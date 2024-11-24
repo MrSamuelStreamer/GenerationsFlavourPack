@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.IO;
+using System.Linq;
+using HarmonyLib;
 using ModlistConfigurator;
 using RimWorld;
 using RimWorld.Planet;
@@ -10,10 +15,34 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 {
     private SettingsImporter Importer = new();
 
+    public Lazy<FieldInfo> PresetsField = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
+
+    public DirectoryInfo presetLocation => ModListConfiguratorCompat_Mod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
+    public void LoadPresets()
+    {
+        Dictionary<string, Preset> Presets = (Dictionary<string, Preset>)PresetsField.Value.GetValue(Importer);
+
+        if(Presets == null) return;
+        if (Presets.Count > 0) return;
+
+        foreach (TechLevelConfigDef presetDef in DefDatabase<TechLevelConfigDef>.AllDefsListForReading)
+        {
+            var presetDir = presetLocation.GetDirectories().FirstOrDefault(dir => string.Equals(dir.Name, presetDef.presetPath, StringComparison.CurrentCultureIgnoreCase));
+            if (presetDir == null || !presetDir.Exists)
+            {
+                ModLog.Warn($"Could not find preset location {presetDef.presetPath} for preset {presetDef.defName}");
+                continue;
+            }
+
+            Presets.Add(presetDef.defName, new Preset(presetDef.defName, presetDef.label, presetDef.version, presetDir));
+        }
+    }
+
     public override void FinalizeInit()
     {
         base.FinalizeInit();
         Find.SignalManager.RegisterReceiver(this);
+        LoadPresets();
     }
 
     public void Notify_SignalReceived(Signal signal)
@@ -25,14 +54,11 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
             TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.techLevel == newLevel);
 
-            if (tlcd != null && tlcd.modlistPreset != null)
-            {
-                MergeSettings(tlcd.defName);
-            }
+            MergeSettings(tlcd.defName, newLevel.ToString());
         }
     }
 
-    private void MergeSettings(string presetName)
+    private void MergeSettings(string presetName, string levelName)
     {
         List<string> modsToImport = Importer.ModsToImport(presetName);
 
@@ -43,14 +69,13 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         else
         {
             Find.WindowStack.Add(new Dialog_MessageBox(
-                $"This will merge the settings for the following mods and will restart Rimworld to apply the configs. Merging allows you to preserve any user-settings that do not conflict with the preset. Do you want to continue?\r\n\r\n{string.Join("\r\n", modsToImport)}",
+                "MSS_Gen_Tech_Level_Advancing".Translate(levelName, string.Join("\r\n", modsToImport)),
                 buttonAAction:
                 () =>
                 {
                     Importer.MergeSettings(presetName);
                     Find.WindowStack.Add(new Dialog_MessageBox(
-                        $"Config from \"{presetName}\" Preset have been imported. Restarting Rimworld to apply the configs",
-                        buttonAAction: ModsConfig.RestartFromChangedMods));
+                        "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetName)));
                 }, buttonBText: "Cancel"));
         }
     }

@@ -2,4 +2,6 @@
 <LanguageData>
     <MSS_Gen_SettingsCategory>Mr Samuel Streamer's Generations Flavour Pack</MSS_Gen_SettingsCategory>
     <MSS_Gen_Settings_SettingName>Some Setting</MSS_Gen_Settings_SettingName>
+    <MSS_Gen_Tech_Level_Advancing>Congratulations, you've advanced to the {0} tech level!\n\nWe need to make some changes now.  You'll need to restart Rimworld for the changes to take effect. Settings will be merged so that user changes get preserved. The mods listed below will be affected, do you want to continue?\n\n{1}</MSS_Gen_Tech_Level_Advancing>
+    <MSS_Gen_Tech_Level_Advancing_Restart>Config from "{0}" Preset have been imported. Please restart Rimworld to apply the configs</MSS_Gen_Tech_Level_Advancing_Restart>
 </LanguageData>
