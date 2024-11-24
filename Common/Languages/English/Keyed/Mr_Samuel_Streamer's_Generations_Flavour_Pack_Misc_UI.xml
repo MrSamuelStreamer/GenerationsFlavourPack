@@ -2,7 +2,14 @@
 <LanguageData>
     <MSS_Gen_SettingsCategory>Mr Samuel Streamer's Generations Flavour Pack</MSS_Gen_SettingsCategory>
     <MSS_Gen_Settings_ForceLoadConfig>Force load a config:</MSS_Gen_Settings_ForceLoadConfig>
-
+    <MSS_Gen_Settings_ReformationPointsPerYear>Reformation points awarded per year - {0}</MSS_Gen_Settings_ReformationPointsPerYear>
+    <MSS_Gen_Settings_ReformationPointsPerTechLevel>Reformation points awarded per tech level - {0}</MSS_Gen_Settings_ReformationPointsPerTechLevel>
+    <MSS_Gen_Settings_ReformationPointsPerBaby>Reformation points awarded per colony baby - {0}</MSS_Gen_Settings_ReformationPointsPerBaby>
+    <MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>Reformation points awarded per faction defeated - {0}</MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>
     <MSS_Gen_Tech_Level_Advancing>Congratulations, you've advanced to the {0} tech level!\n\nWe need to make some changes now.  You'll need to restart Rimworld for the changes to take effect. Settings will be merged so that user changes get preserved. The mods listed below will be affected, do you want to continue?\n\n{1}</MSS_Gen_Tech_Level_Advancing>
     <MSS_Gen_Tech_Level_Advancing_Restart>Config from "{0}" Preset have been imported. Please restart Rimworld to apply the configs</MSS_Gen_Tech_Level_Advancing_Restart>
+    <MSS_Gen_FactionDefeated>You defeated {0} and have been awarded {1} reformation points!</MSS_Gen_FactionDefeated>
+    <MSS_Gen_BabyAddedToFaction>A baby was born in your colony! You have been awarded {0} reformation points!</MSS_Gen_BabyAddedToFaction>
+    <MSS_Gen_NewYear>You made it through the year! You have been awarded {0} reformation points!</MSS_Gen_NewYear>
+    <MSS_Gen_TechLeve>You advanced in tech level! You have been awarded {0} reformation points!</MSS_Gen_TechLeve>
 </LanguageData>
