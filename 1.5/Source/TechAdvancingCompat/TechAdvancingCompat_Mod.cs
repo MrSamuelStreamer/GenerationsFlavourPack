@@ -27,6 +27,6 @@ public class TechAdvancingCompat_Mod : Mod
     public static void GetNewTechLevel_Patch(TechLevel __result)
     {
         if (Faction.OfPlayer.def.techLevel != __result)
-            Find.SignalManager.SendSignal(new Signal("MSS_Gen_TechLevelChanged", new NamedArgument(__result, "newTechLevel"), new NamedArgument(Faction.OfPlayer.def.techLevel, "oldTechLevel")));
+            Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_TechLevelChanged, new NamedArgument(__result, "newTechLevel"), new NamedArgument(Faction.OfPlayer.def.techLevel, "oldTechLevel")));
     }
 }

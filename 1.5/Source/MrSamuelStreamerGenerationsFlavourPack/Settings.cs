@@ -8,9 +8,14 @@ public class Settings : ModSettings
 {
     public Vector2 scrollPosition = Vector2.zero;
 
+    public int ReformationPointsPerYear = 1;
+    public int ReformationPointsPerTechLevel = 5;
+    public int ReformationPointsPerBaby = 1;
+    public int ReformationPointsPerDefeatedFaction = 5;
+
     public void DoWindowContents(Rect wrect)
     {
-        float scrollViewHeigh = 24f+12f+12f;
+        float scrollViewHeigh = 24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
 
         List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
 
@@ -47,6 +52,26 @@ public class Settings : ModSettings
                 }
             }
             options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerYear".Translate(ReformationPointsPerYear));
+            options.IntAdjuster(ref ReformationPointsPerYear, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerTechLevel".Translate(ReformationPointsPerTechLevel));
+            options.IntAdjuster(ref ReformationPointsPerTechLevel, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerBaby".Translate(ReformationPointsPerBaby));
+            options.IntAdjuster(ref ReformationPointsPerBaby, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerDefeatedFaction".Translate(ReformationPointsPerDefeatedFaction));
+            options.IntAdjuster(ref ReformationPointsPerDefeatedFaction, 1, 0);
+
+            options.Gap();
         }
         finally
         {
@@ -57,5 +82,9 @@ public class Settings : ModSettings
 
     public override void ExposeData()
     {
+        Scribe_Values.Look(ref ReformationPointsPerYear, "ReformationPointsPerYear", 1);
+        Scribe_Values.Look(ref ReformationPointsPerTechLevel, "ReformationPointsPerYear", 5);
+        Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerBaby", 1);
+        Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerDefeatedFaction", 5);
     }
 }

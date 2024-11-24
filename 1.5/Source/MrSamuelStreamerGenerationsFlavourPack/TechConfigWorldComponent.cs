@@ -47,10 +47,22 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
     public void Notify_SignalReceived(Signal signal)
     {
-        if (signal.tag == "MSS_Gen_TechLevelChanged")
+        if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
         {
             TechLevel newLevel = (TechLevel)signal.args.GetArg(0).arg;
             ModLog.Log($"{signal.ToString()} : {newLevel} | {signal.args.GetArg(1).ToString()}");
+
+            if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
+            {
+                if (!Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.development.TryAddDevelopmentPoints(MSS_GenMod.settings.ReformationPointsPerTechLevel))
+                {
+                    ModLog.Debug("Couldn't add reformation points");
+                }
+                else
+                {
+                    Messages.Message("MSS_Gen_TechLeve".Translate(MSS_GenMod.settings.ReformationPointsPerTechLevel), MessageTypeDefOf.PositiveEvent, false);
+                }
+            }
 
             TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.techLevel == newLevel);
 
