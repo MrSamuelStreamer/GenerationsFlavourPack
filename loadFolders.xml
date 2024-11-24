@@ -3,7 +3,6 @@
 	<v1.5>
 		<li>Common</li>
 		<li>1.5</li>
-		<li IfModActive="garethp.modlistconfigurator">Compatibility/garethp.modlistconfigurator/1.5</li>
 		<li IfModActive="ghxx.techadvancing">Compatibility/ghxx.techadvancing/1.5</li>
 	</v1.5>
 </loadFolders>

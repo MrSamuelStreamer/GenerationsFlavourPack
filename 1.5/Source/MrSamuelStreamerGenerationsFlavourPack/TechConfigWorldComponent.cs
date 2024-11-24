@@ -9,15 +9,15 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
-namespace MSS_Gen.ModListConfiguratorCompat;
+namespace MSS_Gen;
 
 public class TechConfigWorldComponent(World world) : WorldComponent(world), ISignalReceiver
 {
-    private SettingsImporter Importer = new();
+    private SettingsImporter Importer => MSS_GenMod.Importer;
 
     public Lazy<FieldInfo> PresetsField = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
 
-    public DirectoryInfo presetLocation => ModListConfiguratorCompat_Mod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
+    public DirectoryInfo presetLocation => MSS_GenMod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
     public void LoadPresets()
     {
         Dictionary<string, Preset> Presets = (Dictionary<string, Preset>)PresetsField.Value.GetValue(Importer);
@@ -28,7 +28,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         foreach (TechLevelConfigDef presetDef in DefDatabase<TechLevelConfigDef>.AllDefsListForReading)
         {
             var presetDir = presetLocation.GetDirectories().FirstOrDefault(dir => string.Equals(dir.Name, presetDef.presetPath, StringComparison.CurrentCultureIgnoreCase));
-            if (presetDir == null || !presetDir.Exists)
+            if (presetDir is not { Exists: true })
             {
                 ModLog.Warn($"Could not find preset location {presetDef.presetPath} for preset {presetDef.defName}");
                 continue;
@@ -58,9 +58,9 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         }
     }
 
-    private void MergeSettings(string presetName, string levelName)
+    private void MergeSettings(string presetDefName, string levelName)
     {
-        List<string> modsToImport = Importer.ModsToImport(presetName);
+        List<string> modsToImport = Importer.ModsToImport(presetDefName);
 
         if (modsToImport.Count == 0)
         {
@@ -73,9 +73,9 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
                 buttonAAction:
                 () =>
                 {
-                    Importer.MergeSettings(presetName);
+                    Importer.MergeSettings(presetDefName);
                     Find.WindowStack.Add(new Dialog_MessageBox(
-                        "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetName)));
+                        "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
                 }, buttonBText: "Cancel"));
         }
     }

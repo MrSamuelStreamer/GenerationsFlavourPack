@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-    <MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
+    <MSS_Gen.TechLevelConfigDef>
         <defName>MSS_Gen_Archotech</defName>
-        <presetLabel>MSS_Gen_Archotech</presetLabel>
+        <presetLabel>Archotech Config</presetLabel>
         <techLevel>Archotech</techLevel>
         <presetPath>Archotech</presetPath>
         <version>2</version>
-    </MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
+    </MSS_Gen.TechLevelConfigDef>
 </Defs>

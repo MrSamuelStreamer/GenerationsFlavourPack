@@ -1,8 +1,7 @@
-﻿using ModlistConfigurator;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
-namespace MSS_Gen.ModListConfiguratorCompat;
+namespace MSS_Gen;
 
 public class TechLevelConfigDef: Def
 {
