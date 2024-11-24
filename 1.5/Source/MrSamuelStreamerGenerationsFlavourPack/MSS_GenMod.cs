@@ -1,15 +1,19 @@
 ﻿using Verse;
 using UnityEngine;
 using HarmonyLib;
+using ModlistConfigurator;
 
 namespace MSS_Gen;
 
 public class MSS_GenMod : Mod
 {
+    public static SettingsImporter Importer = new();
     public static Settings settings;
+    public static MSS_GenMod mod;
 
     public MSS_GenMod(ModContentPack content) : base(content)
     {
+        mod = this;
         ModLog.Debug("Hello world from Mr Samuel Streamer's Generations Flavour Pack");
 
         // initialize settings

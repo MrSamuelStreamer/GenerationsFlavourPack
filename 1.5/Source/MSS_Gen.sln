@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrSamuelStreamerGenerationsFlavourPack", "MrSamuelStreamerGenerationsFlavourPack\MrSamuelStreamerGenerationsFlavourPack.csproj", "{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechAdvancingCompat", "TechAdvancingCompat\TechAdvancingCompat.csproj", "{1B3FA69E-D905-4156-BC70-32412F5CC56A}"
+EndProject
 Global
 				GlobalSection(SolutionConfigurationPlatforms) = preSolution
 								Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 								{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 								{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 								{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.Build.0 = Release|Any CPU
+								{1b3fa69e-d905-4156-bc70-32412f5cc56a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+								{1b3fa69e-d905-4156-bc70-32412f5cc56a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+								{1b3fa69e-d905-4156-bc70-32412f5cc56a}.Release|Any CPU.ActiveCfg = Release|Any CPU
+								{1b3fa69e-d905-4156-bc70-32412f5cc56a}.Release|Any CPU.Build.0 = Release|Any CPU
 				EndGlobalSection
 				GlobalSection(SolutionProperties) = preSolution
 								HideSolutionNode = FALSE

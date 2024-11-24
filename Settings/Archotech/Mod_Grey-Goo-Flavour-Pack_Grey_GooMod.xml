@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Grey_Goo.Settings">
+		<EnableGoo>True</EnableGoo>
+		<ChanceToSpreadGooToCell>0.25</ChanceToSpreadGooToCell>
+		<GooDamageRange>0~10</GooDamageRange>
+	</ModSettings>
+</SettingsBlock>
