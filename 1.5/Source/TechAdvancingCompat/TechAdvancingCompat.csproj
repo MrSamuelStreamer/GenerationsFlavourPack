@@ -58,6 +58,12 @@
       <Link>Attached/Rimworld/%(RecursiveDir)/%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.dll">
+      <Link>ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.dll</Link>
+    </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb">
+      <Link>ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
