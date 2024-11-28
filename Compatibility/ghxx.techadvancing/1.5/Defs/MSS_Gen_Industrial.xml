@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef>
+        <defName>MSS_Gen_DisableForIndustrial</defName>
+        <techLevel>Industrial</techLevel>
+        <recipes>
+            <li>ButcherCorpseFlesh</li>
+        </recipes>
+        <things>
+            <li>Beer</li>
+        </things>
+        <quests>
+            <li>OpportunitySite_BanditCamp</li>
+        </quests>
+        <incidents>
+            <li>Disease_Flu</li>
+        </incidents>
+    </MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef>
+</Defs>

@@ -64,6 +64,18 @@
     <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb">
       <Link>ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb</Link>
     </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Defs\MSS_Gen_Industrial.xml">
+      <Link>ghxx.techadvancing\1.5\Defs\MSS_Gen_Industrial.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.dll">
+      <Link>ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.dll</Link>
+    </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb">
+      <Link>ghxx.techadvancing\1.5\Assemblies\MSS_Gen.TechAdvancingCompat.pdb</Link>
+    </Content>
+    <Content Include="..\..\..\Compatibility\ghxx.techadvancing\1.5\Defs\MSS_Gen_Industrial.xml">
+      <Link>ghxx.techadvancing\1.5\Defs\MSS_Gen_Industrial.xml</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
