@@ -4,5 +4,6 @@
 		<li>Common</li>
 		<li>1.5</li>
 		<li IfModActive="ghxx.techadvancing">Compatibility/ghxx.techadvancing/1.5</li>
+		<li IfModActive="silencer59.timekills">Compatibility/silencer59.timekills/1.5</li>
 	</v1.5>
 </loadFolders>
