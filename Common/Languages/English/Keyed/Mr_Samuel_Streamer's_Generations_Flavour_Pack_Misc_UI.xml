@@ -12,4 +12,7 @@
     <MSS_Gen_BabyAddedToFaction>A baby was born in your colony! You have been awarded {0} reformation points!</MSS_Gen_BabyAddedToFaction>
     <MSS_Gen_NewYear>You made it through the year! You have been awarded {0} reformation points!</MSS_Gen_NewYear>
     <MSS_Gen_TechLeve>You advanced in tech level! You have been awarded {0} reformation points!</MSS_Gen_TechLeve>
+
+    <MSS_Gen_TooAdvancedLabelCap>Too Advanced ({0})</MSS_Gen_TooAdvancedLabelCap>
+    <MSS_Gen_TooAdvancedDescription>This is way too advanced for you to even comprehend.</MSS_Gen_TooAdvancedDescription>
 </LanguageData>
