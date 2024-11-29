@@ -17,4 +17,11 @@
     <!--         <li>Disease_Flu</li> -->
     <!--     </incidents> -->
     <!-- </MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef> -->
+
+    <!-- <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef> -->
+    <!--     <defName>MSS_Gen_RandyForArchotech</defName> -->
+    <!--     <StoryTeller>Randy</StoryTeller> -->
+    <!--     <TechLevel>Archotech</TechLevel> -->
+    <!-- </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef> -->
+
 </Defs>
