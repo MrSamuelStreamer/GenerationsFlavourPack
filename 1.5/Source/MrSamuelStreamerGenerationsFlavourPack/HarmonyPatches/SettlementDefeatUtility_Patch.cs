@@ -27,7 +27,7 @@ public static class SettlementDefeatUtility_Patch
         for (int i = 0; i < codes.Count; i++)
         {
             // Look for the line factionBase.Faction.defeated = true;
-            if (codes[i].opcode == OpCodes.Stfld && codes[i].operand == factionDefeatedField)
+            if (codes[i].opcode == OpCodes.Stfld && (FieldInfo)codes[i].operand == factionDefeatedField)
             {
                 // Insert after the found instruction
                 codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldarg_0)); // Load `factionBase`
