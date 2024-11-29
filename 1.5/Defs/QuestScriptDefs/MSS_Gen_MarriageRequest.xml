@@ -2,7 +2,8 @@
 
 <Defs>
     <QuestScriptDef>
-        <defName>MSS_Gen_MarriageRequest</defName>
+        <defName>MSS_Gen_MarriageRequestLeave</defName>
+        <label>Marriage Request (Leave Colony)</label>
         <rootSelectionWeight>1.1</rootSelectionWeight>
         <rootMinProgressScore>8</rootMinProgressScore>
         <defaultChallengeRating>1</defaultChallengeRating>
@@ -66,9 +67,101 @@
                         <li Class="MSS_Gen.Quests.QuestNode_MarryAway">
                             <proposee>$proposee</proposee>
                             <asker>$asker</asker>
-                            <sendStandardLetter>true</sendStandardLetter>
                         </li>
                     </nodes>
+                </li>
+
+                <!-- proposee died -->
+                <li Class="QuestNode_Signal">
+                    <inSignal>proposee.Destroyed</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <goodwillChangeAmount>-5</goodwillChangeAmount>
+                        <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                        <goodwillChangeReason>QuestPawnLost</goodwillChangeReason>
+                        <signalListenMode>OngoingOrNotYetAccepted</signalListenMode>
+                    </node>
+                </li>
+
+                <!-- asker died -->
+                <li Class="QuestNode_Signal">
+                    <inSignal>asker.Destroyed</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <signalListenMode>OngoingOrNotYetAccepted</signalListenMode>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+    <QuestScriptDef>
+        <defName>MSS_Gen_MarriageRequestStay</defName>
+        <label>Marriage Request (Stay in Colony)</label>
+        <rootSelectionWeight>1.1</rootSelectionWeight>
+        <rootMinProgressScore>8</rootMinProgressScore>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Proposal to [proposee_nameFull]</li>
+                <li>questName->The hand of [proposee_nameFull]</li>
+                <li>questName->[proposee_nameFull]'s hand</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] from [faction_name], has asked for [proposee_nameFull]'s hand in marriage. [asker_pronoun] wants to come and live with [proposee_nameFull]. Accepting this will mean [proposee_nameFull] joins the colony.</li>
+                <!-- <li>questDescription->[asker_nameFull], has asked for [proposee_nameFull]'s hand in marriage. They want [proposee_nameFull] to live with them. Accepting this will mean [proposee_nameFull] moves permanently to that faction.</li> -->
+            </rulesStrings>
+        </questDescriptionRules>
+
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetMap" />
+
+                <li Class="MSS_Gen.Quests.QuestNode_GetUnmarriedPawn">
+                    <storeAs>asker</storeAs>
+                    <canGeneratePawn>true</canGeneratePawn>
+                    <hostileWeight>0.15</hostileWeight>
+                </li>
+
+                <li Class="QuestNode_GetWalkInSpot" />
+
+                <li Class="MSS_Gen.Quests.QuestNode_GetPlayerPawn">
+                    <storeAs>proposee</storeAs>
+                    <CannotBeMarried>true</CannotBeMarried>
+                </li>
+
+                <li Class="MSS_Gen.Quests.QuestNode_SingleToList">
+                    <single>$proposee</single>
+                    <list>requiredPawns</list>
+                </li>
+
+                <li Class="QuestNode_GetFactionOf">
+                    <thing>$asker</thing>
+                    <storeAs>faction</storeAs>
+                </li>
+
+                <li Class="QuestNode_PawnsArrive">
+                    <pawns>$asker</pawns>
+                    <joinPlayer>true</joinPlayer>
+                    <isSingleReward>true</isSingleReward>
+                    <rewardDetailsHidden>false</rewardDetailsHidden>
+                </li>
+
+                <li Class="MSS_Gen.Quests.QuestNode_MarryStay">
+                    <proposee>$proposee</proposee>
+                    <asker>$asker</asker>
+                    <outSignalComplete>MSS_Gen_Married</outSignalComplete>
+                </li>
+
+                <li Class="QuestNode_Signal">
+                    <inSignal>MSS_Gen_Married</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Success</outcome>
+                    </node>
+
                 </li>
 
                 <!-- proposee died -->

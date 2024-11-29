@@ -15,4 +15,7 @@
 
     <MSS_Gen_QuestPart_MarryAwayEndLetterLabel>{0} is leaving.</MSS_Gen_QuestPart_MarryAwayEndLetterLabel>
     <MSS_Gen_QuestPart_MarryAwayEndLetterText>{0} is leaving the colony to marry {1} of faction {2}.</MSS_Gen_QuestPart_MarryAwayEndLetterText>
+
+    <MSS_Gen_QuestPart_MarryStayEndLetterLabel>Married!</MSS_Gen_QuestPart_MarryStayEndLetterLabel>
+    <MSS_Gen_QuestPart_MarryStayEndLetterText>{0} has married {1} of faction {2}. {1} is now a permanent member of your faction and a colonist.</MSS_Gen_QuestPart_MarryStayEndLetterText>
 </LanguageData>
