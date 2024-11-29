@@ -17,17 +17,21 @@
         <questDescriptionRules>
             <rulesStrings>
                 <li>questDescription->[asker_nameFull] from [faction_name], has asked for [proposee_nameFull]'s hand in marriage. They want [proposee_nameFull] to live with them. Accepting this will mean [proposee_nameFull] moves permanently to that faction.</li>
-                <li>questDescription->[asker_nameFull], has asked for [proposee_nameFull]'s hand in marriage. They want [proposee_nameFull] to live with them. Accepting this will mean [proposee_nameFull] moves permanently to that faction.</li>
+                <!-- <li>questDescription->[asker_nameFull], has asked for [proposee_nameFull]'s hand in marriage. They want [proposee_nameFull] to live with them. Accepting this will mean [proposee_nameFull] moves permanently to that faction.</li> -->
             </rulesStrings>
         </questDescriptionRules>
 
         <root Class="QuestNode_Sequence">
             <nodes>
+                <li Class="QuestNode_GetMap" />
 
-                <li Class="QuestNode_GetPawn">
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+
+                <li Class="MSS_Gen.Quests.QuestNode_GetUnmarriedPawn">
                     <storeAs>asker</storeAs>
-                    <mustBeFactionLeader>false</mustBeFactionLeader>
-                    <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+                    <canGeneratePawn>true</canGeneratePawn>
                     <hostileWeight>0.15</hostileWeight>
                 </li>
 
@@ -36,12 +40,36 @@
                     <CannotBeMarried>true</CannotBeMarried>
                 </li>
 
+                <li Class="MSS_Gen.Quests.QuestNode_SingleToList">
+                    <single>$proposee</single>
+                    <list>requiredPawns</list>
+                </li>
+
                 <li Class="QuestNode_GetFactionOf">
                     <thing>$asker</thing>
                     <storeAs>faction</storeAs>
                 </li>
 
-                <li Class="QuestNode_GetMap" />
+                <!-- Rewards -->
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                </li>
+
+                <li Class="QuestNode_Sequence">
+                    <nodes>
+                        <li Class="QuestNode_GiveRewards">
+                            <parms>
+                                <allowGoodwill>true</allowGoodwill>
+                                <allowRoyalFavor>true</allowRoyalFavor>
+                            </parms>
+                        </li>
+                        <li Class="MSS_Gen.Quests.QuestNode_MarryAway">
+                            <proposee>$proposee</proposee>
+                            <asker>$asker</asker>
+                            <sendStandardLetter>true</sendStandardLetter>
+                        </li>
+                    </nodes>
+                </li>
 
                 <!-- proposee died -->
                 <li Class="QuestNode_Signal">
@@ -61,91 +89,6 @@
                     <node Class="QuestNode_End">
                         <outcome>Fail</outcome>
                         <signalListenMode>OngoingOrNotYetAccepted</signalListenMode>
-                    </node>
-                </li>
-                <li Class="MSS_Gen.Quests.QuestNode_SingleToList">
-                    <single>$proposee</single>
-                    <list>requiredPawns</list>
-                </li>
-
-                <!-- Shuttle -->
-                <li Class="QuestNode_ShuttleDelay">
-                    <delayTicks>3500</delayTicks>
-                    <node Class="QuestNode_Sequence">
-                        <nodes>
-                            <li Class="QuestNode_SubScript">
-                                <def>Util_TransportShip_Pickup</def>
-                                <parms>
-                                    <requiredPawns>$requiredPawns</requiredPawns>
-                                    <leaveDelayTicks>60000</leaveDelayTicks>
-                                    <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
-                                    <acceptColonists>true</acceptColonists>
-                                    <acceptChildren>true</acceptChildren>
-                                    <onlyAcceptColonists>true</onlyAcceptColonists>
-                                </parms>
-                            </li>
-
-                            <li Class="QuestNode_Letter">
-                                <label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
-                                <text TKey="LetterTextShuttleArrived">The shuttle has arrived to collect [proposee_nameFull] for their marriage to $proposee.</text>
-                                <lookTargets>$pickupShipThing</lookTargets>
-                            </li>
-                        </nodes>
-                    </node>
-                </li>
-
-                <li Class="QuestNode_SubScript">
-                    <def>Util_RandomizePointsChallengeRating</def>
-                </li>
-
-                <!-- Rewards -->
-                <li Class="QuestNode_SubScript">
-                    <def>Util_GetDefaultRewardValueFromPoints</def>
-                </li>
-
-
-                <li Class="QuestNode_Signal">
-                    <inSignal>pickupShipThing.SentSatisfied</inSignal>
-                    <node Class="QuestNode_Sequence">
-                        <nodes>
-                            <li Class="QuestNode_Delay">
-                                <delayTicks>300</delayTicks>
-                                <node Class="QuestNode_Sequence">
-                                    <nodes>
-                                        <li Class="QuestNode_GiveRewards">
-                                            <parms>
-                                                <allowGoodwill>true</allowGoodwill>
-                                                <allowRoyalFavor>true</allowRoyalFavor>
-                                            </parms>
-                                        </li>
-                                        <li Class="MSS_Gen.Quests.QuestNode_MarryAway">
-                                            <proposee>$proposee</proposee>
-                                            <asker>$asker</asker>
-                                            <sendStandardLetter>true</sendStandardLetter>
-                                        </li>
-                                    </nodes>
-                                </node>
-                            </li>
-                        </nodes>
-                    </node>
-                </li>
-
-                <li Class="QuestNode_Signal">
-                    <inSignal>pickupShipThing.SentUnsatisfied</inSignal>
-                    <node Class="QuestNode_Sequence">
-                        <nodes>
-                            <li Class="QuestNode_Letter">
-                                <label TKey="LetterLabelQuestFailed">Quest failed: [proposee_nameFull]'s marriage</label>
-                                <letterDef>NegativeEvent</letterDef>
-                                <text TKey="LetterTextQuestFailed">The shuttle sent to collect [proposee_nameFull] has departed. </text>
-                            </li>
-                            <li Class="QuestNode_End">
-                                <outcome>Fail</outcome>
-                                <goodwillChangeAmount>-5</goodwillChangeAmount>
-                                <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
-                                <goodwillChangeReason>MemberMissedShuttle</goodwillChangeReason>
-                            </li>
-                        </nodes>
                     </node>
                 </li>
             </nodes>

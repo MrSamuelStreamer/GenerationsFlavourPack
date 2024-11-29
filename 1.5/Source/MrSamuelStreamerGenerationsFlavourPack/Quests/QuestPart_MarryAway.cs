@@ -8,7 +8,6 @@ public class QuestPart_MarryAway : QuestPart
     public string inSignal;
     public Pawn asker;
     public Pawn proposee;
-    public bool sendLetter;
 
 
     public override void Notify_QuestSignalReceived(Signal signal)
@@ -20,7 +19,9 @@ public class QuestPart_MarryAway : QuestPart
         proposee.SetFaction(asker.Faction);
         MarriageCeremonyUtility.Married(asker, proposee);
 
-        quest.End(QuestEndOutcome.Success, sendLetter, true);
+        LeaveQuestPartUtility.MakePawnsLeave([proposee], true, this.quest, true);
+        quest.End(QuestEndOutcome.Success, false, true);
+        Find.LetterStack.ReceiveLetter("MSS_Gen_QuestPart_MarryAwayEndLetterLabel".Translate(proposee.NameShortColored), "MSS_Gen_QuestPart_MarryAwayEndLetterText".Translate(proposee.NameFullColored, asker.NameFullColored, asker.Faction.NameColored), LetterDefOf.NeutralEvent, (LookTargets) proposee, quest: this.quest, playSound: true);
     }
 
     public override void ExposeData()
@@ -29,7 +30,6 @@ public class QuestPart_MarryAway : QuestPart
         Scribe_References.Look(ref asker, "asker");
         Scribe_References.Look(ref proposee, "proposee");
         Scribe_Values.Look(ref inSignal, "inSignal");
-        Scribe_Values.Look(ref sendLetter, "sendLetter");
     }
 
     public override void AssignDebugData()

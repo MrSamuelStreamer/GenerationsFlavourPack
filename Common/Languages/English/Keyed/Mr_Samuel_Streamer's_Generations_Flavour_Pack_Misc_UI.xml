@@ -12,4 +12,7 @@
     <MSS_Gen_BabyAddedToFaction>A baby was born in your colony! You have been awarded {0} reformation points!</MSS_Gen_BabyAddedToFaction>
     <MSS_Gen_NewYear>You made it through the year! You have been awarded {0} reformation points!</MSS_Gen_NewYear>
     <MSS_Gen_TechLeve>You advanced in tech level! You have been awarded {0} reformation points!</MSS_Gen_TechLeve>
+
+    <MSS_Gen_QuestPart_MarryAwayEndLetterLabel>{0} is leaving.</MSS_Gen_QuestPart_MarryAwayEndLetterLabel>
+    <MSS_Gen_QuestPart_MarryAwayEndLetterText>{0} is leaving the colony to marry {1} of faction {2}.</MSS_Gen_QuestPart_MarryAwayEndLetterText>
 </LanguageData>

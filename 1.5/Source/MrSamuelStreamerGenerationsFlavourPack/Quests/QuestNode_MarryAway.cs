@@ -8,7 +8,6 @@ public class QuestNode_MarryAway : QuestNode
     public SlateRef<string> inSignal;
     public SlateRef<object> proposee;
     public SlateRef<object> asker;
-    public SlateRef<bool?> sendStandardLetter;
 
     protected override void RunInt()
     {
@@ -28,8 +27,6 @@ public class QuestNode_MarryAway : QuestNode
         part.inSignal = QuestGenUtility.HardcodedSignalWithQuestID(this.inSignal.GetValue(slate)) ?? QuestGen.slate.Get<string>("inSignal");
         part.proposee = p;
         part.asker = a;
-        part.sendLetter = sendStandardLetter.GetValue(slate) ?? false;
-
-            QuestGen.quest.AddPart(part);
+        QuestGen.quest.AddPart(part);
     }
 }
