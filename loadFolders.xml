@@ -6,5 +6,14 @@
 		<li IfModActive="ghxx.techadvancing">Compatibility/ghxx.techadvancing/1.5</li>
 		<li IfModActive="jp.factionevolution">Compatibility/jp.factionevolution</li>
 		<li IfModActive="silencer59.timekills">Compatibility/silencer59.timekills/1.5</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Compatibility/dankpyon.medieval.overhaul/1.5</li>
+		<li IfModActive="gwinnbleidd.researchtweaks">Compatibility/gwinnbleidd.researchtweaks/1.5</li>
+		<li IfModActive="anthitei.athsstyleableframework.style">Compatibility/anthitei.athsstyleableframework.style/1.5</li>
+		<li IfModActive="erin.decorations">Compatibility/erin.decorations/1.5</li>
+		<li IfModActive="koni.misc.steamworlddefenses">Compatibility/koni.misc.steamworlddefenses/1.5</li>
+		<li IfModActive="biomesteam.biomesfossils">Compatibility/biomesteam.biomesfossils/1.5</li>
+		<li IfModActive="van.dacrypts">Compatibility/van.dacrypts/1.5</li>
+		<li IfModActive="legendaryminuteman.planetsidepolitics">Compatibility/legendaryminuteman.planetsidepolitics/1.5</li>
+		<li IfModActive="void.charactereditor">Compatibility/void.charactereditor/1.5</li>
 	</v1.5>
 </loadFolders>
