@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="DankPyon_Plasteel1x1c"]/researchPrerequisites</xpath>
+                    <value>
+                       <researchPrerequisites>
+                            <li>DankPyon_RusticStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="DankPyon_Plasteel1x2c" or defName="DankPyon_Plasteel2x2c"]</xpath>
+                    <value>
+                       <researchPrerequisites>
+                            <li>DankPyon_RusticStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

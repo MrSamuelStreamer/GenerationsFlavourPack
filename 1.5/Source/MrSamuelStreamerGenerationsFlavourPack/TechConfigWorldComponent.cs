@@ -13,6 +13,7 @@ namespace MSS_Gen;
 
 public class TechConfigWorldComponent(World world) : WorldComponent(world), ISignalReceiver
 {
+    public bool Loaded = false;
     private SettingsImporter Importer => MSS_GenMod.Importer;
 
     public Lazy<FieldInfo> PresetsField = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
@@ -36,6 +37,8 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
             Presets.Add(presetDef.defName, new Preset(presetDef.defName, presetDef.label, presetDef.version, presetDir));
         }
+
+        Loaded = true;;
     }
 
     public override void FinalizeInit()
@@ -47,6 +50,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
     public void Notify_SignalReceived(Signal signal)
     {
+        if(!Loaded) return;
         if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
         {
             TechLevel newLevel = (TechLevel)signal.args.GetArg(0).arg;
@@ -66,7 +70,10 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
             TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.techLevel == newLevel);
 
-            MergeSettings(tlcd.defName, newLevel.ToString());
+            if (tlcd is not null)
+            {
+                MergeSettings(tlcd.defName, newLevel.ToString());
+            }
         }
     }
 

@@ -36,5 +36,18 @@
         <li>Ludeon.RimWorld.Royalty</li>
         <li>Ludeon.RimWorld.Biotech</li>
         <li>Ludeon.RimWorld.Anomaly</li>
+        <li>silencer59.timekills</li>
+        <li>garethp.modlistconfigurator</li>
+        <li>ghxx.techadvancing</li>
+        <li>jp.factionevolution</li>
+        <li>mss.flavourpack</li>
+        <li>dankpyon.medieval.overhaul</li>
+        <li>anthitei.athsstyleableframework.style</li>
+        <li>erin.decorations</li>
+        <li>koni.misc.steamworlddefenses</li>
+        <li>biomesteam.biomesfossils</li>
+        <li>van.dacrypts</li>
+        <li>legendaryminuteman.planetsidepolitics</li>
+        <li>void.charactereditor</li>
     </loadAfter>
 </ModMetaData>

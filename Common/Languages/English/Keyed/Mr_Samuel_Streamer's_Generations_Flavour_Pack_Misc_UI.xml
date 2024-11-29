@@ -18,4 +18,7 @@
 
     <MSS_Gen_QuestPart_MarryStayEndLetterLabel>Married!</MSS_Gen_QuestPart_MarryStayEndLetterLabel>
     <MSS_Gen_QuestPart_MarryStayEndLetterText>{0} has married {1} of faction {2}. {1} is now a permanent member of your faction and a colonist.</MSS_Gen_QuestPart_MarryStayEndLetterText>
+
+    <MSS_Gen_TooAdvancedLabelCap>Too Advanced ({0})</MSS_Gen_TooAdvancedLabelCap>
+    <MSS_Gen_TooAdvancedDescription>This is way too advanced for you to even comprehend.</MSS_Gen_TooAdvancedDescription>
 </LanguageData>

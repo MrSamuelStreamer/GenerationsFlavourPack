@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionEvolution.FactionDef_Evolvable ParentName="TribeBase">
+    <defName>MSS_Gen_RivalTribal</defName>
+    <label>Alpha Tribe</label>
+    <description>A tribe lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable, no doubt inspired by the rival Archoseed. They can never be allied.</description>
+    <colorSpectrum>
+      <li>(1.0, 0.31, 0.27)</li>
+      <li>(0.9, 0.27, 0.31)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <evolvesToDef>MSS_Gen_RivalIndustrial</evolvesToDef>
+    <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderFactionBase">
+    <defName>MSS_Gen_RivalIndustrial</defName>
+    <label>Alpha Industrial</label>
+    <description>An industrial-era city lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable, no doubt inspired by the rival Archoseed. They can never be allied.</description>
+    <colorSpectrum>
+      <li>(1.0, 0.31, 0.27)</li>
+      <li>(0.9, 0.27, 0.31)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <evolvesToDef>OutlanderCivil</evolvesToDef>
+    <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+    <specialPawnkindReplacements>
+      <li>
+        <pawnkindDef>Villager</pawnkindDef>
+        <replacesDefOf>Empire_Fighter_Janissary</replacesDefOf>
+      </li>
+      <li>
+        <pawnkindDef>Grenadier_Destructive</pawnkindDef> 
+        <replacesDefOf>Empire_Fighter_Cataphract</replacesDefOf>
+      </li>
+      <li>
+        <pawnkindDef>Tribal_Warrior</pawnkindDef>
+        <replacesDefOf>Mercenary_Elite</replacesDefOf>
+      </li>
+    </specialPawnkindReplacements>
+  </FactionEvolution.FactionDef_Evolvable>
+</Defs>
