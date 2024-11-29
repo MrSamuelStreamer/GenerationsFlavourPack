@@ -12,10 +12,10 @@
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>10</configurationListOrderPriority>
     <evolvesToDef>MSS_Gen_RivalIndustrial</evolvesToDef>
-    <evolvesWhenPlayerTech>industrial</evolvesWhenPlayerTech>
+    <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
   </FactionEvolution.FactionDef_Evolvable>
 
-  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderRoughBase">
+  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderFactionBase">
     <defName>MSS_Gen_RivalIndustrial</defName>
     <label>Alpha Industrial</label>
     <description>An industrial-era city lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable, no doubt inspired by the rival Archoseed. They can never be allied.</description>
@@ -27,7 +27,7 @@
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>10</configurationListOrderPriority>
     <evolvesToDef>OutlanderCivil</evolvesToDef>
-    <evolvesWhenPlayerTech>industrial</evolvesWhenPlayerTech>
+    <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
     <specialPawnkindReplacements>
       <li>
         <pawnkindDef>Villager</pawnkindDef>
