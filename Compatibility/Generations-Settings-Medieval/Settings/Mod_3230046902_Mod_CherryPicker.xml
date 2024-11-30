@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CherryPicker.ModSettings_CherryPicker">
+		<keys>
+			<li>ScenarioDef/Crashlanded</li>
+			<li>ScenarioDef/Tutorial</li>
+			<li>ScenarioDef/LostTribe</li>
+			<li>ScenarioDef/TheRichExplorer</li>
+			<li>ScenarioDef/NakedBrutality</li>
+			<li>ScenarioDef/Mechanitor</li>
+			<li>ScenarioDef/Sanguophage</li>
+			<li>ScenarioDef/TheAnomaly</li>
+			<li>ScenarioDef/VFEC_NewEmpire</li>
+			<li>ScenarioDef/VREA_NewUtopia</li>
+			<li>ScenarioDef/VFEE_NewFamily</li>
+			<li>ScenarioDef/VFE_TheLoneScavenger</li>
+			<li>ScenarioDef/DankPyon_LoneWolfStart</li>
+			<li>ScenarioDef/DankPyon_MercenaryStart</li>
+			<li>ScenarioDef/DankPyon_TavernOwnerStart</li>
+			<li>ScenarioDef/DankPyon_RoxKnightStart</li>
+			<li>ThingDef/Zombgrella</li>
+			<li>ThingDef/Zombrella</li>
+			<li>QuestScriptDef/AncientComplex_Standard</li>
+			<li>QuestScriptDef/OpportunitySite_AncientComplex</li>
+			<li>QuestScriptDef/AncientComplex_Mission</li>
+			<li>QuestScriptDef/AncientSignalActivation</li>
+			<li>QuestScriptDef/VFE_OpportunitySite_AbandonedFactory</li>
+			<li>QuestScriptDef/VFE_OpportunitySite_BroadcastingStation</li>
+			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidShipLanding</li>
+			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidStoragePickup</li>
+			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidAttackParty</li>
+		</keys>
+	</ModSettings>
+</SettingsBlock>

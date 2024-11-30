@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="aRandomKiwi.ARS.Settings">
+		<folders>
+			<li>Default</li>
+		</folders>
+		<nbAutosave>20</nbAutosave>
+		<keyBinding>2</keyBinding>
+		<uniqueQuicksaveName>True</uniqueQuicksaveName>
+		<disableQuicksavesNotifs>True</disableQuicksavesNotifs>
+		<maxQuicksaves>20</maxQuicksaves>
+	</ModSettings>
+</SettingsBlock>

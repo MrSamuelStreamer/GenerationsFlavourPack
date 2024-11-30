@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Madeline.ModMismatchFormatter.Settings">
+		<useVersionCompare>False</useVersionCompare>
+		<saveVersionToSaveFile>False</saveVersionToSaveFile>
+	</ModSettings>
+</SettingsBlock>

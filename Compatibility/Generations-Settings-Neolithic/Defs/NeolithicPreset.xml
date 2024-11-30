@@ -1,0 +1,7 @@
+﻿<Defs>
+    <ModlistConfigurator.ModlistPresetDef>
+        <defName>GenerationsCavemen</defName>
+        <presetLabel>Generations: Neolithic</presetLabel>
+        <version>1.0</version>
+    </ModlistConfigurator.ModlistPresetDef>
+</Defs>

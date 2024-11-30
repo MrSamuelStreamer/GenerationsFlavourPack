@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NoRandomIdeologies.NoRandomIdeologiesSettings">
+		<PreferedIdeology>
+			<keys />
+			<values />
+		</PreferedIdeology>
+		<FactionIgnore />
+	</ModSettings>
+</SettingsBlock>

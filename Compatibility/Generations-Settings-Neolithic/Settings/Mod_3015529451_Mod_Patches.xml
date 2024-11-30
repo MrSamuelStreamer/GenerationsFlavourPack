@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MO_Patches.ModSettings_MOPatches">
+		<alchemical_drug>False</alchemical_drug>
+		<medieval_drug>False</medieval_drug>
+		<darkForestDifficultyMode>Easy</darkForestDifficultyMode>
+		<settingMode>
+			<keys />
+			<values />
+		</settingMode>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="IAintBuildingThat.Settings">
+		<hiddenBuildables>
+			<li>DankPyon_IronIngots1x1c</li>
+			<li>Zombgrella</li>
+			<li>Zombrella</li>
+		</hiddenBuildables>
+	</ModSettings>
+</SettingsBlock>

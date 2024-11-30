@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="StorageUpperBound.StackGapSettings">
+		<EnableHardEjection>True</EnableHardEjection>
+		<DisplayLogFactor>3</DisplayLogFactor>
+		<GlobalMultistackMode>0</GlobalMultistackMode>
+		<PercentageMode>False</PercentageMode>
+		<GlobalSimilarStackEnabled>True</GlobalSimilarStackEnabled>
+	</ModSettings>
+</SettingsBlock>

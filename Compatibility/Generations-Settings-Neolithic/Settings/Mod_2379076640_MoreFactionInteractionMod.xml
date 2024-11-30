@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MoreFactionInteraction.MoreFactionInteraction_Settings">
+		<ticksToUpgrade>1777639</ticksToUpgrade>
+		<doNotAffectTraders>True</doNotAffectTraders>
+		<traderWealthOffsetFromTimesTraded>0.7</traderWealthOffsetFromTimesTraded>
+	</ModSettings>
+</SettingsBlock>

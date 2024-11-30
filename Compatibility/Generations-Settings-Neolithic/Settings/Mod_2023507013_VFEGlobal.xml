@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VFECore.VFEGlobalSettings">
+		<toggablePatch>
+			<keys>
+				<li>Animalhelmetscanbewornoverordinaryones:</li>
+				<li>Makebattlefieldremaintsdeconstructable:</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</toggablePatch>
+		<disableCaching>False</disableCaching>
+		<hideRandomizeButtons>False</hideRandomizeButtons>
+		<weatherDamagesOptions>
+			<keys />
+			<values />
+		</weatherDamagesOptions>
+	</ModSettings>
+</SettingsBlock>
