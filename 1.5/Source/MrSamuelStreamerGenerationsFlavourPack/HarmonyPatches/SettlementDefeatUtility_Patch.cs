@@ -18,25 +18,26 @@ public static class SettlementDefeatUtility_Patch
     [HarmonyTranspiler]
     public static IEnumerable<CodeInstruction> CheckDefeated_Patch(IEnumerable<CodeInstruction> instructions)
     {
-        var codes = new List<CodeInstruction>(instructions);
-        var factionDefeatedField = AccessTools.Field(typeof(Faction), "defeated");
-        var factionField = AccessTools.Field(typeof(Settlement), "factionInt");
-        var factionDefeatedSignalMethod = AccessTools.Method(
+        FieldInfo factionDefeatedField = AccessTools.Field(typeof(Faction), "defeated");
+        FieldInfo factionField = AccessTools.Field(typeof(Settlement), "factionInt");
+        MethodInfo factionDefeatedSignalMethod = AccessTools.Method(
             typeof(SettlementDefeatUtility_Patch), nameof(FactionDefeatedSignal));
 
-        for (int i = 0; i < codes.Count; i++)
+        bool found = false;
+
+        foreach (CodeInstruction code in instructions)
         {
+            yield return code;
             // Look for the line factionBase.Faction.defeated = true;
-            if (codes[i].opcode == OpCodes.Stfld && (FieldInfo)codes[i].operand == factionDefeatedField)
+            if (!found && code.opcode == OpCodes.Stfld && (FieldInfo)code.operand == factionDefeatedField)
             {
+                found = true;
                 // Insert after the found instruction
-                codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldarg_0)); // Load `factionBase`
-                codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldfld, factionField)); // Load `factionBase.Faction`
-                codes.Insert(i + 3, new CodeInstruction(OpCodes.Call, factionDefeatedSignalMethod)); // Call method
-                break;
+                yield return new CodeInstruction(OpCodes.Ldarg_0);
+                yield return new CodeInstruction(OpCodes.Ldfld, factionField);
+                yield return new CodeInstruction(OpCodes.Call, factionDefeatedSignalMethod);
             }
         }
-        return codes.AsEnumerable();
     }
 
     public static void FactionDefeatedSignal(Faction faction)
