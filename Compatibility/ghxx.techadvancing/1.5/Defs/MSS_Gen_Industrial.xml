@@ -18,10 +18,35 @@
     <!--     </incidents> -->
     <!-- </MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef> -->
 
-    <!-- <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef> -->
-    <!--     <defName>MSS_Gen_RandyForArchotech</defName> -->
-    <!--     <StoryTeller>Randy</StoryTeller> -->
-    <!--     <TechLevel>Archotech</TechLevel> -->
-    <!-- </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef> -->
+    <!-- Storyteller per Tech Level -->
+    <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef MayRequire="oskarpotocki.vfe.tribals">
+        <defName>MSS_Gen_TalonForTribal</defName>
+        <StoryTeller >VFET_TalonTribal</StoryTeller>
+        <TechLevel>Neolithic</TechLevel>
+    </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+
+    <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef MayRequire="oskarpotocki.vfe.classical">
+        <defName>MSS_Gen_NeronForMedieval</defName>
+        <StoryTeller>VFEC_NeronNeolithic</StoryTeller>
+        <TechLevel>Medieval</TechLevel>
+    </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+
+    <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef MayRequire="oskarpotocki.vse.perrypersistent">
+        <defName>MSS_Gen_PerryThePlatipus</defName>
+        <StoryTeller>VSE_PerryPersistent</StoryTeller>
+        <TechLevel>Industrial</TechLevel>
+    </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+
+    <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+        <defName>MSS_Gen_CassandraForIndustrial</defName>
+        <StoryTeller>Cassandra</StoryTeller>
+        <TechLevel>Spacer</TechLevel>
+    </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+
+    <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
+        <defName>MSS_Gen_RandyForArchotech</defName>
+        <StoryTeller>Randy</StoryTeller>
+        <TechLevel>Archotech</TechLevel>
+    </MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef>
 
 </Defs>

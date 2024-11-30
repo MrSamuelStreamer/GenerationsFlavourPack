@@ -1,7 +1,8 @@
 ﻿<Defs>
     <ModlistConfigurator.ModlistPresetDef>
-        <defName>GenerationsCavemen</defName>
+        <defName>GenerationsNeolithic</defName>
         <presetLabel>Generations: Neolithic</presetLabel>
         <version>1.0</version>
+        <subDir>Compatibility/Generations-Settings-Neolithic</subDir>
     </ModlistConfigurator.ModlistPresetDef>
 </Defs>
