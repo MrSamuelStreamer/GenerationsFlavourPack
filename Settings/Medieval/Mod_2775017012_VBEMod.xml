@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VBE.VBESettings">
+		<cycle>False</cycle>
+		<randomize>False</randomize>
+		<current>VBE_Eclipse</current>
+		<loadingBackground>False</loadingBackground>
+		<enabled>
+			<keys>
+				<li>VBE_Adventure</li>
+				<li>VBE_Archotech</li>
+				<li>VBE_Aurora</li>
+				<li>VBE_Desolation</li>
+				<li>VBE_Destruction</li>
+				<li>VBE_Emptiness</li>
+				<li>VBE_Experiment</li>
+				<li>VBE_Forgotten</li>
+				<li>VBE_Giant</li>
+				<li>VBE_Greed</li>
+				<li>VBE_Infestation</li>
+				<li>VBE_Opportunity</li>
+				<li>VBE_Pilgrimage</li>
+				<li>VBE_Serenity</li>
+				<li>VBE_Turmoil</li>
+				<li>VBE_Exploration</li>
+				<li>VBE_Awakening</li>
+				<li>VBE_Sacrifice</li>
+				<li>VBE_Eclipse</li>
+				<li>VBE_Denial</li>
+				<li>VBE_Passion</li>
+				<li>VBE_Arrogance</li>
+				<li>VBE_Growth</li>
+				<li>VBE_Isolation</li>
+				<li>VBE_Obligation</li>
+				<li>VBE_Habit</li>
+				<li>VBE_Dread</li>
+				<li>VBE_Pride</li>
+				<li>VBE_Shattering</li>
+				<li>BMT_Dino_Splash</li>
+				<li>MSS_Reecube</li>
+				<li>MSS_Isocube</li>
+				<li>Core</li>
+				<li>Royalty</li>
+				<li>Ideology</li>
+				<li>Biotech</li>
+				<li>Anomaly</li>
+				<li>Classic Cassandra-1</li>
+				<li>Cyberpunk-1</li>
+				<li>Mechanoid Cluster-1</li>
+				<li>Muffalo-1</li>
+				<li>Phoebe Chillax-1</li>
+				<li>Rim-Life 2-1</li>
+				<li>Scyther-1</li>
+				<li>Singularity-1</li>
+				<li>Thrumbo-1</li>
+				<li>USFM-1</li>
+				<li>Classic Cassandra-1_Animated</li>
+				<li>Cyberpunk-1_Animated</li>
+				<li>Mechanoid Cluster-1_Animated</li>
+				<li>Muffalo-1_Animated</li>
+				<li>Phoebe Chillax-1_Animated</li>
+				<li>Rim-Life 2-1_Animated</li>
+				<li>Scyther-1_Animated</li>
+				<li>Singularity-1_Animated</li>
+				<li>Thrumbo-1_Animated</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</enabled>
+	</ModSettings>
+</SettingsBlock>
