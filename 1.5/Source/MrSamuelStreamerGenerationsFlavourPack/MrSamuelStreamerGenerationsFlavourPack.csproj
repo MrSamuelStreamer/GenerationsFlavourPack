@@ -56,6 +56,57 @@
       <Link>Attached/Rimworld/%(RecursiveDir)/%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\..\..\modlist.xml">
+      <Link>GenerationsFlavourPack\modlist.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_1938420742_VEEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_1938420742_VEEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_2775017012_VBEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_2775017012_VBEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_2877699803_VHGE_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_2877699803_VHGE_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_3230046902_Mod_CherryPicker.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_3246108162_Mod_GiddyUp.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_3246108162_Mod_GiddyUp.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Medieval\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Medieval\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_1938420742_VEEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_1938420742_VEEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_2775017012_VBEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2775017012_VBEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_2877699803_VHGE_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2877699803_VHGE_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_3230046902_Mod_CherryPicker.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_3246108162_Mod_GiddyUp.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3246108162_Mod_GiddyUp.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Neolithic\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />

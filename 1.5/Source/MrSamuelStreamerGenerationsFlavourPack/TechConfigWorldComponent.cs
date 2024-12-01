@@ -13,6 +13,8 @@ namespace MSS_Gen;
 
 public class TechConfigWorldComponent(World world) : WorldComponent(world), ISignalReceiver
 {
+    public static Lazy<List<ModContentPack>> RunningMods = new(() => LoadedModManager.RunningMods.ToList());
+
     public bool Loaded = false;
     private SettingsImporter Importer => MSS_GenMod.Importer;
 
@@ -45,16 +47,26 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
     {
         base.FinalizeInit();
         Find.SignalManager.RegisterReceiver(this);
-        LoadPresets();
+    }
+
+    public bool MeetsRequirements(TechLevel techLevelToCheck, TechLevelConfigDef def)
+    {
+        if (def.techLevel != techLevelToCheck) return false;
+        if (def.modsMustExists.NullOrEmpty()) return true;
+        return def.modsMustExists.All(modPackageId=> RunningMods.Value.Any(runningMod => runningMod.PackageId == modPackageId));
     }
 
     public void Notify_SignalReceived(Signal signal)
     {
-        if(!Loaded) return;
         if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
         {
-            TechLevel newLevel = (TechLevel)signal.args.GetArg(0).arg;
-            ModLog.Debug($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg(1).ToString()}");
+            if (!Loaded)
+            {
+                LoadPresets();
+            }
+
+            TechLevel newLevel = (TechLevel)signal.args.GetArg("newTechLevel").arg;
+            ModLog.Debug($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg("oldTechLevel").ToString()}");
 
             if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
             {
@@ -68,7 +80,9 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
                 }
             }
 
-            TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.MeetsRequirements(newLevel));
+            List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
+
+            TechLevelConfigDef tlcd = defs.FirstOrDefault(tlcd => MeetsRequirements(newLevel, tlcd));
 
             if (tlcd is not null)
             {

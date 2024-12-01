@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
+    <MSS_Gen.TechLevelConfigDef>
         <defName>MSS_TechLevelConfig_Neolithic</defName>
-        <label>Generations Neolithic</label>
+        <presetLabel>Generations Neolithic</presetLabel>
         <techLevel>Neolithic</techLevel>
         <version>1.0</version>
         <presetPath>Neolithic</presetPath>
-    </MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
-    <MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
+        <modsMustExists/>
+    </MSS_Gen.TechLevelConfigDef>
+    <MSS_Gen.TechLevelConfigDef>
         <defName>MSS_TechLevelConfig_Medieval</defName>
-        <label>Generations Medieval</label>
+        <presetLabel>Generations Medieval</presetLabel>
         <techLevel>Medieval</techLevel>
         <version>1.0</version>
         <presetPath>Medieval</presetPath>
-    </MSS_Gen.ModListConfiguratorCompat.TechLevelConfigDef>
+        <modsMustExists/>
+    </MSS_Gen.TechLevelConfigDef>
 </Defs>
