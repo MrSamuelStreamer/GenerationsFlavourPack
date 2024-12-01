@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ModlistConfigurator;
 using UnityEngine;
 using Verse;
 
@@ -44,7 +45,7 @@ public class Settings : ModSettings
                             buttonAAction:
                             () =>
                             {
-                                MSS_GenMod.Importer.OverwriteSettings(techLevelConfigDef.defName);
+                                new SettingsImporter().OverwriteSettings(techLevelConfigDef.defName);
                                 Find.WindowStack.Add(new Dialog_MessageBox(
                                     "MSS_Gen_Tech_Level_Advancing_Restart".Translate(techLevelConfigDef.presetLabel)));
                             }, buttonBText: "Cancel"));

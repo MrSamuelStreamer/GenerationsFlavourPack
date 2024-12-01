@@ -4,6 +4,7 @@ using System.Reflection;
 using System.IO;
 using System.Linq;
 using HarmonyLib;
+using JetBrains.Annotations;
 using ModlistConfigurator;
 using RimWorld;
 using RimWorld.Planet;
@@ -16,14 +17,13 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
     public static Lazy<List<ModContentPack>> RunningMods = new(() => LoadedModManager.RunningMods.ToList());
 
     public bool Loaded = false;
-    private SettingsImporter Importer => MSS_GenMod.Importer;
 
     public Lazy<FieldInfo> PresetsField = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
 
     public DirectoryInfo presetLocation => MSS_GenMod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
     public void LoadPresets()
     {
-        Dictionary<string, Preset> Presets = (Dictionary<string, Preset>)PresetsField.Value.GetValue(Importer);
+        Dictionary<string, Preset> Presets = (Dictionary<string, Preset>)PresetsField.Value.GetValue(new SettingsImporter());
 
         if(Presets == null) return;
         if (Presets.Count > 0) return;
@@ -98,11 +98,13 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
     private void MergeSettings(string presetDefName, string levelName)
     {
-        List<string> modsToImport = Importer.ModsToImport(presetDefName);
+        SettingsImporter importer = new SettingsImporter();
+
+        List<string> modsToImport = importer.ModsToImport(presetDefName);
 
         if (modsToImport.Count == 0)
         {
-            Find.WindowStack.Add(new Dialog_MessageBox("All mods configs are up-to-date, nothing to import"));
+            Find.WindowStack.Add(new Dialog_MessageBox("All mods configs are up-to-date, nothing to import", layer: WindowLayer.Super));
         }
         else
         {
@@ -111,10 +113,10 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
                 buttonAAction:
                 () =>
                 {
-                    Importer.MergeSettings(presetDefName);
+                    importer.MergeSettings(presetDefName);
                     Find.WindowStack.Add(new Dialog_MessageBox(
                         "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
-                }, buttonBText: "Cancel"));
+                }, buttonBText: "Cancel", layer: WindowLayer.Super));
         }
     }
 }

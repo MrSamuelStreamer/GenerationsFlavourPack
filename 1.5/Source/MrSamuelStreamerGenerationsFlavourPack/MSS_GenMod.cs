@@ -1,13 +1,17 @@
-﻿using Verse;
+﻿using System;
+using System.Linq;
+using System.Reflection;
+using Verse;
 using UnityEngine;
 using HarmonyLib;
+using JetBrains.Annotations;
 using ModlistConfigurator;
 
 namespace MSS_Gen;
 
 public class MSS_GenMod : Mod
 {
-    public static SettingsImporter Importer = new();
+
     public static Settings settings;
     public static MSS_GenMod mod;
 
