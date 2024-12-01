@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="RomanceTweaks.RomanceTweaksSettings">
-		<RomanceChanceModifierSingle>2</RomanceChanceModifierSingle>
-		<RomanceSuccessModifier>1.5</RomanceSuccessModifier>
-		<BreakupChanceModifier>0.5</BreakupChanceModifier>
-	</ModSettings>
-</SettingsBlock>

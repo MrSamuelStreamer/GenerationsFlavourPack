@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="GeologicalLandforms.GeologicalLandformsSettings">
-		<DisabledLandforms />
-		<DisabledBiomeVariants />
-		<BiomesExcludedFromLandforms />
-		<BiomesExcludedFromTransitions />
-	</ModSettings>
-</SettingsBlock>

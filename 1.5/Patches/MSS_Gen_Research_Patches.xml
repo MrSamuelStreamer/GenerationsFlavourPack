@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Togas"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TyrianProduction"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_RoadBuilding"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="PoliticsPolemicsTech"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/prerequisites</xpath>
+        <value>
+            <li>MSS_Gen_Classical</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MSS_Resource_tree"]/techLevel</xpath>
+        <value>
+            <techLevel>Medieval</techLevel>
+        </value>
+    </Operation>
+</Patch>

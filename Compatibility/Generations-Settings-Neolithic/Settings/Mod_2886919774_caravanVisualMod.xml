@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="caravanVisual.caravanVisualSettings">
-		<SwingAnimation>False</SwingAnimation>
-		<PawnScale>0.8</PawnScale>
-	</ModSettings>
-</SettingsBlock>

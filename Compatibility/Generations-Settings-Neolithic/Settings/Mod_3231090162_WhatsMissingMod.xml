@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="Revolus.WhatsMissing.Settings">
-		<MaxTooltipsWidth>260</MaxTooltipsWidth>
-		<HideZeroCountIngredients>True</HideZeroCountIngredients>
-	</ModSettings>
-</SettingsBlock>

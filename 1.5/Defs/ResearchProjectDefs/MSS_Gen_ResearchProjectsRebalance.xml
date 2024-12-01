@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>MSS_Gen_Classical</defName>
+    <label>Classical Theory</label>
+    <description>Learn bronze and iron age technology, bridging the gap between Neolithic and Medieval.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>VFEC_CraftingBench</li>
+    </prerequisites>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->classical theory</li>
+        <li>subject->theory</li>
+        <li>subject_story->was civilised and educuated, by themselves</li>
+        <li>subject_story->enjoyed lying around in bed sheets, drinking wine</li>
+        <li>subject_story->pointed at his comrade, calling them a featherless biped</li>
+        <li>subject_gerund->philosophising and theorising</li>
+        <li>subject_gerund->composing epics</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

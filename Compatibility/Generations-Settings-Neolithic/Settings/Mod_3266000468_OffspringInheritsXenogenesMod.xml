@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="OffspringInheritXenogenes.OffspringInheritsXenogenesMod+Settings">
-		<endogene_chance>75</endogene_chance>
-		<xenogene_chance>25</xenogene_chance>
-	</ModSettings>
-</SettingsBlock>

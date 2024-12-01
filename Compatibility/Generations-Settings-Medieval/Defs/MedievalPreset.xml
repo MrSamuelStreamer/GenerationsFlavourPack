@@ -1,7 +1,7 @@
 ﻿<Defs>
     <ModlistConfigurator.ModlistPresetDef>
-        <defName>GenerationsMedieval</defName>
-        <presetLabel>Generations: Medieval</presetLabel>
+        <defName>MSS_Config_Preset_Medieval</defName>
+        <presetLabel>Generations Medieval</presetLabel>
         <version>1.0</version>
         <subDir>Compatibility/Generations-Settings-Medieval</subDir>
     </ModlistConfigurator.ModlistPresetDef>
