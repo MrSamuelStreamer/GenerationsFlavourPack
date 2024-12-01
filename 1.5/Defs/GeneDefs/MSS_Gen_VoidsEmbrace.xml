@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>MSS_Gen_VoidsEmbrace</defName>
+        <label>void's embrace</label>
+        <description>The void's tendrils claim the carrier, dragging them back from the precipice of death. But each rebirth is a harrowing journey through the void's desolate expanse, leaving the soul scarred and the mind emptied.</description>
+        <geneClass>MSS_Gen.Gene_VoidsEmbrace</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_Deathless</iconPath>
+        <displayCategory>Archite</displayCategory>
+        <marketValueFactor>2</marketValueFactor>
+        <biostatCpx>7</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <customEffectDescriptions>
+            <li>Can only die from destruction of brain.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>immortal</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>void</symbol></li>
+                <li><symbol>curse</symbol></li>
+                <li><symbol>scorne</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>hanted</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

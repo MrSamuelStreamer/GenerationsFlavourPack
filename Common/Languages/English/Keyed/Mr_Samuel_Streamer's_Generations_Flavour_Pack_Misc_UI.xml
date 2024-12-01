@@ -21,4 +21,6 @@
 
     <MSS_Gen_TooAdvancedLabelCap>Too Advanced ({0})</MSS_Gen_TooAdvancedLabelCap>
     <MSS_Gen_TooAdvancedDescription>This is way too advanced for you to even comprehend.</MSS_Gen_TooAdvancedDescription>
+
+    <MSS_Gen_VoidsEmbraceSkillsReset>{0} experienced the void, and left a part of themselves behind. Their skills have now been reset.</MSS_Gen_VoidsEmbraceSkillsReset>
 </LanguageData>

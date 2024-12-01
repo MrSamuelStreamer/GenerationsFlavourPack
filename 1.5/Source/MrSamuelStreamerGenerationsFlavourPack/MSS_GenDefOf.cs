@@ -10,5 +10,7 @@ public static class MSS_GenDefOf
     // [MayRequireBiotech]
     // public static GeneDef YourPrefix_YourGeneDefName;
 
+    public static GeneDef MSS_Gen_VoidsEmbrace;
+
     static MSS_GenDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MSS_GenDefOf));
 }
