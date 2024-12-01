@@ -54,7 +54,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
         {
             TechLevel newLevel = (TechLevel)signal.args.GetArg(0).arg;
-            ModLog.Log($"{signal.ToString()} : {newLevel} | {signal.args.GetArg(1).ToString()}");
+            ModLog.Debug($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg(1).ToString()}");
 
             if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
             {
@@ -72,7 +72,12 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
             if (tlcd is not null)
             {
+                ModLog.Debug($"TechConfigWorldComponent found TechLevelConfigDef for {newLevel} - {tlcd.ToString()}");
                 MergeSettings(tlcd.defName, newLevel.ToString());
+            }
+            else
+            {
+                ModLog.Debug($"TechConfigWorldComponent found no relevant TechLevelConfigDef for {newLevel}");
             }
         }
     }

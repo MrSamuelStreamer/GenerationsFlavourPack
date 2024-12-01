@@ -18,9 +18,13 @@ public class StoryTellerTechLevelWorldComponent(World world) : WorldComponent(wo
 
         TechLevel? techLevel = (TechLevel)signal.args.GetArg(0).arg;
 
+        ModLog.Debug($"StoryTellerTechLevelWorldComponent got tech level change to {techLevel.ToString()}");
+
         StoryTellerForTechLevelDef newTeller = DefDatabase<StoryTellerForTechLevelDef>.AllDefsListForReading.FirstOrDefault(def => def.StoryTeller!=null && def.TechLevel == techLevel);
 
         if(newTeller == null) return;
+
+        ModLog.Debug($"StoryTellerTechLevelWorldComponent changing storyteller to {newTeller.StoryTeller.LabelCap}");
 
         Current.Game.storyteller.def = newTeller.StoryTeller;
         Current.Game.storyteller.Notify_DefChanged();
