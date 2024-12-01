@@ -68,7 +68,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
                 }
             }
 
-            TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.techLevel == newLevel);
+            TechLevelConfigDef tlcd = DefDatabase<TechLevelConfigDef>.AllDefsListForReading.FirstOrDefault(tlcd => tlcd.MeetsRequirements(newLevel));
 
             if (tlcd is not null)
             {
