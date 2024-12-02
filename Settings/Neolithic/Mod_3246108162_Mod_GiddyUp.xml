@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="GiddyUp.ModSettings_GiddyUp">
+		<enemyMountChance>0</enemyMountChance>
+		<enemyMountChancePreInd>100</enemyMountChancePreInd>
+		<outBiomeWeight>20</outBiomeWeight>
+		<visitorMountChance>50</visitorMountChance>
+		<visitorMountChancePreInd>50</visitorMountChancePreInd>
 		<rideAndRollEnabled>False</rideAndRollEnabled>
 		<battleMountsEnabled>False</battleMountsEnabled>
 		<caravansEnabled>False</caravansEnabled>
+		<disableSlavePawnColumn>True</disableSlavePawnColumn>
+		<automountDisabledByDefault>True</automountDisabledByDefault>
+		<giveCaravanSpeed>True</giveCaravanSpeed>
 		<invertMountingRules />
 		<invertDrawRules />
 		<offsetCache>

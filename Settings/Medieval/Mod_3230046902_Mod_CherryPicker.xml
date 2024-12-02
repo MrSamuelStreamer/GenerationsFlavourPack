@@ -29,6 +29,20 @@
 			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidShipLanding</li>
 			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidStoragePickup</li>
 			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidAttackParty</li>
+			<li>XenotypeDef/Dirtmole</li>
+			<li>XenotypeDef/Genie</li>
+			<li>XenotypeDef/Sanguophage</li>
+			<li>XenotypeDef/Neanderthal</li>
+			<li>XenotypeDef/Waster</li>
+			<li>XenotypeDef/Yttakin</li>
+			<li>XenotypeDef/Highmate</li>
+			<li>XenotypeDef/VREA_AndroidAwakened</li>
+			<li>XenotypeDef/VREA_AndroidBasic</li>
+			<li>XenotypeDef/ArchoGenes_Archinite</li>
+			<li>XenotypeDef/BOR_Kwazaari</li>
+			<li>XenotypeDef/BOR_Solarite</li>
+			<li>XenotypeDef/VRE_Archon</li>
+			<li>XenotypeDef/Hussar</li>
 		</keys>
 	</ModSettings>
 </SettingsBlock>

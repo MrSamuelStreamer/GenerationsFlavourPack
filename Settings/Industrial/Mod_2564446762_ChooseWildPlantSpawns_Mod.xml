@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ChooseWildPlantSpawns.ChooseWildPlantSpawns_Settings">
+		<CustomSpawnRates>
+			<keys />
+			<values />
+		</CustomSpawnRates>
+		<CustomDensities>
+			<keys>
+				<li>TemperateForest</li>
+			</keys>
+			<values>
+				<li>0.803</li>
+			</values>
+		</CustomDensities>
+		<CustomCaveWeights>
+			<keys />
+			<values />
+		</CustomCaveWeights>
+	</ModSettings>
+</SettingsBlock>
