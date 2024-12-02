@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ChooseWildPlantSpawns.ChooseWildPlantSpawns_Settings">
+		<CustomSpawnRates>
+			<keys />
+			<values />
+		</CustomSpawnRates>
+		<CustomDensities>
+			<keys>
+				<li>TemperateForest</li>
+				<li>DankPyon_AncientForest</li>
+				<li>AridShrubland</li>
+				<li>BorealForest</li>
+				<li>ColdBog</li>
+				<li>DankPyon_DarkForest</li>
+				<li>Desert</li>
+				<li>ExtremeDesert</li>
+				<li>RG_TemperateGrassland</li>
+				<li>TemperateSwamp</li>
+				<li>TropicalRainforest</li>
+				<li>TropicalSwamp</li>
+				<li>Tundra</li>
+			</keys>
+			<values>
+				<li>0.4715</li>
+				<li>0.5017</li>
+				<li>0.5017</li>
+				<li>0.238</li>
+				<li>0.2305</li>
+				<li>0.4565</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0.2004</li>
+				<li>0.6147</li>
+				<li>0.6071</li>
+				<li>0.6373</li>
+				<li>0.0497</li>
+			</values>
+		</CustomDensities>
+		<CustomCaveWeights>
+			<keys />
+			<values />
+		</CustomCaveWeights>
+	</ModSettings>
+</SettingsBlock>

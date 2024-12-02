@@ -3,7 +3,7 @@
 	<ModSettings Class="VBE.VBESettings">
 		<cycle>False</cycle>
 		<randomize>False</randomize>
-		<current>VBE_Eclipse</current>
+		<current>VBE_Awakening</current>
 		<loadingBackground>False</loadingBackground>
 		<enabled>
 			<keys>

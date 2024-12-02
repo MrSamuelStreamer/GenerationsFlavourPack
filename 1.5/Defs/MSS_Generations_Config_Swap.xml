@@ -8,12 +8,40 @@
         <presetPath>Neolithic</presetPath>
         <modsMustExists/>
     </MSS_Gen.TechLevelConfigDef>
+
     <MSS_Gen.TechLevelConfigDef>
         <defName>MSS_TechLevelConfig_Medieval</defName>
         <presetLabel>Generations Medieval</presetLabel>
         <techLevel>Medieval</techLevel>
         <version>1.0</version>
         <presetPath>Medieval</presetPath>
+        <modsMustExists/>
+    </MSS_Gen.TechLevelConfigDef>
+
+    <MSS_Gen.TechLevelConfigDef>
+        <defName>MSS_TechLevelConfig_Industrial</defName>
+        <presetLabel>Generations Industrial</presetLabel>
+        <techLevel>Industrial</techLevel>
+        <version>1.0</version>
+        <presetPath>Industrial</presetPath>
+        <modsMustExists/>
+    </MSS_Gen.TechLevelConfigDef>
+
+    <MSS_Gen.TechLevelConfigDef>
+        <defName>MSS_TechLevelConfig_Spacer</defName>
+        <presetLabel>Generations Spacer</presetLabel>
+        <techLevel>Spacer</techLevel>
+        <version>1.0</version>
+        <presetPath>Spacer</presetPath>
+        <modsMustExists/>
+    </MSS_Gen.TechLevelConfigDef>
+
+    <MSS_Gen.TechLevelConfigDef>
+        <defName>MSS_TechLevelConfig_Ultra</defName>
+        <presetLabel>Generations Ultra</presetLabel>
+        <techLevel>Ultra</techLevel>
+        <version>1.0</version>
+        <presetPath>Ultra</presetPath>
         <modsMustExists/>
     </MSS_Gen.TechLevelConfigDef>
 </Defs>
