@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSS_Gen_Archoseed</defName>
+    <label>Archoseed</label>
+    <description>An Archoseed is a weaker, corporeal Archobeing designed to seed worlds habitable worlds with new life and guide sapient species civilisations to their greatest potential.</description>
+    <descriptionShort>A lesser, corporeal Archotech being.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/Sanguophage_8</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="mss.genflavourpack">MSS_Gen_VoidsEmbrace</li>
+      <li MayRequire="neronix17.archotech.genetics">ArchoGenes_ArchotechSkin</li>
+      <li MayRequire="neronix17.archotech.genetics">ArchoGenes_ArchotechPresence</li>
+      <li MayRequire="neronix17.archotech.genetics">ArchoGenes_ArchotechSight</li>
+      <li MayRequire="neronix17.archotech.genetics">ArchoGenes_Eyes_Archotech</li>
+      <li MayRequire="neronix17.archotech.genetics">ArchoGenes_Skin_Archotech</li>
+      <li>MeleeDamage_Strong</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_FastShooter</li>
+      <li>Sterile</li>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li MayRequire="void.charactereditor">SZBodySize_12</li>
+      <li>Ageless</li>
+      <li>DiseaseFree</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

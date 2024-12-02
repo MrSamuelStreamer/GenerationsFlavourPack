@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <FactionEvolution.FactionDef_Evolvable ParentName="TribeBase">
+  <FactionEvolution.FactionDef_Evolvable ParentName="TribeRoughBase">
     <defName>MSS_Gen_RivalTribal</defName>
     <label>Alpha Tribe</label>
     <description>A tribe lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable, no doubt inspired by the rival Archoseed. They can never be allied.</description>
@@ -24,7 +24,7 @@
       <li>(0.9, 0.27, 0.31)</li>
     </colorSpectrum>
     <classicIdeo>true</classicIdeo>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
     <configurationListOrderPriority>10</configurationListOrderPriority>
     <evolvesToDef>OutlanderCivil</evolvesToDef>
     <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
