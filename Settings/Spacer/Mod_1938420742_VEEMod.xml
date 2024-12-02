@@ -128,6 +128,7 @@
 				<li>VREA_PsychicStorm</li>
 				<li>VSIE_OneNightStand</li>
 				<li>MeteorStorm</li>
+				<li>ArchoGenes_BioUnitPodCrash</li>
 			</keys>
 			<values>
 				<li>False</li>
@@ -164,40 +165,6 @@
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
-				<li>False</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
-				<li>True</li>
-				<li>False</li>
-				<li>False</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
@@ -212,29 +179,22 @@
 				<li>True</li>
 				<li>False</li>
 				<li>True</li>
-				<li>False</li>
-				<li>False</li>
-				<li>True</li>
-				<li>True</li>
-				<li>True</li>
-				<li>False</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
-				<li>False</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
-				<li>False</li>
 				<li>True</li>
-				<li>False</li>
-				<li>False</li>
 				<li>True</li>
-				<li>False</li>
-				<li>False</li>
-				<li>False</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
 				<li>True</li>
 				<li>True</li>
 				<li>True</li>
@@ -248,8 +208,50 @@
 				<li>False</li>
 				<li>False</li>
 				<li>False</li>
+				<li>True</li>
 				<li>False</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
 				<li>False</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
 				<li>False</li>
 				<li>True</li>
 				<li>True</li>
@@ -382,6 +384,7 @@
 				<li>VREA_PsychicStorm</li>
 				<li>VSIE_OneNightStand</li>
 				<li>MeteorStorm</li>
+				<li>ArchoGenes_BioUnitPodCrash</li>
 			</keys>
 			<values>
 				<li>1</li>
@@ -440,7 +443,7 @@
 				<li>1</li>
 				<li>0.3</li>
 				<li>0.5</li>
-				<li>3</li>
+				<li>19.73</li>
 				<li>3</li>
 				<li>4</li>
 				<li>4</li>
@@ -508,6 +511,7 @@
 				<li>1</li>
 				<li>0.01</li>
 				<li>0.01</li>
+				<li>0</li>
 			</values>
 		</incidentsOccurence>
 		<incidentsOccurenceForReset>
@@ -636,6 +640,7 @@
 				<li>VREA_PsychicStorm</li>
 				<li>VSIE_OneNightStand</li>
 				<li>MeteorStorm</li>
+				<li>ArchoGenes_BioUnitPodCrash</li>
 			</keys>
 			<values>
 				<li>1</li>
@@ -762,6 +767,7 @@
 				<li>1</li>
 				<li>0.01</li>
 				<li>2.5</li>
+				<li>0.001</li>
 			</values>
 		</incidentsOccurenceForReset>
 	</ModSettings>

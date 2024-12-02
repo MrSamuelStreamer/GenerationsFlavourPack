@@ -3,7 +3,7 @@
 	<ModSettings Class="VBE.VBESettings">
 		<cycle>False</cycle>
 		<randomize>False</randomize>
-		<current>BMT_Dino_Splash</current>
+		<current>VBE_Obligation</current>
 		<loadingBackground>False</loadingBackground>
 		<enabled>
 			<keys>
