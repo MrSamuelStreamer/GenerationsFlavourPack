@@ -47,8 +47,8 @@ public class Settings : ModSettings
                             {
                                 new SettingsImporter().OverwriteSettings(techLevelConfigDef.defName);
                                 Find.WindowStack.Add(new Dialog_MessageBox(
-                                    "MSS_Gen_Tech_Level_Advancing_Restart".Translate(techLevelConfigDef.presetLabel)));
-                            }, buttonBText: "Cancel"));
+                                    "MSS_Gen_Tech_Level_Advancing_Restart".Translate(techLevelConfigDef.presetLabel), layer:WindowLayer.Super));
+                            }, buttonBText: "Cancel", layer:WindowLayer.Super));
                     }
                 }
             }
