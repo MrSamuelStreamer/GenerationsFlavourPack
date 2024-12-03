@@ -96,4 +96,151 @@
             <techLevel>Medieval</techLevel>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_RusticFarm"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_BreedingFarmRustic"]</xpath>
+        <value> 
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PS_FarmHopper"]/researchPrerequisites</xpath>
+        <value>
+             <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_PawnDoor"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_PawnHatch"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_BatteryFarm"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_BreedingFarm"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_Factory"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PS_FactoryHopper"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PS_BugWallStorage"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PS_BugWallCocoon"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PS_BugCocoon"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_DigitizerFabricator"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_DigitizerPlatform"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PS_Crystallizer"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>MSS_Gen_Compact_Buildings</li>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ChristmasTreeBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>VFET_Culture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BOR_Telescope_II"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>BOR_Research_Joy_II</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BOR_Telescope_III"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>BOR_Research_Joy_III</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 </Patch>

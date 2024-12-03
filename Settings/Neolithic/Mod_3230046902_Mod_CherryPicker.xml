@@ -47,8 +47,8 @@
 			<li>XenotypeDef/ArchoGenes_Archinite</li>
 			<li>XenotypeDef/BOR_Kwazaari</li>
 			<li>XenotypeDef/BOR_Solarite</li>
-			<li>XenotypeDef/MSS_Goo_GeneDistribution</li>
 			<li>XenotypeDef/EF_Elders</li>
+			<li>ScenarioDef/VFET_WildMen</li>
 		</keys>
 	</ModSettings>
 </SettingsBlock>

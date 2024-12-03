@@ -3,7 +3,7 @@
 
   <ScenarioDef>
     <defName>MSS_Gen_Wildmen</defName>
-    <label>Wild Men</label>
+    <label>Generations</label>
     <description>Your group has discovered fire, and through it, the building blocks for a civilisation that will stand the test of time. Evolve your colony era by era amid a constantly changing world. A beginning that is heavily forested and populated by dinosaurs and neanderthals will soon make way for knights and horses, electricity and polution, and finally the secrets of the Archon's themselves.
 
 Warning: This has the restrictions of VE Tribal. You start without the ability to do basic tasks, such as sowing, doctoring and hunting - it is extremely difficult and anything can end your run.</description>
@@ -16,8 +16,8 @@ Warning: This has the restrictions of VE Tribal. You start without the ability t
 		<parts>
 			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 					<def>ConfigurePawnsXenotypes</def>
-					<pawnChoiceCount>3</pawnChoiceCount>
-					<customSummary>Start with three neanderthal.</customSummary>
+					<pawnChoiceCount>4</pawnChoiceCount>
+					<customSummary>Start with three neanderthal and their guardian Archoseed.</customSummary>
 					<overrideKinds>
 						<li>
 							<xenotype>Neanderthal</xenotype>
@@ -30,24 +30,15 @@ Warning: This has the restrictions of VE Tribal. You start without the ability t
 							<count>3</count>
 							<requiredAtStart>true</requiredAtStart>
 						</li>
+						<li>
+							<xenotype>MSS_Gen_Archoseed</xenotype>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
 					</xenotypeCounts>
 				</li>
 			<li Class="ScenPart_PlayerPawnsArriveMethod">
 				<def>PlayerPawnsArriveMethod</def>
-			</li>
-			<li Class="ScenPart_ForcedHediff">
-				<def>ForcedHediff</def>
-				<chance>0.5</chance>
-				<context>PlayerStarter</context>
-				<hediff>Malnutrition</hediff>
-				<severityRange>0~0.495</severityRange>
-			</li>
-			<li Class="ScenPart_SetNeedLevel">
-				<def>SetNeedLevel</def>
-				<chance>1</chance>
-				<context>PlayerStarter</context>
-				<need>Food</need>
-				<levelRange>0~0.1481481</levelRange>
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
@@ -62,11 +53,7 @@ Warning: This has the restrictions of VE Tribal. You start without the ability t
 			</li>
 			<li Class="ScenPart_GameStartDialog">
 				<def>GameStartDialog</def>
-				<text>The world was tough and scary. Surviving each day was hard. But a small group of wild people decided to face it together, rather than alone.
-
-They spent their days looking for food and shelter, and their nights fighting off the cold and danger.
-
-Now, they are starting to form a simple group, helping each other to face the tough world ahead. They are taking their first steps towards becoming a tribe, trying to make life a little less hard for each other.</text>
+				<text>The world was tough and scary. Surviving each day was hard. But the ArchoSeed arrived. They taught us to work together. To make. To create flame. To speak. Now we grow in number. And we grow in thought.</text>
 				<closeSound>VFET_GameStartSting_WildMen</closeSound>
 			</li>
 			<li Class="ScenPart_CreateIncident">

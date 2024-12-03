@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Neolithic Evolving Factions -->
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="VFEC_RepublicBase">
+    <defName>VFEC_CentralRepublic</defName>
+    <label>Ambitious central republic</label>
+    <fixedName>Ambitious central republic</fixedName>
+    <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+    <evolvesToDef>DankPyon_NobleHouseCivil</evolvesToDef>
+    <description>These people have been here a very long time. Their civilization started as a gathering of tribes, but quickly developed skills such as writing, masonry and civil service. \n\nDespite their apparent technological weakness, the Republic can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular part of the Republic holds production and city development in high regards. Gaining their support will unlock several perks focused on improving the wellbeing of the people.</description>
+    <colorSpectrum>
+      <li>(0.39, 0.48, 0.38)</li>
+      <li>(0.39, 0.48, 0.38)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/CentralRepublic</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/RepublicSettlement</settlementTexturePath>
+	<factionNameMaker>VFEC_NamerFactionCentral</factionNameMaker>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <modExtensions>
+      <li Class="VFEC.Senators.FactionExtension_SenatorInfo">
+        <numSenators>5</numSenators>
+        <senatorPerks>
+          <li>AmorVincitOmnia</li>
+          <li>CarpeDiem</li>
+          <li>NilDesperandum</li>
+          <li>PanemEtCircenses</li>
+          <li>ArsLongaVitaBrevis</li>
+        </senatorPerks>
+        <senatorResearch>
+          <li>VFEC_Togas</li>
+          <li>VFEC_TemperatureControl</li>
+          <li>VFEC_MeatDrying</li>
+          <li>VFEC_Mosaics</li>
+          <li>VFEC_Thermaebath</li>
+        </senatorResearch>
+        <finalResearch>VFEC_DramaAndComedy</finalResearch>
+        <finalPerk>Tributum</finalPerk>
+        <perkBGPath>UI/Perks/PerkBG_CentralRepublic</perkBGPath>
+      </li>
+    </modExtensions>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="VFEC_RepublicBase">
+    <defName>VFEC_WesternRepublic</defName>
+    <label>Ambitious western republic</label>
+    <fixedName>Ambitious western republic</fixedName>
+    <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+    <evolvesToDef>DankPyon_NobleHouseCivil2</evolvesToDef>
+    <description>These people have been here a very long time. Their civilization started as a gathering of tribes, but quickly developed skills such as writing, masonry and civil service. \n\nDespite their apparent technological weakness, the Imperium can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular part of the Republic considers honor and superiority in battle to be most valuable. Gaining their support will unlock several perks focused on warfare and military.</description>
+    <colorSpectrum>
+      <li>(0.79, 0.30, 0.30)</li>
+      <li>(0.79, 0.30, 0.30)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/WesternRepublic</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/RepublicSettlement</settlementTexturePath>
+	<factionNameMaker>VFEC_NamerFactionWestern</factionNameMaker>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <modExtensions>
+      <li Class="VFEC.Senators.FactionExtension_SenatorInfo">
+        <numSenators>5</numSenators>
+        <senatorPerks>
+          <li>ExitusActaProbat</li>
+          <li>AleaIactaEst</li>
+          <li>PecuniaNervusBelli</li>
+          <li>SiVisPacemParaBellum</li>
+          <li>NosMorituriTeSalutant</li>
+        </senatorPerks>
+        <senatorResearch>
+          <li>VFEC_HeavyShieldMaking</li>
+          <li>VFEC_LegionaryArmaments</li>
+          <li>VFEC_LegionnaireArmor</li>
+          <li>VFEC_CenturionArmor</li>
+          <li>VFEC_Scorpion</li>
+        </senatorResearch>
+        <finalResearch>VFEC_Beacons</finalResearch>
+        <finalPerk>Auxilia</finalPerk>
+        <perkBGPath>UI/Perks/PerkBG_WesternRepublic</perkBGPath>
+      </li>
+    </modExtensions>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="VFEC_RepublicBase">
+    <defName>VFEC_EasternRepublic</defName>
+    <label>Ambitious eastern republic</label>
+    <fixedName>Ambitious eastern republic</fixedName>
+    <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+    <evolvesToDef>DankPyon_NobleHouseRoxmont</evolvesToDef>
+    <description>These people have been here a very long time. Their civilization started as a gathering of tribes, but quickly developed skills such as writing, masonry and civil service. \n\nDespite their apparent technological weakness, the Imperium can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular part of the Republic values hard work and production over brawl and intellect. Gaining their support will unlock several perks focused on research and progress.</description>
+    <colorSpectrum>
+      <li>(0.34, 0.39, 0.76)</li>
+      <li>(0.34, 0.39, 0.76)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/EasternRepublic</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/RepublicSettlement</settlementTexturePath>
+	<factionNameMaker>VFEC_NamerFactionEastern</factionNameMaker>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <modExtensions>
+      <li Class="VFEC.Senators.FactionExtension_SenatorInfo">
+        <numSenators>5</numSenators>
+        <senatorPerks>
+          <li>NonOmniaPossumusOmnes</li>
+          <li>TimendiCausaEstNescire</li>
+          <li>MensSanaInCorporeSano</li>
+          <li>ActaNonVerba</li>
+          <li>NaturaNonConstristatur</li>
+        </senatorPerks>
+        <senatorResearch>
+          <li>VFEC_BronzeWorking</li>
+          <li>VFEC_CraftingBench</li>
+          <li>VFEC_CementMaking</li>
+          <li>VFEC_WoodfiredCrematorium</li>
+          <li>VFEC_TyrianProduction</li>
+        </senatorResearch>
+        <finalResearch>VFEC_RoadBuilding</finalResearch>
+        <finalPerk>Profectus</finalPerk>
+        <perkBGPath>UI/Perks/PerkBG_EasternRepublic</perkBGPath>
+      </li>
+    </modExtensions>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="TribeRoughBase">
+    <defName>TribeRoughNeanderthal</defName>
+    <label>Ambitious neanderthal tribe</label>
+    <fixedName>Ambitious neanderthal tribe</fixedName>
+    <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+    <evolvesToDef>DankPyon_NobleHouseSavage</evolvesToDef>
+    <description>An unfriendly, territorial tribe of neanderthals. They are open to peaceful trade, but are otherwise unfriendly and territorial. Warriors from their tribe won't hesitate to bash in the skulls of anyone they deem dangerous. Their numbers, and the extreme amounts of damage they absorb before falling make them serious foes despite their lack of technology and analytical ability.\n\nHaving been on this planet for countless generations, they have no memory of how they got here. They might be the descendants of a neanderthal service caste from a dead civilization, or even the leftovers from some ancient science experiment.</description>
+    <factionIconPath>World/WorldObjects/Expanding/FierceNeanderthalTribe</factionIconPath>
+    <factionNameMaker>NamerFactionTribalNeanderthal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribalNeaderthal</settlementNameMaker>
+    <pawnSingular>neanderthal</pawnSingular>
+    <pawnsPlural>neanderthals</pawnsPlural>
+    <replacesFaction>TribeRough</replacesFaction>
+    <melaninRange>0~0.5</melaninRange>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Neanderthal>999</Neanderthal>
+      </xenotypeChances>
+    </xenotypeSet>
+    <dialogFactionGreetingHostile>NeanderthalFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>NeanderthalFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>NeanderthalFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>NeanderthalFactionGreetingWarm</dialogFactionGreetingWarm>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+          <Tribal_Penitent>10</Tribal_Penitent>
+          <Tribal_Warrior>10</Tribal_Warrior>
+          <Tribal_Berserker>10</Tribal_Berserker>
+          <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Tribal_Breacher>5</Tribal_Breacher>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>20</Tribal_Warrior>
+          <Tribal_Child>10</Tribal_Child>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>10</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="TribeRoughBase">
+    <defName>MSS_Gen_RivalTribal</defName>
+    <label>Ambitious Alpha Tribe</label>
+    <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+    <evolvesToDef>DankPyon_NobleHouseFierce</evolvesToDef>
+    <fixedName>Ambitious Alpha Tribe</fixedName>
+    <description>A tribe lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable, no doubt inspired by the rival Archoseed. They can never be allied.</description>
+    <colorSpectrum>
+      <li>(1.0, 0.31, 0.27)</li>
+      <li>(0.9, 0.27, 0.31)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <!-- Medieval Evolving Factions -->
+
+<FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
+		<defName>DankPyon_NobleHouseCivil</defName>
+		<label>ambitious civil noble house</label>
+    <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+    <evolvesToDef>PirateWaster</evolvesToDef>
+		<description>From the earth they came and so they shall claim; House Oswin declares their presence to have long existed when the first emperor dominated these lands. Now, one of the many noble houses, yet their ambitions to etch their name in history have yet to run dry. In an attempt to recover the treasure of the old under-empires, their expeditions uncover the earth in search of the depths of the ruins.
+
+Guided by ancient maps and whispered legends, House Oswin's explorers delve into forgotten catacombs and shadowed caverns. Each descent is fraught with peril, as they navigate labyrinthine passages and face guardians of stone and steel. Yet, undeterred by the trials, they press on, driven by the promise of untold riches and arcane knowledge hidden beneath the soil. Their legacy is written not in ink, but in the very bones of the earth they unearth.</description>
+		<colorSpectrum>
+			<li>(64, 103, 137)</li>
+		</colorSpectrum>
+		<fixedName>Ambitious House Oswin</fixedName>
+		<factionIconPath>WorldObjects/CastleRough</factionIconPath>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_FootmanOswin>50</DankPyon_FootmanOswin>
+					<DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+					<DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+					<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightOswin>20</DankPyon_KnightOswin>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanOswin>40</DankPyon_FootmanOswin>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+					<DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightOswin>25</DankPyon_KnightOswin>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanOswin>40</DankPyon_FootmanOswin>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightOswin>10</DankPyon_KnightOswin>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanOswin>20</DankPyon_FootmanOswin>
+					<DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+					<DankPyon_StandardOswin>10</DankPyon_StandardOswin>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightOswin>10</DankPyon_KnightOswin>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanOswin>30</DankPyon_FootmanOswin>
+					<DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+					<DankPyon_StandardOswin>20</DankPyon_StandardOswin>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightOswin>25</DankPyon_KnightOswin>
+					<DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+        <modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Oswin</li>
+					<li>DankPyon_Settlement2_Oswin</li>
+					<li>DankPyon_Settlement1_Oswin</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions>	
+	</FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
+		<defName>DankPyon_NobleHouseCivil2</defName>
+		<label>ambitious civil noble house</label>
+    <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+    <evolvesToDef>Pirate</evolvesToDef>
+		<description>War is a profitable endeavor, much so, that trading and haggling is as relentlessly ferocious as winning a battle. House Soren is notoriously recognized to be the masters of the trade, cunningly closing each profitable bargain. Many of their acquisitions are gained by honest trading but also through deceit, bribery, and extortion. Their towns are filled with riches as the house resides in their decadent castles, whilst pot-bellied peasants litter the streets.
+
+House Soren's influence stretches far and wide, with their merchant fleets dominating the seas and their caravans threading through the most dangerous routes. They possess a network of spies and informants, ensuring they are always a step ahead of their rivals. The halls of their castles are adorned with treasures from distant lands, a testament to their vast wealth and far-reaching connections.
+
+Once subjugated under the oppressive rule of the shattered empire, House Soren was among the first to seize the opportunity for independence when the empire's grip weakened. Their struggle for control over the other houses has been fierce, leveraging their economic prowess to tip the scales in their favor. They have successfully established themselves as a dominant force, exploiting the power vacuum left by the empire's collapse.</description>
+		<colorSpectrum>
+			<li>(83, 124, 80)</li>
+		</colorSpectrum>
+		<fixedName>Ambitious House Soren</fixedName>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_FootmanSoren>50</DankPyon_FootmanSoren>
+					<DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+					<DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+					<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+					<DankPyon_KnightSoren>20</DankPyon_KnightSoren>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<!-- Normal fights, ranged only -->
+			<!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanSoren>40</DankPyon_FootmanSoren>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+					<DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+					<DankPyon_KnightSoren>25</DankPyon_KnightSoren>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanSoren>40</DankPyon_FootmanSoren>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
+					<DankPyon_KnightSoren>10</DankPyon_KnightSoren>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanSoren>20</DankPyon_FootmanSoren>
+					<DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+					<DankPyon_StandardSoren>10</DankPyon_StandardSoren>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
+					<DankPyon_KnightSoren>10</DankPyon_KnightSoren>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanSoren>30</DankPyon_FootmanSoren>
+					<DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+					<DankPyon_StandardSoren>20</DankPyon_StandardSoren>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+					<DankPyon_KnightSoren>25</DankPyon_KnightSoren>
+					<DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+        <modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Soren</li>
+					<li>DankPyon_Settlement2_Soren</li>
+					<li>DankPyon_Settlement1_Soren</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions>	
+	</FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
+		<defName>DankPyon_NobleHouseRoxmont</defName>
+		<label>ambitious civil noble house</label>
+    <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+    <evolvesToDef>OutlanderCivil</evolvesToDef>
+		<description>House Roxmont was founded in an older era of strife and hardship. While other Houses rose and fell, house Roxmont endured. Settled in the cold dark forests, they prefer not to meddle in social affairs, leaving them isolated from the other noble families.</description>
+		<colorSpectrum>
+			<li>(81, 77, 74)</li>
+		</colorSpectrum>
+		<fixedName>Ambitious House Roxmont</fixedName>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+		<caravanTraderKinds Inherit="false">
+			<li>DankPyon_Caravan_Medieval_BulkGoodsMerchant_Roxmont</li>
+			<li>DankPyon_Caravan_Medieval_ArtPatron</li>
+			<li>DankPyon_Caravan_Medieval_Armorsmith</li>
+			<li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+			<li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+			<li>DankPyon_Caravan_Medieval_Scholar</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds Inherit="false">
+			<li>DankPyon_Visitor_Medieval_Roxmont</li>
+		</visitorTraderKinds>
+		<baseTraderKinds Inherit="false"> <!--Colony trader-->
+			<li>DankPyon_Base_Medieval_Roxmont</li>
+		</baseTraderKinds>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_FootmanRoxmont>50</DankPyon_FootmanRoxmont>
+					<DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+					<DankPyon_StandardRoxmont>30</DankPyon_StandardRoxmont>
+					<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderRoxmont>25</DankPyon_ZweihanderRoxmont>
+					<DankPyon_KnightRoxmont>30</DankPyon_KnightRoxmont>
+					<DankPyon_Medieval_LordRoxmont>10</DankPyon_Medieval_LordRoxmont>
+				</options>
+			</li>
+			<!-- Normal fights, ranged only -->
+			<!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanRoxmont>40</DankPyon_FootmanRoxmont>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardRoxmont>10</DankPyon_StandardRoxmont>
+					<DankPyon_ZweihanderRoxmont>30</DankPyon_ZweihanderRoxmont>
+					<DankPyon_KnightRoxmont>25</DankPyon_KnightRoxmont>
+					<DankPyon_Medieval_LordRoxmont>10</DankPyon_Medieval_LordRoxmont>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanRoxmont>40</DankPyon_FootmanRoxmont>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardRoxmont>10</DankPyon_StandardRoxmont>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_KnightRoxmont>10</DankPyon_KnightRoxmont>
+					<DankPyon_Medieval_LordRoxmont>10</DankPyon_Medieval_LordRoxmont>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanRoxmont>20</DankPyon_FootmanRoxmont>
+					<DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+					<DankPyon_StandardRoxmont>5</DankPyon_StandardRoxmont>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderRoxmont>10</DankPyon_ZweihanderRoxmont>
+					<DankPyon_KnightRoxmont>5</DankPyon_KnightRoxmont>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanRoxmont>30</DankPyon_FootmanRoxmont>
+					<DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+					<DankPyon_StandardRoxmont>10</DankPyon_StandardRoxmont>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderRoxmont>25</DankPyon_ZweihanderRoxmont>
+					<DankPyon_KnightRoxmont>25</DankPyon_KnightRoxmont>
+					<DankPyon_Medieval_LordRoxmont>60</DankPyon_Medieval_LordRoxmont>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
+		<defName>DankPyon_NobleHouseSavage</defName>
+		<label>Ambitious cruel noble house</label>
+    <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+    <evolvesToDef>OutlanderRoughPig</evolvesToDef>
+		<description>Caring not for their reputation, house Hesse is renowned for their brutish conduct, ravaging settlements, raiding trade caravans, and slaughtering peasants amongst the forsaken roads. It is, however, popular to many mercenaries looking for a quick coin or a quick end. They prefer not to meddle in social affairs, leaving them isolated from the other noble families.</description>
+		<colorSpectrum>
+			<li>(215, 215, 215)</li>
+		</colorSpectrum>
+		<fixedName>Ambitious House Hesse</fixedName>
+		<naturalEnemy>true</naturalEnemy>
+		<factionIconPath>WorldObjects/CastleSavage</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_FootmanHesse>50</DankPyon_FootmanHesse>
+					<DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+					<DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+					<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderOswin>20</DankPyon_ZweihanderOswin>
+					<DankPyon_KnightHesse>20</DankPyon_KnightHesse>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanHesse>40</DankPyon_FootmanHesse>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+					<DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
+					<DankPyon_KnightHesse>25</DankPyon_KnightHesse>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanHesse>40</DankPyon_FootmanHesse>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderHesse>15</DankPyon_ZweihanderHesse>
+					<DankPyon_KnightHesse>10</DankPyon_KnightHesse>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanHesse>20</DankPyon_FootmanHesse>
+					<DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+					<DankPyon_StandardHesse>10</DankPyon_StandardHesse>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderHesse>10</DankPyon_ZweihanderHesse>
+					<DankPyon_KnightHesse>10</DankPyon_KnightHesse>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanHesse>30</DankPyon_FootmanHesse>
+					<DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+					<DankPyon_StandardHesse>20</DankPyon_StandardHesse>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
+					<DankPyon_KnightHesse>25</DankPyon_KnightHesse>
+					<DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+        <modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Hesse</li>
+					<li>DankPyon_Settlement2_Hesse</li>
+					<li>DankPyon_Settlement1_Hesse</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions>	
+	</FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
+		<defName>DankPyon_NobleHouseFierce</defName>
+		<label>Ambitious fierce noble house</label>
+    <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+    <evolvesToDef>OutlanderRough</evolvesToDef>
+		<description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(99, 99, 99)</li>
+		</colorSpectrum>
+		<fixedName>Ambitious House Amboise</fixedName>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_FootmanAmboise>50</DankPyon_FootmanAmboise>
+					<DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+					<DankPyon_StandardAmboise>30</DankPyon_StandardAmboise>
+					<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
+					<DankPyon_KnightAmboise>30</DankPyon_KnightAmboise>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+					<DankPyon_ZweihanderAmboise>30</DankPyon_ZweihanderAmboise>
+					<DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
+					<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+					<DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_KnightAmboise>10</DankPyon_KnightAmboise>
+					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanAmboise>20</DankPyon_FootmanAmboise>
+					<DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+					<DankPyon_StandardAmboise>5</DankPyon_StandardAmboise>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+					<DankPyon_ZweihanderAmboise>10</DankPyon_ZweihanderAmboise>
+					<DankPyon_KnightAmboise>5</DankPyon_KnightAmboise>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+					<DankPyon_FootmanAmboise>30</DankPyon_FootmanAmboise>
+					<DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+					<DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+					<DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+					<DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
+					<DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
+					<DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+        <modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Amboise</li>
+					<li>DankPyon_Settlement2_Amboise</li>
+					<li>DankPyon_Settlement1_Amboise</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions>			
+	</FactionEvolution.FactionDef_Evolvable>
+
+  <!-- Industrial Evolving Factions -->
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderFactionBase">
+    <defName>OutlanderCivil</defName>
+    <label>Ambitious civil outlander union</label>
+    <fixedName>Ambitious civil outlander union</fixedName>
+    <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+    <evolvesToDef>Empire</evolvesToDef>
+    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+    <colorSpectrum>
+      <li>(0.35, 0.30, 0.60)</li>
+      <li>(0.45, 0.40, 0.90)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderRoughBase">
+    <defName>OutlanderRough</defName>
+    <label>rough outlander union</label>
+    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
+    <factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="PatreonFactionBase">
+    <defName>PatreonCivil</defName>
+    <label>Ambitious Wealthy Settlers</label>
+    <fixedName>Ambitious wealthy settlers</fixedName>
+    <evolvesWhenPlayerTech>Ultra</evolvesWhenPlayerTech>
+    <evolvesToDef>BOR_SolarRepublic</evolvesToDef>
+    <description>A strange group of settlers who believe they can barge their way onto any world by expending exorbitant amounts of currency. Thanks to the tremendous corruption and low morals of the planetary settlement committee, normally a small bribe is all it takes.</description>
+    <colorSpectrum>
+      <li>(1.0, 0.31, 0.27)</li>
+      <li>(0.9, 0.27, 0.31)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+  </FactionEvolution.FactionDef_Evolvable>
+
+  <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderRoughBase">
+    <defName>OutlanderRoughPig</defName>
+    <label>ambitious rough pig union</label>
+    <fixedName>Ambitious pig union</fixedName>
+    <evolvesWhenPlayerTech>Ultra</evolvesWhenPlayerTech>
+    <evolvesToDef>BOR_KwazaarBazaar</evolvesToDef>
+    <description>A loose union of hardy pigskin townships. They're willing to make friends, even with thinsnouts, but they're also ready to toss a bomb and gnaw human gristle when it suits them. Treat them with respect and they'll offer a trotter to an ally in need. Turn against them and the last thing you hear might be a triumphant battle squeal.</description>
+    <factionIconPath>World/WorldObjects/Expanding/RoughPigUnion</factionIconPath>
+    <factionNameMaker>NamerFactionOutlanderPig</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlanderPig</settlementNameMaker>
+    <pawnSingular>pigskin</pawnSingular>
+    <pawnsPlural>pigskins</pawnsPlural>
+    <replacesFaction>OutlanderRough</replacesFaction>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Pigskin>999</Pigskin>
+      </xenotypeChances>
+    </xenotypeSet>
+    <dialogFactionGreetingHostile>PigFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>PigFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>PigFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>PigFactionGreetingWarm</dialogFactionGreetingWarm>
+    <dialogMilitaryAidSent>PigMilitaryAidSent</dialogMilitaryAidSent>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <Villager_Pig>5</Villager_Pig>
+          <Town_Guard_Pig>10</Town_Guard_Pig>
+          <Grenadier_Destructive>10</Grenadier_Destructive>
+          <Mercenary_Slasher>10</Mercenary_Slasher>
+          <Mercenary_Gunner_Pig>7</Mercenary_Gunner_Pig>
+          <Mercenary_Elite_Pig>10</Mercenary_Elite_Pig>
+          <Town_Councilman_Pig>10</Town_Councilman_Pig>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager_Pig>20</Villager_Pig>
+          <Villager_Child_Pig>10</Villager_Child_Pig>
+          <Town_Guard_Pig>10</Town_Guard_Pig>
+          <Town_Councilman_Pig>10</Town_Councilman_Pig>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader_Pig>1</Town_Trader_Pig>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Villager_Pig>3</Villager_Pig>
+          <Town_Guard_Pig>10</Town_Guard_Pig>
+          <Grenadier_Destructive>10</Grenadier_Destructive>
+          <Mercenary_Slasher>10</Mercenary_Slasher>
+          <Mercenary_Gunner_Pig>7</Mercenary_Gunner_Pig>
+          <Mercenary_Elite_Pig>10</Mercenary_Elite_Pig>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Villager_Pig>10</Villager_Pig>
+          <Town_Guard_Pig>10</Town_Guard_Pig>
+          <Grenadier_Destructive>10</Grenadier_Destructive>
+          <Mercenary_Slasher>10</Mercenary_Slasher>
+          <Mercenary_Gunner_Pig>7</Mercenary_Gunner_Pig>
+          <Mercenary_Elite_Pig>10</Mercenary_Elite_Pig>
+          <Town_Councilman_Pig>10</Town_Councilman_Pig>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionEvolution.FactionDef_Evolvable>
+
+</Defs>

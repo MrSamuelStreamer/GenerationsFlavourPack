@@ -23,4 +23,24 @@
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>MSS_Gen_Compact_Buildings</defName>
+    <label>Compact Buildings</label>
+    <description>Discover the secrets of urban planning and dimensional improbability to create structures capable of storing colonist and animals alike.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->architecture</li>
+        <li>subject->building</li>
+        <li>subject_story->studied architectural design</li>
+        <li>subject_story->created intricate and confusing structures</li>
+        <li>subject_story->designed a box that seemed to be bigger on the inside</li>
+        <li>subject_gerund->theorising and quantifying</li>
+        <li>subject_gerund->building storage boxes</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
 </Defs>
