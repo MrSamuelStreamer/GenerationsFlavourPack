@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Medieval Faction Patches -->
+    <!-- Medieval Fierce -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseFierce"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseFierce"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Medieval Civil House -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Medieval Civil House 2 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil2"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil2"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Medieval Civil House 3 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Medieval Savage -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseSavage"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseSavage"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+
+    <!-- Industrial Faction Patches -->
+    <!-- Civil Outlander -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderCivil"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="OutlanderCivil"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Rough Outlander -->
+    <Operation Class="PatchOperationAdd">                                <!-- Possibly needs base patch instead -->
+        <xpath>Defs/FactionDef[defName="OutlanderRough"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Rough Pig Union -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+
+    <!-- Spacer Faction Patches -->
+    <!-- Waster Pirates -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Pirates -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Pirate"/requiredCountAtGameStart</xpath>
+        <value>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+     <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Pirate"/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Empire -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Empire"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Empire"/requiredCountAtGameStart</xpath>
+        <value>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Empire"/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Patreon -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="PatreonCivil"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Ultra Faction Patches -->
+    <!-- Kwazaar Bazaar -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"/requiredCountAtGameStart</xpath>
+        <value>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+        <!-- Kwazaar Bazaar -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"/requiredCountAtGameStart</xpath>
+        <value>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <!-- Hidden Factions (WILL be active at relevant era, but hidden from world creation and factions screen -->
+    <!-- Cultists -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="DankPyon_ShadowSect"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Knights of Ulrik -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="DankPyon_UlrikFaction"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Deserters -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="VFEE_Deserters"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Vanilla Expanded Mechanoid -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="VFE_Mechanoid"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- March of the Archocubes -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="DV_Archocubening"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Insect -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Insect"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Medieval Hornets -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="DankPyon_Hornets"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+     <!-- Brigands -->
+     <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="DankPyon_BrigandFaction"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+</Patch>
