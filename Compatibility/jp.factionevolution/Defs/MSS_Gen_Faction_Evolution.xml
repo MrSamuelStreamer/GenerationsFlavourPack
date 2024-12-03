@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Faction Evolution 1 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="VFEC_CentralRepublic"]</xpath>
+        <value>
+            <evolvesToDef>DankPyon_NobleHouseCivil</evolvesToDef>
+            <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil"]</xpath>
+        <value>
+            <evolvesToDef>PirateWaster</evolvesToDef>
+            <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <!-- Faction Evolution 2 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="VFEC_WesternRepublic"]</xpath>
+        <value>
+            <evolvesToDef>DankPyon_NobleHouseCivil2</evolvesToDef>
+            <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil2"]</xpath>
+        <value>
+            <evolvesToDef>Pirate</evolvesToDef>
+            <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <!-- Faction Evolution 3 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="VFEC_EasternRepublic"]</xpath>
+        <value>
+            <evolvesToDef>DankPyon_NobleHouseRoxmont</evolvesToDef>
+            <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]</xpath>
+        <value>
+            <evolvesToDef>OutlanderCivil </evolvesToDef>
+            <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderCivil"]</xpath>
+        <value>
+            <evolvesToDef>Empire</evolvesToDef>
+            <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <!-- Faction Evolution 4 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="TribeRoughNeanderthal"]</xpath>
+        <value>
+            <evolvesToDef>DankPyon_NobleHouseSavage</evolvesToDef>
+            <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseSavage"]</xpath>
+        <value>
+            <evolvesToDef>OutlanderRoughPig</evolvesToDef>
+            <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
+        <value>
+            <evolvesToDef>BOR_KwazaarBazaar</evolvesToDef>
+            <evolvesWhenPlayerTech>Ultra</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <!-- Faction Evolution 5 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="MSS_Gen_RivalTribal"]</xpath>
+        <value>
+            <evolvesToDef>DankPyon_NobleHouseFierce</evolvesToDef>
+            <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseFierce"]</xpath>
+        <value>
+            <evolvesToDef>OutlanderRough</evolvesToDef>
+            <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderRough"]</xpath>
+        <value>
+            <evolvesToDef>PatreonCivil</evolvesToDef>
+            <evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="PatreonCivil"]</xpath>
+        <value>
+            <evolvesToDef>BOR_SolarRepublic</evolvesToDef>
+            <evolvesWhenPlayerTech>Ultra</evolvesWhenPlayerTech>
+        </value>
+    </Operation>
+</Patch>

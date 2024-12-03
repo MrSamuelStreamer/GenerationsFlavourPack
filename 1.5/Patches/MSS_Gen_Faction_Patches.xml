@@ -124,13 +124,13 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="Pirate"/requiredCountAtGameStart</xpath>
+        <xpath>Defs/FactionDef[defName="Pirate"]/requiredCountAtGameStart</xpath>
         <value>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
         </value>
     </Operation>
      <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="Pirate"/maxConfigurableAtWorldCreation</xpath>
+        <xpath>Defs/FactionDef[defName="Pirate"]/maxConfigurableAtWorldCreation</xpath>
         <value>
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
@@ -143,13 +143,13 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="Empire"/requiredCountAtGameStart</xpath>
+        <xpath>Defs/FactionDef[defName="Empire"]/requiredCountAtGameStart</xpath>
         <value>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="Empire"/maxConfigurableAtWorldCreation</xpath>
+        <xpath>Defs/FactionDef[defName="Empire"]/maxConfigurableAtWorldCreation</xpath>
         <value>
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
@@ -172,13 +172,13 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"/maxConfigurableAtWorldCreation</xpath>
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]/maxConfigurableAtWorldCreation</xpath>
         <value>
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"/requiredCountAtGameStart</xpath>
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]/requiredCountAtGameStart</xpath>
         <value>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
         </value>
@@ -191,13 +191,13 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"/maxConfigurableAtWorldCreation</xpath>
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]/maxConfigurableAtWorldCreation</xpath>
         <value>
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">                                
-        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"/requiredCountAtGameStart</xpath>
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]/requiredCountAtGameStart</xpath>
         <value>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
         </value>
@@ -255,6 +255,22 @@
      <!-- Brigands -->
      <Operation Class="PatchOperationAdd">                                
         <xpath>Defs/FactionDef[defName="DankPyon_BrigandFaction"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Impid -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <!-- Mechanoids (Core) -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Mechanoid"]</xpath>
         <value>
             <displayInFactionSelection>false</displayInFactionSelection>
         </value>
