@@ -19,6 +19,9 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     public bool GlobalWarmingHasFired = false;
     public int CountdownToGlobalWarming = -1;
 
+    public bool ArchonRaidHasFired = false;
+    public int CountdownToArchonRaid = -1;
+
     public override void ExposeData()
     {
         base.ExposeData();
@@ -28,6 +31,8 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         Scribe_Values.Look(ref CountdownToIceAge, "CountdownToIceAge", -1);
         Scribe_Values.Look(ref GlobalWarmingHasFired, "GlobalWarmingHasFired", false);
         Scribe_Values.Look(ref CountdownToGlobalWarming, "CountdownToGlobalWarming", -1);
+        Scribe_Values.Look(ref ArchonRaidHasFired, "ArchonRaidHasFired", false);
+        Scribe_Values.Look(ref CountdownToArchonRaid, "CountdownToArchonRaid", -1);
     }
 
     public override void FinalizeInit()
@@ -42,6 +47,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         DoMeteor();
         DoIceAge();
         DoGlobalWarming();
+        DoArchonRaid();
     }
 
     public void DoMeteor()
@@ -95,6 +101,9 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
         GlobalWarmingHasFired = true;
 
+        GameCondition iceAge = Find.World.gameConditionManager.GetActiveCondition(GameConditionDef.Named("IceAge"));
+        iceAge?.End();
+
         GameCondition conditionGlobalWarming = GameConditionMaker.MakeCondition(GameConditionDef.Named("GlobalWarming"));
 
         Find.World.gameConditionManager.RegisterCondition(conditionGlobalWarming);
@@ -103,6 +112,27 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
             "MSS_Gen_IceAgeStart_letterDesc".Translate(),
             LetterDefOf.ThreatBig
         );
+    }
+
+    public void DoArchonRaid()
+    {
+        if(CountdownToArchonRaid < 0) return;
+        if(ArchonRaidHasFired) return;
+        if(CountdownToArchonRaid >= Find.TickManager.TicksGame) return;
+
+        ArchonRaidHasFired = true;
+
+        GameCondition globalWarming = Find.World.gameConditionManager.GetActiveCondition(GameConditionDef.Named("GlobalWarming"));
+        globalWarming?.End();
+        //
+        // GameCondition conditionGlobalWarming = GameConditionMaker.MakeCondition(GameConditionDef.Named("GlobalWarming"));
+        //
+        // Find.World.gameConditionManager.RegisterCondition(conditionGlobalWarming);
+        //
+        // Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
+        //     "MSS_Gen_IceAgeStart_letterDesc".Translate(),
+        //     LetterDefOf.ThreatBig
+        // );
     }
 
     public void Notify_SignalReceived(Signal signal)
@@ -138,6 +168,12 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
                         LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
                     break;
                 case TechLevel.Ultra:
+                    if(ArchonRaidHasFired) return;
+                    if(CountdownToArchonRaid > -1) return;
+                    CountdownToArchonRaid = GenDate.TicksPerDay + Find.TickManager.TicksGame;
+                    Find.LetterStack.ReceiveLetter("MSS_Gen_ArchonRaid_letterTitle".Translate(),
+                        "MSS_Gen_ArchonRaid_letterDesc".Translate(),
+                        LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
                     break;
             }
         }
