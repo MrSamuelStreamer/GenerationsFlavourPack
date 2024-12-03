@@ -14,7 +14,5 @@
 		<li IfModActive="biomesteam.biomesfossils">Compatibility/biomesteam.biomesfossils/1.5</li>
 		<li IfModActive="van.dacrypts">Compatibility/van.dacrypts/1.5</li>
 		<li IfModActive="legendaryminuteman.planetsidepolitics">Compatibility/legendaryminuteman.planetsidepolitics/1.5</li>
-		<!-- <li IfModActive="garethp.modlistconfigurator">Compatibility/Generations-Settings-Neolithic/</li>
-		<li IfModActive="garethp.modlistconfigurator">Compatibility/Generations-Settings-Medieval/</li> -->
 	</v1.5>
 </loadFolders>
