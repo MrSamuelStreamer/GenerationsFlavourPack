@@ -13,12 +13,21 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     public int CountdownToMeteor = -1;
     public FloatRange MeteorDuration = new FloatRange(0.06f, 0.07f);
 
+    public bool IceAgeHasFired = false;
+    public int CountdownToIceAge = -1;
+
+    public bool GlobalWarmingHasFired = false;
+    public int CountdownToGlobalWarming = -1;
 
     public override void ExposeData()
     {
         base.ExposeData();
         Scribe_Values.Look(ref MeteorHasFired, "MeteorHasFired", false);
         Scribe_Values.Look(ref CountdownToMeteor, "CountdownToMeteor", -1);
+        Scribe_Values.Look(ref IceAgeHasFired, "IceAgeHasFired", false);
+        Scribe_Values.Look(ref CountdownToIceAge, "CountdownToIceAge", -1);
+        Scribe_Values.Look(ref GlobalWarmingHasFired, "GlobalWarmingHasFired", false);
+        Scribe_Values.Look(ref CountdownToGlobalWarming, "CountdownToGlobalWarming", -1);
     }
 
     public override void FinalizeInit()
@@ -31,6 +40,8 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     {
         base.WorldComponentTick();
         DoMeteor();
+        DoIceAge();
+        DoGlobalWarming();
     }
 
     public void DoMeteor()
@@ -58,6 +69,42 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         );
     }
 
+    public void DoIceAge()
+    {
+        if(CountdownToIceAge < 0) return;
+        if(IceAgeHasFired) return;
+        if(CountdownToIceAge >= Find.TickManager.TicksGame) return;
+
+        IceAgeHasFired = true;
+
+        GameCondition conditionIceAge = GameConditionMaker.MakeCondition(GameConditionDef.Named("IceAge"));
+
+        Find.World.gameConditionManager.RegisterCondition(conditionIceAge);
+
+        Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
+            "MSS_Gen_IceAgeStart_letterDesc".Translate(),
+            LetterDefOf.ThreatBig
+        );
+    }
+
+    public void DoGlobalWarming()
+    {
+        if(CountdownToGlobalWarming < 0) return;
+        if(GlobalWarmingHasFired) return;
+        if(CountdownToGlobalWarming >= Find.TickManager.TicksGame) return;
+
+        GlobalWarmingHasFired = true;
+
+        GameCondition conditionGlobalWarming = GameConditionMaker.MakeCondition(GameConditionDef.Named("GlobalWarming"));
+
+        Find.World.gameConditionManager.RegisterCondition(conditionGlobalWarming);
+
+        Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
+            "MSS_Gen_IceAgeStart_letterDesc".Translate(),
+            LetterDefOf.ThreatBig
+        );
+    }
+
     public void Notify_SignalReceived(Signal signal)
     {
         if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
@@ -75,8 +122,20 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
                         LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
                     break;
                 case TechLevel.Industrial:
+                    if(IceAgeHasFired) return;
+                    if(CountdownToIceAge > -1) return;
+                    CountdownToIceAge = GenDate.TicksPerDay + Find.TickManager.TicksGame;
+                    Find.LetterStack.ReceiveLetter("MSS_Gen_IceAge_letterTitle".Translate(),
+                        "MSS_Gen_IceAge_letterDesc".Translate(),
+                        LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
                     break;
                 case TechLevel.Spacer:
+                    if(GlobalWarmingHasFired) return;
+                    if(CountdownToGlobalWarming > -1) return;
+                    CountdownToGlobalWarming = GenDate.TicksPerDay + Find.TickManager.TicksGame;
+                    Find.LetterStack.ReceiveLetter("MSS_Gen_GlobalWarming_letterTitle".Translate(),
+                        "MSS_Gen_GlobalWarming_letterDesc".Translate(),
+                        LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
                     break;
                 case TechLevel.Ultra:
                     break;
