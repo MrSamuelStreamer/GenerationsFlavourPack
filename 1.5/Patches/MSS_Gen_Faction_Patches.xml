@@ -1,111 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Medieval Faction Patches -->
-    <!-- Medieval Fierce -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseFierce"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseFierce"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Medieval Civil House -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Medieval Civil House 2 -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil2"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseCivil2"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Medieval Civil House 3 -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Medieval Savage -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseSavage"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="DankPyon_NobleHouseSavage"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-
-    <!-- Industrial Faction Patches -->
-    <!-- Civil Outlander -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/FactionDef[defName="OutlanderCivil"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/FactionDef[defName="OutlanderCivil"]/maxConfigurableAtWorldCreation</xpath>
-        <value>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Rough Outlander -->
-    <Operation Class="PatchOperationAdd">                                <!-- Possibly needs base patch instead -->
-        <xpath>Defs/FactionDef[defName="OutlanderRough"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-    <!-- Rough Pig Union -->
-    <Operation Class="PatchOperationAdd">                                
-        <xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
-        <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        </value>
-    </Operation>
-
     <!-- Spacer Faction Patches -->
     <!-- Waster Pirates -->
     <Operation Class="PatchOperationAdd">                                
@@ -114,6 +8,24 @@
             <displayInFactionSelection>false</displayInFactionSelection>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="PirateWaster"]/label</xpath>
+        <value>
+            <label>Slums of Randy</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
+        <value>
+            <fixedName>Slums of Randy</fixedName>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="PirateWaster"]/description</xpath>
+        <value>
+            <description>Having embraced anarchy since the very beginning, the slums of Randy are the defiant cities formed out of the chaos of the old House of Randy. The hardy citizens have adapted to a life clouded by smog, and a brain distracted by hard drugs.</description>
         </value>
     </Operation>
     <!-- Pirates -->
@@ -135,6 +47,24 @@
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Pirate"]/label</xpath>
+        <value>
+            <label>Golden Pirates</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+        <value>
+            <fixedName>Golden Pirates</fixedName>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Pirate"]/description</xpath>
+        <value>
+            <description>Never truly being able to overcome their love for plunder, nor quite forgetting the glory days of the House of Gold, this violent and decadent people have refined the art of theft and luxury.</description>
+        </value>
+    </Operation>
     <!-- Empire -->
     <Operation Class="PatchOperationAdd">                                
         <xpath>Defs/FactionDef[defName="Empire"]</xpath>
@@ -154,13 +84,22 @@
             <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         </value>
     </Operation>
-    <!-- Patreon -->
-    <Operation Class="PatchOperationAdd">                                
-        <xpath>Defs/FactionDef[defName="PatreonCivil"]</xpath>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
         <value>
-            <displayInFactionSelection>false</displayInFactionSelection>
-            <requiredCountAtGameStart>0</requiredCountAtGameStart>
-            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+            <label>Empire of Order</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="Empire"]</xpath>
+        <value>
+            <fixedName>Empire of Order</fixedName>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+        <value>
+            <description>Since the very beginning of their republic days, the Empire of Order stands as a testiment to a society built on the principals of control and observation. Though powerful, the society is starkly divided into the rich and poor, with an oligarchy of few deciding for the many.</description>
         </value>
     </Operation>
     <!-- Ultra Faction Patches -->
@@ -183,7 +122,25 @@
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
         </value>
     </Operation>
-        <!-- Kwazaar Bazaar -->
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]/label</xpath>
+        <value>
+            <label>Neanderthal Metropolis</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]</xpath>
+        <value>
+            <fixedName>Neanderthal Metropolis</fixedName>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_KwazaarBazaar"]/description</xpath>
+        <value>
+            <description>Against all odds, and through totally unknown means, the once simple minded Neanderthals have entered a period of unbelievable technological growth, somehow creating an ultratech civilisation.</description>
+        </value>
+    </Operation>
+        <!-- Solar Republic -->
     <Operation Class="PatchOperationAdd">                                
         <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]</xpath>
         <value>
@@ -200,6 +157,30 @@
         <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]/requiredCountAtGameStart</xpath>
         <value>
             <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]/label</xpath>
+        <value>
+            <label>Solar Empire of Sigma</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]</xpath>
+        <value>
+            <fixedName>Solar Empire of Sigma</fixedName>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]/description</xpath>
+        <value>
+            <description>Having overcome their difficult Industrial years, the guiding hand of the Archoseed Sigma has driven the once simple tribe to the building blocks of an ultratech ecumenopolis.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="BOR_SolarRepublic"]</xpath>
+        <value>
+            <permanentEnemy>true</permanentEnemy>
         </value>
     </Operation>
     <!-- Hidden Factions (WILL be active at relevant era, but hidden from world creation and factions screen -->
@@ -271,6 +252,50 @@
     <!-- Mechanoids (Core) -->
     <Operation Class="PatchOperationAdd">                                
         <xpath>Defs/FactionDef[defName="Mechanoid"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Gentle Tribe -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="TribeCivil"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">                                
+        <xpath>Defs/FactionDef[defName="TribeCivil"]/maxConfigurableAtWorldCreation</xpath>
+        <value>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Savage Tribe-->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="TribeSavage"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+            <requiredCountAtGameStart>0</requiredCountAtGameStart>
+            <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        </value>
+    </Operation>
+    <!-- Cannibal Tribe -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="NudistTribe"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Nudist Tribe -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+        <value>
+            <displayInFactionSelection>false</displayInFactionSelection>
+        </value>
+    </Operation>
+    <!-- Fierce -->
+    <Operation Class="PatchOperationAdd">                                
+        <xpath>Defs/FactionDef[defName="TribeRough"]</xpath>
         <value>
             <displayInFactionSelection>false</displayInFactionSelection>
         </value>
