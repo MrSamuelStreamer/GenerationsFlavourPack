@@ -18,6 +18,8 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
     public bool Loaded = false;
 
+    public TechLevel LatestTechLevel = TechLevel.Undefined;
+
     public Lazy<FieldInfo> PresetsField = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
 
     public DirectoryInfo presetLocation => MSS_GenMod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
@@ -43,6 +45,12 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         Loaded = true;;
     }
 
+    public override void ExposeData()
+    {
+        base.ExposeData();
+        Scribe_Values.Look(ref LatestTechLevel, "LatestTechLevel", TechLevel.Undefined);
+    }
+
     public override void FinalizeInit()
     {
         base.FinalizeInit();
@@ -66,6 +74,10 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
             }
 
             TechLevel newLevel = (TechLevel)signal.args.GetArg("newTechLevel").arg;
+
+            if(newLevel <= LatestTechLevel) return;
+            LatestTechLevel = newLevel;
+
             ModLog.Debug($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg("oldTechLevel").ToString()}");
 
             if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
@@ -110,6 +122,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         {
             Find.WindowStack.Add(new Dialog_MessageBox(
                 "MSS_Gen_Tech_Level_Advancing".Translate(levelName, string.Join("\r\n", modsToImport)),
+                buttonADestructive: true,
                 buttonAAction:
                 () =>
                 {
