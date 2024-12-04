@@ -243,4 +243,108 @@
             </researchPrerequisites>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FT_Sandbag"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FT_WallSandbag"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VFEArch_BridgeSteelConcrete"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FT_Floor_Concrete"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FT_PlankFloor"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VFEArch_WoodPlankFloorConcrete"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VFEArch_PolishedStoneFloorConcrete"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VFEArch_CobblestoneFloorConcrete"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Fabrication</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatSmall"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>CarpetMaking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatMedium"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>CarpetMaking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatLarge"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>CarpetMaking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatLinked"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>CarpetMaking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatLinked"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>CarpetMaking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 </Patch>

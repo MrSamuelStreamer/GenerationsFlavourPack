@@ -7,6 +7,8 @@
 				<li>vanillaexpanded.vtexe</li>
 				<li>regrowth.botr.retextures</li>
 				<li>rebuild.cotr.doorsandcorners</li>
+				<li>hlx.ultratechalteredcarbon</li>
+				<li>resplice.xotr.core</li>
 			</keys>
 			<values>
 				<li>
@@ -89,7 +91,9 @@
 							<li Class="ReGrowthCore.ReGrowthCore_PerspectiveOres">
 								<skippedMineableDefs />
 							</li>
-							<li Class="ReGrowthCore.ReGrowthCore_MakeCamp" />
+							<li Class="ReGrowthCore.ReGrowthCore_MakeCamp">
+								<enableMakeCamp>False</enableMakeCamp>
+							</li>
 						</values>
 					</workers>
 				</li>
@@ -177,6 +181,71 @@
 						<values>
 							<li>10</li>
 							<li>500</li>
+						</values>
+					</patchOperationValues>
+					<workers>
+						<keys />
+						<values />
+					</workers>
+				</li>
+				<li>
+					<packageID>hlx.ultratechalteredcarbon</packageID>
+					<patchOperationStates>
+						<keys>
+							<li>AC_ChrysalisFullBody</li>
+							<li>AC_StackSpawningPirates</li>
+							<li>AC_StackSpawningAncientSpacer</li>
+							<li>AC_StackSpawningEmpire</li>
+						</keys>
+						<values>
+							<li>False</li>
+							<li>False</li>
+							<li>False</li>
+							<li>False</li>
+						</values>
+					</patchOperationStates>
+					<patchOperationValues>
+						<keys />
+						<values />
+					</patchOperationValues>
+					<workers>
+						<keys>
+							<li>AlteredCarbon.AlteredCarbonSettingsWorker_General</li>
+							<li>AlteredCarbon.AlteredCarbonSettingsWorker_SleeveGrowing</li>
+							<li>AlteredCarbon.AlteredCarbonSettingsWorker_EditStack</li>
+						</keys>
+						<values>
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_General">
+								<enableStackSpawning>False</enableStackSpawning>
+								<sleeveDeathDoesNotCauseGearTainting>False</sleeveDeathDoesNotCauseGearTainting>
+							</li>
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_SleeveGrowing" />
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_EditStack">
+								<enableStackDegradation>False</enableStackDegradation>
+							</li>
+						</values>
+					</workers>
+				</li>
+				<li>
+					<packageID>resplice.xotr.core</packageID>
+					<patchOperationStates>
+						<keys>
+							<li>RS_DarkArchiteEditor</li>
+							<li>RS_VoidspikeDegradation</li>
+						</keys>
+						<values>
+							<li>False</li>
+							<li>False</li>
+						</values>
+					</patchOperationStates>
+					<patchOperationValues>
+						<keys>
+							<li>RS_ArchiteMetabolismEfficiency</li>
+							<li>RS_ArchiteMetabolismCost</li>
+						</keys>
+						<values>
+							<li>6</li>
+							<li>2</li>
 						</values>
 					</patchOperationValues>
 					<workers>

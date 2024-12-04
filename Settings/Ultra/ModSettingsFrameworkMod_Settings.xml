@@ -192,15 +192,15 @@
 					<packageID>hlx.ultratechalteredcarbon</packageID>
 					<patchOperationStates>
 						<keys>
-							<li>AC_ChrysalisFullBody</li>
-							<li>AC_StackSpawningPirates</li>
-							<li>AC_StackSpawningAncientSpacer</li>
 							<li>AC_StackSpawningEmpire</li>
+							<li>AC_StackSpawningAncientSpacer</li>
+							<li>AC_StackSpawningPirates</li>
+							<li>AC_ChrysalisFullBody</li>
 						</keys>
 						<values>
-							<li>False</li>
-							<li>False</li>
-							<li>False</li>
+							<li>True</li>
+							<li>True</li>
+							<li>True</li>
 							<li>False</li>
 						</values>
 					</patchOperationStates>
@@ -215,14 +215,12 @@
 							<li>AlteredCarbon.AlteredCarbonSettingsWorker_EditStack</li>
 						</keys>
 						<values>
-							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_General">
-								<enableStackSpawning>False</enableStackSpawning>
-								<sleeveDeathDoesNotCauseGearTainting>False</sleeveDeathDoesNotCauseGearTainting>
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_General" />
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_SleeveGrowing">
+								<sleeveGrowingTimeMultiplier>0.7</sleeveGrowingTimeMultiplier>
+								<sleeveGrowingCostMultiplier>1.3</sleeveGrowingCostMultiplier>
 							</li>
-							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_SleeveGrowing" />
-							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_EditStack">
-								<enableStackDegradation>False</enableStackDegradation>
-							</li>
+							<li Class="AlteredCarbon.AlteredCarbonSettingsWorker_EditStack" />
 						</values>
 					</workers>
 				</li>
