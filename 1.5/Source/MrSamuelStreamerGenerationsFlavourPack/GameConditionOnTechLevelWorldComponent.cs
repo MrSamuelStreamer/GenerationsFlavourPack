@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using LudeonTK;
 using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
@@ -66,7 +67,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
         Map target = Current.Game.Maps.First(map => map.IsPlayerHome);
 
-        ThingDef gift = DefDatabase<ThingDef>.GetNamedSilentFail("MAG_ArchoReproductor") ?? ThingDefOf.Gold;
+        ThingDef gift = DefDatabase<ThingDef>.GetNamedSilentFail("ArchoReproductor") ?? ThingDefOf.Gold;
         IntVec3 intVec3 = DropCellFinder.RandomDropSpot(target);
         SkyfallerMaker.SpawnSkyfaller(ThingDefOf.ShipChunkIncoming, gift, intVec3, target);
 
@@ -74,7 +75,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
         Find.LetterStack.ReceiveLetter("MSS_Gen_ArchoGiftLanded_letterTitle".Translate(),
             "MSS_Gen_ArchoGiftLanded_letterDesc".Translate(),
-            LetterDefOf.NeutralEvent,
+            LetterDefOf.ThreatBig,
             lookTargets
         );
     }
@@ -215,4 +216,53 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
             }
         }
     }
+
+    public static GameConditionOnTechLevelWorldComponent Get() => Find.World.components.OfType<GameConditionOnTechLevelWorldComponent>().First();
+
+    // Debug action triggers
+    [DebugAction("MSSGenerations", "Trigger Archo Gift", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    public static void ForceArchoGift()
+    {
+        GameConditionOnTechLevelWorldComponent comp = Get();
+        comp.CountdownToArchoGift = Find.TickManager.TicksGame - 1;
+        comp.ArchoGiftHasFired = false;
+        comp.DoArchoGift();
+    }
+
+    [DebugAction("MSSGenerations", "Trigger Meteor", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    public static void ForceMeteor()
+    {
+        GameConditionOnTechLevelWorldComponent comp = Get();
+        comp.CountdownToMeteor = Find.TickManager.TicksGame - 1;
+        comp.MeteorHasFired = false;
+        comp.DoMeteor();
+    }
+
+    [DebugAction("MSSGenerations", "Trigger Ice Age", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    public static void ForceIceAge()
+    {
+        GameConditionOnTechLevelWorldComponent comp = Get();
+        comp.CountdownToIceAge = Find.TickManager.TicksGame - 1;
+        comp.IceAgeHasFired = false;
+        comp.DoIceAge();
+    }
+
+    [DebugAction("MSSGenerations", "Trigger Global Warming", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    public static void ForceGlobalWarming()
+    {
+        GameConditionOnTechLevelWorldComponent comp = Get();
+        comp.CountdownToGlobalWarming = Find.TickManager.TicksGame - 1;
+        comp.GlobalWarmingHasFired = false;
+        comp.DoGlobalWarming();
+    }
+
+    [DebugAction("MSSGenerations", "Trigger Archon Raid", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    public static void ForceArchonRaid()
+    {
+        GameConditionOnTechLevelWorldComponent comp = Get();
+        comp.CountdownToArchonRaid = Find.TickManager.TicksGame - 1;
+        comp.ArchonRaidHasFired = false;
+        comp.DoArchonRaid();
+    }
+
 }
