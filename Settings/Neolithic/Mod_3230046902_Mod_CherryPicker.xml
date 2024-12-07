@@ -49,6 +49,8 @@
 			<li>XenotypeDef/BOR_Solarite</li>
 			<li>XenotypeDef/EF_Elders</li>
 			<li>ScenarioDef/VFET_WildMen</li>
+			<li>ScenarioDef/FTC_LostFortress</li>
+			<li>ThingDef/VFEArch_HedgeWall</li>
 		</keys>
 	</ModSettings>
 </SettingsBlock>
