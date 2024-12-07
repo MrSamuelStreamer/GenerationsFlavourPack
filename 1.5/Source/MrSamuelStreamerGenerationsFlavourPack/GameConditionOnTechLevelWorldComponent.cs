@@ -9,6 +9,9 @@ namespace MSS_Gen;
 
 public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponent(world), ISignalReceiver
 {
+    public bool ArchoGiftHasFired = false;
+    public int CountdownToArchoGift = -1;
+
     public bool MeteorHasFired = false;
     public int CountdownToMeteor = -1;
     public FloatRange MeteorDuration = new FloatRange(0.06f, 0.07f);
@@ -25,6 +28,8 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     public override void ExposeData()
     {
         base.ExposeData();
+        Scribe_Values.Look(ref ArchoGiftHasFired, "ArchoGiftHasFired", false);
+        Scribe_Values.Look(ref CountdownToArchoGift, "CountdownToArchoGift", -1);
         Scribe_Values.Look(ref MeteorHasFired, "MeteorHasFired", false);
         Scribe_Values.Look(ref CountdownToMeteor, "CountdownToMeteor", -1);
         Scribe_Values.Look(ref IceAgeHasFired, "IceAgeHasFired", false);
@@ -44,10 +49,34 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     public override void WorldComponentTick()
     {
         base.WorldComponentTick();
+        DoArchoGift();
         DoMeteor();
         DoIceAge();
         DoGlobalWarming();
         DoArchonRaid();
+    }
+
+    public void DoArchoGift()
+    {
+        if(CountdownToArchoGift < 0) return;
+        if(ArchoGiftHasFired) return;
+        if(CountdownToArchoGift >= Find.TickManager.TicksGame) return;
+
+        ArchoGiftHasFired = true;
+
+        Map target = Current.Game.Maps.First(map => map.IsPlayerHome);
+
+        ThingDef gift = DefDatabase<ThingDef>.GetNamedSilentFail("MAG_ArchoReproductor") ?? ThingDefOf.Gold;
+        IntVec3 intVec3 = DropCellFinder.RandomDropSpot(target);
+        SkyfallerMaker.SpawnSkyfaller(ThingDefOf.ShipChunkIncoming, gift, intVec3, target);
+
+        LookTargets lookTargets = new TargetInfo(intVec3, target);
+
+        Find.LetterStack.ReceiveLetter("MSS_Gen_ArchoGiftLanded_letterTitle".Translate(),
+            "MSS_Gen_ArchoGiftLanded_letterDesc".Translate(),
+            LetterDefOf.NeutralEvent,
+            lookTargets
+        );
     }
 
     public void DoMeteor()
@@ -143,6 +172,14 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
             switch (newLevel)
             {
+                case TechLevel.Neolithic:
+                    if(ArchoGiftHasFired) return;
+                    if(CountdownToArchoGift > -1) return;
+                    CountdownToArchoGift = GenDate.TicksPerDay + Find.TickManager.TicksGame;
+                    Find.LetterStack.ReceiveLetter("MSS_Gen_ArchoGift_letterTitle".Translate(),
+                        "MSS_Gen_ArchoGift_letterDesc".Translate(),
+                        LetterDefOf.ThreatBig, delayTicks:GenDate.TicksPerHour);
+                    break;
                 case TechLevel.Medieval:
                     if(MeteorHasFired) return;
                     if(CountdownToMeteor > -1) return;

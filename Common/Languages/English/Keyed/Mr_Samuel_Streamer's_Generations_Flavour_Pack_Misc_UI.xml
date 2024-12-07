@@ -24,6 +24,11 @@
 
     <MSS_Gen_VoidsEmbraceSkillsReset>{0} experienced the void, and left a part of themselves behind. Their skills have now been reset.</MSS_Gen_VoidsEmbraceSkillsReset>
 
+    <MSS_Gen_ArchoGift_letterTitle>A dot in the sky</MSS_Gen_ArchoGift_letterTitle>
+    <MSS_Gen_ArchoGift_letterDesc>Up in the sky a dot has appeared, the tribe is murmuring about the sky falling.</MSS_Gen_ArchoGift_letterDesc>
+    <MSS_Gen_ArchoGiftLanded_letterTitle>A rock from above?</MSS_Gen_ArchoGiftLanded_letterTitle>
+    <MSS_Gen_ArchoGiftLanded_letterDesc>The flaming retribution of the heavens didn't destroy the tribe, the sky didn't fall, but what is it? A gift from above? Not everyone is so certain this isn't the start of a more serious hail of celestial fire, but there are no more spots in the sky, for now, all is quiet.</MSS_Gen_ArchoGiftLanded_letterDesc>
+
     <MSS_Gen_Meteo_letterTitle>Meteor storm incoming</MSS_Gen_Meteo_letterTitle>
     <MSS_Gen_Meteo_letterDesc>The soothsayers are all aligned on one prediction - in one day, the heavens will rain down fire upon the land!</MSS_Gen_Meteo_letterDesc>
 
@@ -31,7 +36,7 @@
     <MSS_Gen_IceAge_letterDesc>Astronomers have noticed that sun spot activity has massively increased, and have recorded dropping temperatures. They think this is a sign of an incoming ice age. Better prepare!</MSS_Gen_IceAge_letterDesc>
 
     <MSS_Gen_GlobalWarming_letterTitle>Global warming incoming</MSS_Gen_GlobalWarming_letterTitle>
-    <MSS_Gen_GlobalWarming_letterDesc>Scientists have identified a trend of increasing global avarage temperature over historical and modern recording. This trend has sharply spiked of late. They belive this will continue in a phenomena they've dubbed Global Warming. They predict multiple environmental disasters will come.</MSS_Gen_GlobalWarming_letterDesc>
+    <MSS_Gen_GlobalWarming_letterDesc>Scientists have identified a trend of increasing global average temperature over historical and modern recording. This trend has sharply spiked of late. They believe this will continue in a phenomena they've dubbed Global Warming. They predict multiple environmental disasters will come.</MSS_Gen_GlobalWarming_letterDesc>
 
     <MSS_Gen_ArchonRaid_letterTitle>Strange signal</MSS_Gen_ArchonRaid_letterTitle>
     <MSS_Gen_ArchonRaid_letterDesc>You've received a strange signal. You can't fully decode it, but as best as you can tell, it's a countdown. It looks like it'll end tomorrow.</MSS_Gen_ArchonRaid_letterDesc>
