@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace MSS_Gen.Comps;
@@ -24,11 +25,14 @@ public class CompLegendaryTracker: ThingComp
         }
     }
 
+    public TechLevel BecameLegendaryAtTechLevel = TechLevel.Undefined;
+
     public Dictionary<Pawn, PawnUsageTracker> pawnUsageTrackers = new();
 
     public override void PostExposeData()
     {
         base.PostExposeData();
+        Scribe_Values.Look(ref BecameLegendaryAtTechLevel, "BecameLegendaryAtTechLevel", TechLevel.Undefined);
         Scribe_Collections.Look(ref pawnUsageTrackers, "pawnUsageTrackers", LookMode.Reference, LookMode.Value);
     }
 
@@ -98,4 +102,17 @@ public class CompLegendaryTracker: ThingComp
             TrackerForPawn(equipmentTracker.pawn).diedWhileEquipped = true;
         }
     }
+
+    public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
+    {
+        base.Notify_Killed(prevMap, dinfo);
+        ModLog.Debug("here");
+    }
+
+    public override void Notify_KilledLeavingsLeft(List<Thing> leavings)
+    {
+        base.Notify_KilledLeavingsLeft(leavings);
+        ModLog.Debug("here");
+    }
+
 }
