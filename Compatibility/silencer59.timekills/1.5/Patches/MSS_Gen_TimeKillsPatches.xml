@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationReplace">
+        <xpath>*/HediffDef[defName="TK_OldAge"]/tendable</xpath>
+        <value>
+            <tendable>false</tendable>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/HediffDef[defName="TK_OldAge"]/comps</xpath>
+        <value><comps /></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/HediffDef[defName="TK_OldAge"]/description</xpath>
+        <value>
+            <description>The effects of old age. Natural body parts and organs may start degrading.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>*/HediffGiverSetDef[defName="OrganicStandard"]/hediffGivers/li[hediff="TK_OldAge"]/ageFractionChanceCurve/points</xpath>
         <value>
             <points>
