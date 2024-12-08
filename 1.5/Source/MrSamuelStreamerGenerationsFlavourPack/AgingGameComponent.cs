@@ -25,8 +25,8 @@ public class AgingGameController: GameComponent
             DefaultAgingHasBeenApplied = true;
             DifficultyDef customDef = DefDatabase<DifficultyDef>.AllDefs.First(def => def.isCustom);
             Current.Game.storyteller.difficultyDef = customDef;
-            Current.Game.storyteller.difficulty.adultAgingRate = 16f;
-            Current.Game.storyteller.difficulty.childAgingRate = 32f;
+            Current.Game.storyteller.difficulty.adultAgingRate = 22f;
+            Current.Game.storyteller.difficulty.childAgingRate = 20f;
             Current.Game.storyteller.Notify_DefChanged();
         }
     }
