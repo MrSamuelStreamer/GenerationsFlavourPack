@@ -298,10 +298,10 @@
 
   <FactionEvolution.FactionDef_Evolvable ParentName="TribeRoughBase">
     <defName>MSS_Gen_RivalTribal</defName>
-    <label>Tribe of Sigma</label>
+    <label>Tribe of Gamma</label>
     <evolvesWhenPlayerTech>Medieval</evolvesWhenPlayerTech>
     <evolvesToDef>DankPyon_NobleHouseFierce</evolvesToDef>
-    <fixedName>Tribe of Sigma</fixedName>
+    <fixedName>Tribe of Gamma</fixedName>
 	<permanentEnemy>true</permanentEnemy>
     <description>A tribe lead by a rival Archoseed. Their language, way of life, and rituals are strange and confusing. Their attitudes are violent and unexplainable. They can never be allied.</description>
     <colorSpectrum>
@@ -797,14 +797,14 @@
 
   <FactionEvolution.FactionDef_Evolvable ParentName="DankPyon_NobleHouseFactionBase">
 		<defName>DankPyon_NobleHouseFierce</defName>
-		<label>Sigma's Castle</label>
+		<label>Gamma's Castle</label>
     <evolvesWhenPlayerTech>Industrial</evolvesWhenPlayerTech>
     <evolvesToDef>OutlanderRough</evolvesToDef>
-		<description>Guided by the nefarious hand of their Archoseed overseer, the people of Sigma's tribe took no time in reaching medieval technologies and reforming their settlements into sturdy castles.</description>
+		<description>Guided by the nefarious hand of their Archoseed overseer, the people of Gamma's tribe took no time in reaching medieval technologies and reforming their settlements into sturdy castles.</description>
 		<colorSpectrum>
 			<li>(99, 99, 99)</li>
 		</colorSpectrum>
-		<fixedName>Sigma's Castle</fixedName>
+		<fixedName>Gamma's Castle</fixedName>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
@@ -932,9 +932,9 @@
 
   <FactionEvolution.FactionDef_Evolvable ParentName="OutlanderRoughBase">
     <defName>OutlanderRough</defName>
-    <label>Sigma City</label>
-	<fixedName>Sigma City</fixedName>
-	<description>Having been manipulated and pushed by the nefarious Archoseed 'Sigma', the medieval people of Sigma's Castle flourished and their population boomed, eventually forming dangerous cities.</description>
+    <label>Gamma City</label>
+	<fixedName>Gamma City</fixedName>
+	<description>Having been manipulated and pushed by the nefarious Archoseed 'Gamma', the medieval people of Gamma's Castle flourished and their population boomed, eventually forming dangerous cities.</description>
 	<permanentEnemy>true</permanentEnemy>
 	<evolvesWhenPlayerTech>Spacer</evolvesWhenPlayerTech>
     <evolvesToDef>PatreonCivil</evolvesToDef>
@@ -947,12 +947,12 @@
 
   <FactionEvolution.FactionDef_Evolvable ParentName="PatreonFactionBase">
     <defName>PatreonCivil</defName>
-    <label>Skylines of Sigma</label>
-    <fixedName>Skylines of Sigma</fixedName>
+    <label>Skylines of Gamma</label>
+    <fixedName>Skylines of Gamma</fixedName>
     <evolvesWhenPlayerTech>Ultra</evolvesWhenPlayerTech>
     <evolvesToDef>BOR_SolarRepublic</evolvesToDef>
 	<permanentEnemy>true</permanentEnemy>
-    <description>Despite the perfidious whims of their Archoseed, the rough industrial cities of Sigma have somehow sloughed off their once hard exterior and reformed into an advanced faction of traders and skilled crafters.</description>
+    <description>Despite the perfidious whims of their Archoseed, the rough industrial cities of Gamma have somehow sloughed off their once hard exterior and reformed into an advanced faction of traders and skilled crafters.</description>
     <colorSpectrum>
       <li>(1.0, 0.31, 0.27)</li>
       <li>(0.9, 0.27, 0.31)</li>
