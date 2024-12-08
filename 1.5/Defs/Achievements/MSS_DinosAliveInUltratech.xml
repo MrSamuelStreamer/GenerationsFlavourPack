@@ -86,6 +86,7 @@
                 <li>BMT_Wuerhosaurus</li>
                 <li>BMT_Yinlong</li>
                 <li>BMT_Yutyrannus</li>
+                <li>MSSFP_Frogge</li>
             </RaceDefs>
         </tracker>
         <texPath>BMT_Prehistoric/Animals/TyrannosaurusRex/TyrannosaurusRex_south</texPath>
