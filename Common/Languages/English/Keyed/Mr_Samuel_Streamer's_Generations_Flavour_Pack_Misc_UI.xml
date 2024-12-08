@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <MSS_Gen_SettingsCategory>Mr Samuel Streamer's Generations Flavour Pack</MSS_Gen_SettingsCategory>
+    <MSS_Gen_Settings_SeasonalStoryteller>Enable seasonal storyteller</MSS_Gen_Settings_SeasonalStoryteller>
     <MSS_Gen_Settings_ForceLoadConfig>Force load a config:</MSS_Gen_Settings_ForceLoadConfig>
     <MSS_Gen_Settings_ReformationPointsPerYear>Reformation points awarded per year - {0}</MSS_Gen_Settings_ReformationPointsPerYear>
     <MSS_Gen_Settings_ReformationPointsPerTechLevel>Reformation points awarded per tech level - {0}</MSS_Gen_Settings_ReformationPointsPerTechLevel>

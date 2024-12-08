@@ -14,9 +14,11 @@ public class Settings : ModSettings
     public int ReformationPointsPerBaby = 1;
     public int ReformationPointsPerDefeatedFaction = 5;
 
+    public bool SeasonalStoryteller = true;
+
     public void DoWindowContents(Rect wrect)
     {
-        float scrollViewHeigh = 24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
+        float scrollViewHeigh = 24f+12f+24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
 
         List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
 
@@ -31,6 +33,8 @@ public class Settings : ModSettings
 
         try
         {
+            options.CheckboxLabeled("MSS_Gen_Settings_SeasonalStoryteller", ref SeasonalStoryteller);
+            options.Gap();
             if (ModLister.GetActiveModWithIdentifier("garethp.modlistconfigurator") != null)
             {
                 options.Label("MSS_Gen_Settings_ForceLoadConfig".Translate());
@@ -87,5 +91,6 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref ReformationPointsPerTechLevel, "ReformationPointsPerYear", 5);
         Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerBaby", 1);
         Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerDefeatedFaction", 5);
+        Scribe_Values.Look(ref SeasonalStoryteller, "SeasonalStoryteller", true);
     }
 }
