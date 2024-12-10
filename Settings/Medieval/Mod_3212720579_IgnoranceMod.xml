@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DIgnoranceIsBliss.Settings">
+		<usePercentResearched>False</usePercentResearched>
+		<percentResearchNeeded>0.95</percentResearchNeeded>
+		<useActualTechLevel>True</useActualTechLevel>
+		<numTechsBehind>-1</numTechsBehind>
+		<numTechsAhead>-1</numTechsAhead>
+		<empireIsAlwaysEligible>False</empireIsAlwaysEligible>
+		<VoidTechTechnologyLevel>6</VoidTechTechnologyLevel>
+		<VoidTechTechnologyLevel>6</VoidTechTechnologyLevel>
+		<VoidTechTechnologyLevel>6</VoidTechTechnologyLevel>
+	</ModSettings>
+</SettingsBlock>
