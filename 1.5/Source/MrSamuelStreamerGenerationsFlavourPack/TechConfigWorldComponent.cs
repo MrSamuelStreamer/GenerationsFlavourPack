@@ -99,7 +99,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
             if (tlcd is not null)
             {
                 ModLog.Debug($"TechConfigWorldComponent found TechLevelConfigDef for {newLevel} - {tlcd.ToString()}");
-                OverwriteSettings(tlcd.defName, newLevel.ToString());
+                MergeSettings(tlcd.defName, newLevel.ToString());
             }
             else
             {
@@ -108,15 +108,17 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
         }
     }
 
-    private void OverwriteSettings(string presetDefName, string levelName)
+    private void MergeSettings(string presetDefName, string levelName)
     {
+        SettingsImporter importer = new();
+        List<string> modsToImport = importer.ModsToImport(presetDefName);
+
         Find.WindowStack.Add(new Dialog_MessageBox(
-            "MSS_Gen_Tech_Level_Advancing".Translate(levelName),
+            "MSS_Gen_Tech_Level_Advancing".Translate(levelName, string.Join("\r\n", modsToImport)),
             buttonADestructive: true,
             buttonAAction:
             () =>
             {
-                SettingsImporter importer = new SettingsImporter();
                 importer.OverwriteSettings(presetDefName);
                 Find.WindowStack.Add(new Dialog_MessageBox(
                     "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
