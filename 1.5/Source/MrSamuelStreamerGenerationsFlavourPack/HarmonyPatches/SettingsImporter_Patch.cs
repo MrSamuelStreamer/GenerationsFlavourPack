@@ -22,6 +22,13 @@ public static class SettingsImporter_Patch
     [HarmonyPrefix]
     public static bool ShouldImport(ref bool __result, string importFilePath, string modId, string modName)
     {
+        if (modId == "2817607528" && modName.ToLower() == "ResourceDictionaryMod".ToLower())
+        {
+            // skip check for ResourceDictionaryMod
+            __result = true;
+            return false;
+        }
+
         // fix a bug in ModlistConfigurator
         XmlElement importSettings = SettingsImporter.GetSettingsFromFile(importFilePath)?.DocumentElement;
         XmlElement currentSettings = SettingsImporter.GetSettingsFromFile(GetSettingsFilename(modId, modName))?.DocumentElement;
@@ -51,6 +58,14 @@ public static class SettingsImporter_Patch
                 string fullName = file.FullName;
                 string modIdentifier = match.Groups[1].Value;
                 string modHandleName = match.Groups[2].Value;
+
+                if (modIdentifier == "2817607528" && modHandleName.ToLower() == "ResourceDictionaryMod".ToLower())
+                {
+                    // Skip for ResourceDictionaryMod
+                    File.Copy(fullName, GetSettingsFilename(modIdentifier, modHandleName));
+                    continue;
+                }
+
                 XmlElement documentElement1 = SettingsImporter.GetSettingsFromFile(fullName)?.DocumentElement;
                 XmlDocument settingsFromFile = SettingsImporter.GetSettingsFromFile(GetSettingsFilename(modIdentifier, modHandleName));
                 XmlElement documentElement2 = settingsFromFile?.DocumentElement;

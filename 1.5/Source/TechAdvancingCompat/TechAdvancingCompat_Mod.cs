@@ -5,6 +5,7 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using RimWorld;
 using Verse;
+using VFETribals;
 
 namespace MSS_Gen.TechAdvancingCompat;
 
@@ -32,7 +33,38 @@ public class TechAdvancingCompat_Mod : Mod
     {
         ModLog.Log("MSS_Gen.TechAdvancingCompat");
         if (Find.FactionManager.OfPlayer.def.techLevel != newLevel)
-            Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_TechLevelChanged, new NamedArgument(newLevel, "newTechLevel"), new NamedArgument(Find.FactionManager.OfPlayer.def.techLevel, "oldTechLevel")));
+        {
+            Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_TechLevelChanged, new NamedArgument(newLevel, "newTechLevel"),
+                new NamedArgument(Find.FactionManager.OfPlayer.def.techLevel, "oldTechLevel")));
+
+            GameComponent_Tribals comp = Current.Game.GetComponent<GameComponent_Tribals>();
+
+            EraAdvancementDef def = null;
+
+            switch (newLevel)
+            {
+                case TechLevel.Neolithic:
+                    def = VFET_DefOf.VFET_FormTribe;
+                    break;
+                case TechLevel.Medieval:
+                    def = VFET_DefOf.VFET_FormTown;
+                    break;
+                case TechLevel.Industrial:
+                    def = VFET_DefOf.VFET_FormCity;
+                    break;
+                case TechLevel.Spacer:
+                    def = VFET_DefOf.VFET_FormCollective;
+                    break;
+                case TechLevel.Ultra:
+                    def = VFET_DefOf.VFET_FormNexus;
+                    break;
+            }
+            if(def == null) return;
+            LookTargets lookTargets = new LookTargets(Find.Maps.Find(map => map.IsPlayerHome).PlayerPawnsForStoryteller);
+
+            comp.AdvanceToEra(def);
+            Find.LetterStack.ReceiveLetter(def.label, def.description, LetterDefOf.RitualOutcomePositive, lookTargets, null, null, null, null);
+        }
     }
 
     public static IEnumerable<CodeInstruction> TA_ResearchManager_Postfix_Transpiler(IEnumerable<CodeInstruction> instructions)

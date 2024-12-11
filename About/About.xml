@@ -27,6 +27,12 @@
             <steamWorkshopUrl>steam://url/CommunityFilePage/735268789</steamWorkshopUrl>
             <downloadUrl>https://github.com/RimWorldMod/Tech-Advancing</downloadUrl>
         </li>
+        <li>
+            <packageId>oskarpotocki.vfe.tribals</packageId>
+            <displayName>Vanilla Factions Expanded - Tribals</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3079786283</steamWorkshopUrl>
+            <downloadUrl>https://github.com/Vanilla-Expanded/VanillaFactionsExpanded-Tribals</downloadUrl>
+        </li>
     </modDependencies>
 
     <loadAfter>
@@ -39,6 +45,7 @@
         <li>silencer59.timekills</li>
         <li>garethp.modlistconfigurator</li>
         <li>ghxx.techadvancing</li>
+        <li>oskarpotocki.vfe.tribals</li>
         <li>jp.factionevolution</li>
         <li>mss.flavourpack</li>
         <li>dankpyon.medieval.overhaul</li>
