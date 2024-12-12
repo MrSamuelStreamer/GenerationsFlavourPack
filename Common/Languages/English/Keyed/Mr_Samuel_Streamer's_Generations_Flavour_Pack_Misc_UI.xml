@@ -7,7 +7,7 @@
     <MSS_Gen_Settings_ReformationPointsPerTechLevel>Reformation points awarded per tech level - {0}</MSS_Gen_Settings_ReformationPointsPerTechLevel>
     <MSS_Gen_Settings_ReformationPointsPerBaby>Reformation points awarded per colony baby - {0}</MSS_Gen_Settings_ReformationPointsPerBaby>
     <MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>Reformation points awarded per faction defeated - {0}</MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>
-    <MSS_Gen_Tech_Level_Advancing>Congratulations, you've advanced to the {0} tech level!\n\nWe need to make some changes now.  You'll need to restart Rimworld for the changes to take effect. Settings will be merged so that user changes get preserved. The mods listed below will be affected, do you want to continue?\n\n{1}</MSS_Gen_Tech_Level_Advancing>
+    <MSS_Gen_Tech_Level_Advancing>Congratulations, you've advanced to the {0} tech level!\n\nWe need to make some changes now.  You'll need to restart Rimworld for the changes to take effect. Settings will be merged, so your changes will be preserved. Do you want to continue?\nWarning: not applying these settings will lead to the pack not functioning as expected. If you wish to apply them later, you can do so through the mod settings.\n\nThe following mods require updating:\n\n{1}</MSS_Gen_Tech_Level_Advancing>
     <MSS_Gen_Tech_Level_Advancing_Restart>Config from "{0}" Preset have been imported. Please restart Rimworld to apply the configs</MSS_Gen_Tech_Level_Advancing_Restart>
     <MSS_Gen_FactionDefeated>You defeated {0} and have been awarded {1} reformation points!</MSS_Gen_FactionDefeated>
     <MSS_Gen_BabyAddedToFaction>A baby was born in your colony! You have been awarded {0} reformation points!</MSS_Gen_BabyAddedToFaction>
