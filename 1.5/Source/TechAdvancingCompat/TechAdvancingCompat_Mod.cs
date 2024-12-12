@@ -59,8 +59,13 @@ public class TechAdvancingCompat_Mod : Mod
                     def = VFET_DefOf.VFET_FormNexus;
                     break;
             }
-            if(def == null) return;
-            LookTargets lookTargets = new LookTargets(Find.Maps.Find(map => map.IsPlayerHome).PlayerPawnsForStoryteller);
+
+            if (def == null)
+            {
+                ModLog.Warn($"EraAdvancementDef for {newLevel} not found");
+                return;
+            }
+            LookTargets lookTargets = new(Find.Maps.Find(map => map.IsPlayerHome).PlayerPawnsForStoryteller);
 
             comp.AdvanceToEra(def);
             Find.LetterStack.ReceiveLetter(def.label, def.description, LetterDefOf.RitualOutcomePositive, lookTargets, null, null, null, null);

@@ -6,29 +6,36 @@ namespace MSS_Gen;
 
 public class ReformationPointsWorldComponent(World world) : WorldComponent(world), ISignalReceiver
 {
-    public static int OneYear = 3600000;
-    public int NextYearTick = OneYear;
+    public int NextYearTick = GenDate.TicksPerYear;
 
     public override void WorldComponentTick()
     {
         base.WorldComponentTick();
         if (Find.TickManager.TicksGame > NextYearTick)
         {
-            NextYearTick += OneYear;
-            AddPoints(MSS_GenMod.settings.ReformationPointsPerYear);
-            Messages.Message("MSS_Gen_NewYear".Translate(MSS_GenMod.settings.ReformationPointsPerDefeatedFaction), MessageTypeDefOf.PositiveEvent, true);
+            NextYearTick = Find.TickManager.TicksGame + GenDate.TicksPerYear;
+            if(AddPoints(MSS_GenMod.settings.ReformationPointsPerYear))
+                Messages.Message("MSS_Gen_NewYear".Translate(MSS_GenMod.settings.ReformationPointsPerDefeatedFaction), MessageTypeDefOf.PositiveEvent, true);
         }
     }
 
-    public void AddPoints(int points)
+    public bool AddPoints(int points)
     {
         if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
         {
             if (!Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.development.TryAddDevelopmentPoints(points))
             {
-                ModLog.Debug("Couldn't add reformation points");
+                ModLog.Warn($"Couldn't add reformation points to ideo {Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.name}");
+                return false;
             }
         }
+        else
+        {
+            ModLog.Warn("Couldn't find fluid ideo to add development points to.");
+            return false;
+        }
+
+        return true;
     }
 
     public override void FinalizeInit()
@@ -48,12 +55,12 @@ public class ReformationPointsWorldComponent(World world) : WorldComponent(world
         switch (signal.tag)
         {
             case Signals.MSS_Gen_BabyAddedToFaction:
-                AddPoints(MSS_GenMod.settings.ReformationPointsPerBaby);
-                Messages.Message("MSS_Gen_BabyAddedToFaction".Translate(MSS_GenMod.settings.ReformationPointsPerBaby), MessageTypeDefOf.PositiveEvent, true);
+                if(AddPoints(MSS_GenMod.settings.ReformationPointsPerBaby))
+                    Messages.Message("MSS_Gen_BabyAddedToFaction".Translate(MSS_GenMod.settings.ReformationPointsPerBaby), MessageTypeDefOf.PositiveEvent, true);
                 break;
             case Signals.MSS_Gen_FactionDefeated:
-                AddPoints(MSS_GenMod.settings.ReformationPointsPerDefeatedFaction);
-                Messages.Message("MSS_Gen_FactionDefeated".Translate(signal.args.GetArg(0), MSS_GenMod.settings.ReformationPointsPerDefeatedFaction), MessageTypeDefOf.PositiveEvent, true);
+                if(AddPoints(MSS_GenMod.settings.ReformationPointsPerDefeatedFaction))
+                    Messages.Message("MSS_Gen_FactionDefeated".Translate(signal.args.GetArg(0), MSS_GenMod.settings.ReformationPointsPerDefeatedFaction), MessageTypeDefOf.PositiveEvent, true);
                 break;
         }
     }
