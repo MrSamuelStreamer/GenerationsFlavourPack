@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationRemove">
+    <Operation Class="PatchOperationReplace">
         <xpath>*/HediffDef[defName="TK_OldAge"]/lethalSeverity</xpath>
+        <value>
+            <lethalSeverity>-1</lethalSeverity>
+        </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>*/HediffDef[defName="TK_OldAge"]/tendable</xpath>
