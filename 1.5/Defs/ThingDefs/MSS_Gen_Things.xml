@@ -14,6 +14,21 @@
         </stages>
     </HediffDef>
 
+    <ThoughtDef>
+        <defName>MSS_Gen_HHLove</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ThoughtWorker_HediffWithTarget</workerClass>
+        <hediff>MSS_Gen_HHLove</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>horny honey love</label>
+                <baseOpinionOffset>40</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
     <ThingDef ParentName="DrugBase">
         <defName>MSS_Gen_HornyHoney</defName>
         <label>horny honey</label>
