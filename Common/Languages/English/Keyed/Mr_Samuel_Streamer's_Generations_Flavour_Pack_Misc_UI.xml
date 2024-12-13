@@ -41,4 +41,6 @@
 
     <MSS_Gen_ArchonRaid_letterTitle>Strange signal</MSS_Gen_ArchonRaid_letterTitle>
     <MSS_Gen_ArchonRaid_letterDesc>You've received a strange signal. You can't fully decode it, but as best as you can tell, it's a countdown. It looks like it'll end tomorrow.</MSS_Gen_ArchonRaid_letterDesc>
+
+    <MSS_Gen_StatPart_FertilityBoost_Explanation>Generations 2: {0}</MSS_Gen_StatPart_FertilityBoost_Explanation>
 </LanguageData>
