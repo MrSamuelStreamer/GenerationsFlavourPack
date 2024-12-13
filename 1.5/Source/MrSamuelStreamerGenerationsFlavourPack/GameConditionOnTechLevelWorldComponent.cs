@@ -171,7 +171,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(raid.category, playerHome);
         raidParms.points *= MSS_GenMod.settings.ArchonRaidMultiplier;
         raidParms.faction = archonFaction;
-        int ticksToFire = Find.TickManager.TicksGame + GenDate.TicksPerHour;
+        int ticksToFire = Find.TickManager.TicksGame + GenDate.TicksPerDay;
         Find.Storyteller.incidentQueue.Add(raid, ticksToFire, raidParms, retryDurationTicks:GenDate.TicksPerHour);
 
         Find.LetterStack.ReceiveLetter("MSS_Gen_ArchonRaid_letterTitle".Translate(),
