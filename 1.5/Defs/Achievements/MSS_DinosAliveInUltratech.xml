@@ -90,6 +90,6 @@
             </RaceDefs>
         </tracker>
         <texPath>BMT_Prehistoric/Animals/TyrannosaurusRex/TyrannosaurusRex_south</texPath>
-        <points>5</points>
+        <points>50</points>
     </AchievementsExpanded.AchievementDef>
 </Defs>

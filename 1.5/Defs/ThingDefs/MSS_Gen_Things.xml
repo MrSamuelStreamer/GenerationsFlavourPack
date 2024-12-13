@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>MSS_Gen_HHLove</defName>
+        <label>horny honey</label>
+        <description>Horny Honey induced adoration. This increases an individual's opinion of someone else, and between adults increases the likelihood of romantic advances and marriage proposals, while reducing the chance of a breakup.</description>
+        <hediffClass>MSS_Gen.Hediff_RandomLove</hediffClass>
+        <targetPrefix>for</targetPrefix>
+        <isBad>false</isBad>
+        <stages>
+            <li></li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="DrugBase">
+        <defName>MSS_Gen_HornyHoney</defName>
+        <label>horny honey</label>
+        <description>A deathly sweet liquid secreted by the black hornets. Thought to bee an aphrodisiac, consuming it also leads to numbing the sensation of pain but sharpening one's reflexes, improving melee and shooting abilities.</description>
+        <descriptionHyperlinks>
+            <HediffDef>DankPyon_HornetHoneyHigh</HediffDef>
+            <HediffDef>DankPyon_HornetHoneyAddiction</HediffDef>
+            <HediffDef>MSS_Gen_HHLove</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Drug/HornetHoney</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>600</WorkToMake>
+            <MarketValue>53</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <techLevel>Medieval</techLevel>
+        <ingestible>
+            <joyKind>Chemical</joyKind>
+            <joy>0.40</joy>
+            <drugCategory>Hard</drugCategory>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <baseIngestTicks>80</baseIngestTicks>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Consume {0}</ingestCommandString>
+            <ingestReportString>Consuming {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>DankPyon_HornetHoneyHigh</hediffDef>
+                    <severity>0.5</severity>
+                    <toleranceChemical>DankPyon_HornetHoney</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>MSS_Gen_HHLove</hediffDef>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.4</offset>
+                    <toleranceChemical>DankPyon_HornetHoney</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>0.15</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>DankPyon_HornetHoney</chemical>
+                <addictiveness>0.026</addictiveness>
+                <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+                <needLevelOffset>0.9</needLevelOffset>
+                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <listOrder>200</listOrder>
+                <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+                <largeOverdoseChance>0.005</largeOverdoseChance>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
