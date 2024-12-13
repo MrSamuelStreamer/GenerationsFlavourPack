@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSS_Gen_GeneDistribution</defName>
+    <label>Gene Distribution</label>
+    <description>This is a selection of genes that will be randomly distributed very rarely to newly generated adults to spice up your colony a bit.</description>
+    <descriptionShort>Random genes to be distributed occasionally to new adutls.</descriptionShort>
+    <iconPath>UI/XenotypeIcons/Androidtype_Chef</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>Superclotting</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SwiftMeditation</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_HighEntropyCapacity</li>
+      <li>MoveSpeed_Quick</li>
+      <li>Mood_Sanguine</li>
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>ToxResist_Partial</li>
+      <li>Aggression_Aggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>KillThirst</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SlowMeleeHitter</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_FastShooter</li>
+      <li>LowSleep</li>
+      <li>Robust</li>
+      <li>Pain_Extra</li>
+      <li>Libido_High</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_ShortPregnancy</li>
+      <li>Beauty_Pretty</li>
+      <li>StrongStomach</li>
+      <li>Learning_Fast</li>
+      <li>Nearsighted</li>
+      <li>DarkVision</li>
+      <li>Instability_Mild</li>
+      <li>Unstoppable</li>
+      <li MayRequire="void.charactereditor">SZBodySize_07</li>
+      <li MayRequire="void.charactereditor">SZBodySize_08</li>
+      <li MayRequire="void.charactereditor">SZBodySize_09</li>
+      <li MayRequire="void.charactereditor">SZBodySize_10</li>
+      <li MayRequire="void.charactereditor">SZBodySize_11</li>
+      <li MayRequire="void.charactereditor">SZBodySize_12</li>
+      <li MayRequire="void.charactereditor">SZBodySize_13</li>
+      <li MayRequire="void.charactereditor">SZBodySize_14</li>
+    </genes>
+  </XenotypeDef>
+</Defs>
