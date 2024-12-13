@@ -155,15 +155,29 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
         GameCondition globalWarming = Find.World.gameConditionManager.GetActiveCondition(GameConditionDef.Named("GlobalWarming"));
         globalWarming?.End();
-        //
-        // GameCondition conditionGlobalWarming = GameConditionMaker.MakeCondition(GameConditionDef.Named("GlobalWarming"));
-        //
-        // Find.World.gameConditionManager.RegisterCondition(conditionGlobalWarming);
-        //
-        // Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
-        //     "MSS_Gen_IceAgeStart_letterDesc".Translate(),
-        //     LetterDefOf.ThreatBig
-        // );
+
+        int duration = Mathf.RoundToInt(new FloatRange(2f, 5f).RandomInRange * GenDate.TicksPerDay);
+        GameCondition storm = GameConditionMaker.MakeCondition(GameConditionDef.Named("VREA_PsychicStorm"), duration:duration);
+
+        Map playerHome = Find.Maps.FirstOrDefault(map => map.IsPlayerHome);
+
+        if(playerHome == null) return;
+
+        playerHome.gameConditionManager.RegisterCondition(storm);
+
+        IncidentDef raid = DefDatabase<IncidentDef>.AllDefsListForReading.FirstOrDefault(def => def.defName == "VREA_ArchonRaid");
+        Faction archonFaction = Find.FactionManager.AllFactions.FirstOrDefault(fac => fac.def.defName == "VRE_Archons");
+
+        IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(raid.category, playerHome);
+        raidParms.points *= MSS_GenMod.settings.ArchonRaidMultiplier;
+        raidParms.faction = archonFaction;
+        int ticksToFire = Find.TickManager.TicksGame + GenDate.TicksPerHour;
+        Find.Storyteller.incidentQueue.Add(raid, ticksToFire, raidParms, retryDurationTicks:GenDate.TicksPerHour);
+
+        Find.LetterStack.ReceiveLetter("MSS_Gen_ArchonRaid_letterTitle".Translate(),
+            "MSS_Gen_ArchonRaid_letterDesc".Translate(),
+            LetterDefOf.ThreatBig
+        );
     }
 
     public void Notify_SignalReceived(Signal signal)

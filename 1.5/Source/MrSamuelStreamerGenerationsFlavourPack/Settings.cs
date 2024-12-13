@@ -9,6 +9,7 @@ public class Settings : ModSettings
 {
     public Vector2 scrollPosition = Vector2.zero;
 
+    public int ArchonRaidMultiplier = 2;
     public int ReformationPointsPerYear = 1;
     public int ReformationPointsPerTechLevel = 5;
     public int ReformationPointsPerBaby = 1;
@@ -18,7 +19,7 @@ public class Settings : ModSettings
 
     public void DoWindowContents(Rect wrect)
     {
-        float scrollViewHeigh = 24f+12f+24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
+        float scrollViewHeigh = 24f+12f+24f+12f+24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
 
         List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
 
@@ -33,6 +34,11 @@ public class Settings : ModSettings
 
         try
         {
+            options.Label("MSS_Gen_Settings_ArchonRaidMultiplier".Translate(ArchonRaidMultiplier));
+            options.IntAdjuster(ref ArchonRaidMultiplier, 1, 1);
+
+            options.Gap();
+
             options.CheckboxLabeled("MSS_Gen_Settings_SeasonalStoryteller", ref SeasonalStoryteller);
             options.Gap();
             if (ModLister.GetActiveModWithIdentifier("garethp.modlistconfigurator") != null)
@@ -87,6 +93,7 @@ public class Settings : ModSettings
 
     public override void ExposeData()
     {
+        Scribe_Values.Look(ref ArchonRaidMultiplier, "ArchonRaidMultiplier", 2);
         Scribe_Values.Look(ref ReformationPointsPerYear, "ReformationPointsPerYear", 1);
         Scribe_Values.Look(ref ReformationPointsPerTechLevel, "ReformationPointsPerYear", 5);
         Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerBaby", 1);

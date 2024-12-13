@@ -11,6 +11,7 @@ public static class MSS_GenDefOf
     // public static GeneDef YourPrefix_YourGeneDefName;
 
     public static GeneDef MSS_Gen_VoidsEmbrace;
+    public static IncidentDef VREA_PsychicStorm;
 
     static MSS_GenDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MSS_GenDefOf));
 }
