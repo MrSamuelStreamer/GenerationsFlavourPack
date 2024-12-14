@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using Verse;
 
@@ -23,6 +24,22 @@ public class CompLegendaryTracker: ThingComp
             Scribe_Values.Look(ref timesUsed, "timesUsed");
             Scribe_Values.Look(ref diedWhileEquipped, "diedWhileEquipped");
         }
+    }
+
+    public override string GetDescriptionPart()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine("MSS_Gen_Tracked".Translate());
+        foreach ((Pawn pawn, PawnUsageTracker tracker) in pawnUsageTrackers)
+        {
+            sb.AppendLine("MSS_Gen_UsedBy".Translate(
+                pawn.Name.ToStringFull,
+                tracker.ticksEquipped.ToStringTicksToPeriod(false, true, false, true),
+                tracker.timesUsed,
+                tracker.Kills
+                ));
+        }
+        return sb.ToString();
     }
 
     public TechLevel BecameLegendaryAtTechLevel = TechLevel.Undefined;
@@ -102,17 +119,4 @@ public class CompLegendaryTracker: ThingComp
             TrackerForPawn(equipmentTracker.pawn).diedWhileEquipped = true;
         }
     }
-
-    public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
-    {
-        base.Notify_Killed(prevMap, dinfo);
-        ModLog.Debug("here");
-    }
-
-    public override void Notify_KilledLeavingsLeft(List<Thing> leavings)
-    {
-        base.Notify_KilledLeavingsLeft(leavings);
-        ModLog.Debug("here");
-    }
-
 }
