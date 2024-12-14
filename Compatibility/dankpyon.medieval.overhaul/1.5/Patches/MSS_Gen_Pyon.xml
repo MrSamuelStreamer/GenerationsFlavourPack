@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="DankPyon_HornetNest"]/killedLeavings</xpath>
         <value>
-            <MSS_Gen_HornyHoney>2</MSS_Gen_HornyHoney>
+            <MSS_Gen_HornyHoney>10</MSS_Gen_HornyHoney>
         </value>
     </Operation>
 </Patch>
