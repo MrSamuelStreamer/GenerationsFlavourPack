@@ -22,9 +22,9 @@ public static class SettingsImporter_Patch
     [HarmonyPrefix]
     public static bool ShouldImport(ref bool __result, string importFilePath, string modId, string modName)
     {
-        if (modId == "2817607528" && modName.ToLower() == "ResourceDictionaryMod".ToLower())
+        if (modId == "2817607528")
         {
-            // skip check for ResourceDictionaryMod
+            ModLog.Log("skip check for ResourceDictionaryMod");
             __result = true;
             return false;
         }

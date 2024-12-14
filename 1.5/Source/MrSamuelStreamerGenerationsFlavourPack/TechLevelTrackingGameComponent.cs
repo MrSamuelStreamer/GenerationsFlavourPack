@@ -10,15 +10,25 @@ public class TechLevelTrackingGameComponent: GameComponent
 
 
     public TechLevelTrackingGameComponent(): base(){}
+    public TechLevelTrackingGameComponent(Game game): base(){}
 
     public override void FinalizeInit()
     {
-        currentTechLevel = Find.FactionManager.OfPlayer.def.techLevel;
+        if(Find.FactionManager != null)
+            currentTechLevel = Find.FactionManager.OfPlayer.def.techLevel;
     }
 
     public override void GameComponentTick()
     {
         base.GameComponentTick();
+
+        if(Find.FactionManager == null) return;
+
+        if (currentTechLevel == TechLevel.Undefined)
+        {
+            currentTechLevel = Find.FactionManager.OfPlayer.def.techLevel;
+            return;
+        }
 
         if (Find.FactionManager.OfPlayer.def.techLevel <= currentTechLevel)
         {

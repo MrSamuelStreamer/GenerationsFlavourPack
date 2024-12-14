@@ -22,12 +22,6 @@
             <downloadUrl>https://github.com/Garethp/rimworld-modlist-configurator</downloadUrl>
         </li>
         <li>
-            <packageId>ghxx.techadvancing</packageId>
-            <displayName>Tech-Advancing </displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/735268789</steamWorkshopUrl>
-            <downloadUrl>https://github.com/RimWorldMod/Tech-Advancing</downloadUrl>
-        </li>
-        <li>
             <packageId>oskarpotocki.vfe.tribals</packageId>
             <displayName>Vanilla Factions Expanded - Tribals</displayName>
             <steamWorkshopUrl>steam://url/CommunityFilePage/3079786283</steamWorkshopUrl>

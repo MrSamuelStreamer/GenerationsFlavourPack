@@ -32,7 +32,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
         foreach (TechLevelConfigDef presetDef in DefDatabase<TechLevelConfigDef>.AllDefsListForReading)
         {
-            var presetDir = presetLocation.GetDirectories().FirstOrDefault(dir => string.Equals(dir.Name, presetDef.presetPath, StringComparison.CurrentCultureIgnoreCase));
+            DirectoryInfo presetDir = presetLocation.GetDirectories().FirstOrDefault(dir => string.Equals(dir.Name, presetDef.presetPath, StringComparison.CurrentCultureIgnoreCase));
             if (presetDir is not { Exists: true })
             {
                 ModLog.Warn($"Could not find preset location {presetDef.presetPath} for preset {presetDef.defName}");
@@ -66,45 +66,47 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
 
     public void Notify_SignalReceived(Signal signal)
     {
-        if (signal.tag == Signals.MSS_Gen_TechLevelChanged)
+        if (signal.tag != Signals.MSS_Gen_TechLevelChanged)
         {
-            if (!Loaded)
+            return;
+        }
+
+        if (!Loaded)
+        {
+            LoadPresets();
+        }
+
+        TechLevel newLevel = (TechLevel)signal.args.GetArg("newTechLevel").arg;
+
+        if(newLevel <= LatestTechLevel) return;
+        LatestTechLevel = newLevel;
+
+        ModLog.Log($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg("oldTechLevel").ToString()}");
+
+        if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
+        {
+            if (!Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.development.TryAddDevelopmentPoints(MSS_GenMod.settings.ReformationPointsPerTechLevel))
             {
-                LoadPresets();
-            }
-
-            TechLevel newLevel = (TechLevel)signal.args.GetArg("newTechLevel").arg;
-
-            if(newLevel <= LatestTechLevel) return;
-            LatestTechLevel = newLevel;
-
-            ModLog.Debug($"TechConfigWorldComponent got change to {newLevel} from {signal.args.GetArg("oldTechLevel").ToString()}");
-
-            if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
-            {
-                if (!Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.development.TryAddDevelopmentPoints(MSS_GenMod.settings.ReformationPointsPerTechLevel))
-                {
-                    ModLog.Debug("Couldn't add reformation points");
-                }
-                else
-                {
-                    Messages.Message("MSS_Gen_TechLeve".Translate(MSS_GenMod.settings.ReformationPointsPerTechLevel), MessageTypeDefOf.PositiveEvent, false);
-                }
-            }
-
-            List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
-
-            TechLevelConfigDef tlcd = defs.FirstOrDefault(tlcd => MeetsRequirements(newLevel, tlcd));
-
-            if (tlcd is not null)
-            {
-                ModLog.Debug($"TechConfigWorldComponent found TechLevelConfigDef for {newLevel} - {tlcd.ToString()}");
-                MergeSettings(tlcd.defName, newLevel.ToString());
+                ModLog.Log("Couldn't add reformation points");
             }
             else
             {
-                ModLog.Debug($"TechConfigWorldComponent found no relevant TechLevelConfigDef for {newLevel}");
+                Messages.Message("MSS_Gen_TechLeve".Translate(MSS_GenMod.settings.ReformationPointsPerTechLevel), MessageTypeDefOf.PositiveEvent, false);
             }
+        }
+
+        List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
+
+        TechLevelConfigDef tlcd = defs.FirstOrDefault(tlcd => MeetsRequirements(newLevel, tlcd));
+
+        if (tlcd is not null)
+        {
+            ModLog.Log($"TechConfigWorldComponent found TechLevelConfigDef for {newLevel} - {tlcd}");
+            MergeSettings(tlcd.defName, newLevel.ToString());
+        }
+        else
+        {
+            ModLog.Log($"TechConfigWorldComponent found no relevant TechLevelConfigDef for {newLevel}");
         }
     }
 
@@ -119,7 +121,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world), ISig
             buttonAAction:
             () =>
             {
-                importer.OverwriteSettings(presetDefName);
+                importer.MergeSettings(presetDefName);
                 Find.WindowStack.Add(new Dialog_MessageBox(
                     "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
             }, buttonBText: "Cancel", layer: WindowLayer.Super));

@@ -50,7 +50,7 @@ public class CompLegendaryTracker: ThingComp
     {
         base.PostExposeData();
         Scribe_Values.Look(ref BecameLegendaryAtTechLevel, "BecameLegendaryAtTechLevel", TechLevel.Undefined);
-        Scribe_Collections.Look(ref pawnUsageTrackers, "pawnUsageTrackers", LookMode.Reference, LookMode.Value);
+        Scribe_Collections.Look(ref pawnUsageTrackers, "pawnUsageTrackers", LookMode.Reference, LookMode.Deep);
     }
 
     public PawnUsageTracker TrackerForPawn(Pawn pawn)

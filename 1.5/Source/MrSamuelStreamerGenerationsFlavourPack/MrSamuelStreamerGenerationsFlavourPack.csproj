@@ -66,6 +66,30 @@
     <Content Include="..\..\..\modlist.xml">
       <Link>GenerationsFlavourPack\modlist.xml</Link>
     </Content>
+    <Content Include="..\..\..\Settings\Industrial\ModSettingsFrameworkMod_Settings.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\ModSettingsFrameworkMod_Settings.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_1668983184_RimThemes.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_1668983184_RimThemes.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_1938420742_VEEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_1938420742_VEEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_2775017012_VBEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_2775017012_VBEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_3230046902_Mod_CherryPicker.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Industrial\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Industrial\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
+    </Content>
     <Content Include="..\..\..\Settings\Medieval\Mod_1938420742_VEEMod.xml">
       <Link>GenerationsFlavourPack\Settings\Medieval\Mod_1938420742_VEEMod.xml</Link>
     </Content>
@@ -90,29 +114,59 @@
     <Content Include="..\..\..\Settings\Medieval\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
       <Link>GenerationsFlavourPack\Settings\Medieval\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_1938420742_VEEMod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_1938420742_VEEMod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\ModSettingsFrameworkMod_Settings.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\ModSettingsFrameworkMod_Settings.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_1668983184_RimThemes.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_1668983184_RimThemes.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_1938420742_VEEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_1938420742_VEEMod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_2775017012_VBEMod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2775017012_VBEMod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_2329011599_MechShipsMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_2329011599_MechShipsMod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_2877699803_VHGE_Mod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_2877699803_VHGE_Mod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_3230046902_Mod_CherryPicker.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_3246108162_Mod_GiddyUp.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3246108162_Mod_GiddyUp.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_2775017012_VBEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_2775017012_VBEMod.xml</Link>
     </Content>
-    <Content Include="..\..\..\Settings\Neolithic\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
-      <Link>GenerationsFlavourPack\Settings\Neolithic\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
+    <Content Include="..\..\..\Settings\Spacer\Mod_3230046902_Mod_CherryPicker.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Spacer\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Spacer\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\ModSettingsFrameworkMod_Settings.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\ModSettingsFrameworkMod_Settings.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_1668983184_RimThemes.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_1668983184_RimThemes.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_1938420742_VEEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_1938420742_VEEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_2329011599_MechShipsMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_2329011599_MechShipsMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_2564042934_ChooseWildAnimalSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_2564446762_ChooseWildPlantSpawns_Mod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_2775017012_VBEMod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_2775017012_VBEMod.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_3230046902_Mod_CherryPicker.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_3230046902_Mod_CherryPicker.xml</Link>
+    </Content>
+    <Content Include="..\..\..\Settings\Ultra\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml">
+      <Link>GenerationsFlavourPack\Settings\Ultra\Mod_3268401022_VanillaAspirationsExpanded_Mod.xml</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>
