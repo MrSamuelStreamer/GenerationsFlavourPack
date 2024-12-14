@@ -9,7 +9,7 @@ public class StatPart_FertilityBoost: StatPart
 
     public override void TransformValue(StatRequest req, ref float val)
     {
-        if (req.Thing is Pawn pawn)
+        if (req.Thing is Pawn pawn && val > 0f)
         {
             val += factor;
         }
