@@ -51,6 +51,12 @@
           <HintPath Condition="Exists('../../../../../../../workshop/content/294100/3009304695/Assemblies/ModlistConfigurator.dll')">../../../../../../../workshop/content/294100/3009304695/Assemblies/ModlistConfigurator.dll</HintPath>
           <Private>False</Private>
       </Reference>
+      <Reference Include="VFETribals">
+          <HintPath Condition="Exists('../../../../VanillaFactionsExpanded-Tribals/1.5/Assemblies/VFETribals.dll')">../../../../VanillaFactionsExpanded-Tribals/1.5/Assemblies/VFETribals.dll</HintPath>
+          <HintPath Condition="Exists('../../../../3079786283/1.5/Assemblies/VFETribals.dll')">../../../../3079786283/1.5/Assemblies/VFETribals.dll</HintPath>
+          <HintPath Condition="Exists('../../../../../../../workshop/content/294100/3079786283/1.5/Assemblies/VFETribals.dll')">../../../../../../../workshop/content/294100/3079786283/1.5/Assemblies/VFETribals.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Condition="Exists('../../../../../Data')" Include="../../../../../Data/**/*">
@@ -130,6 +136,19 @@
     <CompatibilityFiles Include="../../../Compatibility/**" />
 
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
+
+    <ReleaseFiles Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\ThingDefs\MSS_Gen_Things.xml">
+      <Link>GenerationsFlavourPack\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\ThingDefs\MSS_Gen_Things.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Patches\MSS_Gen_Pyon.xml">
+      <Link>GenerationsFlavourPack\Compatibility\dankpyon.medieval.overhaul\1.5\Patches\MSS_Gen_Pyon.xml</Link>
+    </ReleaseFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">
+      <Link>GenerationsFlavourPack\Compatibility\dankpyon.medieval.overhaul\1.5\Defs</Link>
+    </Folder>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
     <RemoveDir Condition="Exists('../../../Release')" Directories="../../../Release" />

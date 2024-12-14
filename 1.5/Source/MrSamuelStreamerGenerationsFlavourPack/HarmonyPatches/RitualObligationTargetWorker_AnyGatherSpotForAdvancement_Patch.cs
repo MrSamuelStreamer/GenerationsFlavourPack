@@ -2,7 +2,7 @@
 using RimWorld;
 using VFETribals;
 
-namespace MSS_Gen.TechAdvancingCompat.HarmonyPatches;
+namespace MSS_Gen.HarmonyPatches;
 
 [HarmonyPatch(typeof(RitualObligationTargetWorker_AnyGatherSpot))]
 public static class RitualObligationTargetWorker_AnyGatherSpotForAdvancement_Patch

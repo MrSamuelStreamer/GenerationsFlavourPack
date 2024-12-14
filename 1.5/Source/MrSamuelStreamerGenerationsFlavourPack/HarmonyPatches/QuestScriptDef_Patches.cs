@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using System.Linq;
 using HarmonyLib;
+using MSS_Gen.TechAdvancingCompat;
 using RimWorld;
 using RimWorld.QuestGen;
-using Verse;
 
-namespace MSS_Gen.TechAdvancingCompat.HarmonyPatches;
+namespace MSS_Gen.HarmonyPatches;
 
 [HarmonyPatch(typeof(QuestScriptDef))]
 public static class QuestScriptDef_Patches

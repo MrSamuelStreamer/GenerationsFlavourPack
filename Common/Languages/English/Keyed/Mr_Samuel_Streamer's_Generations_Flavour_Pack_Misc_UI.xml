@@ -45,4 +45,7 @@
     <MSS_Gen_StatPart_FertilityBoost_Explanation>Generations 2: {0}</MSS_Gen_StatPart_FertilityBoost_Explanation>
 
     <MSS_Gen_Settings_ArchonRaidMultiplier>Multiplier for archon raid points</MSS_Gen_Settings_ArchonRaidMultiplier>
+
+    <MSS_Gen_Tracked>Tracked Usage:</MSS_Gen_Tracked>
+    <MSS_Gen_UsedBy>- {0} used this for {1}. They used it {2} times, and got {3} kills.</MSS_Gen_UsedBy>
 </LanguageData>

@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using HarmonyLib;
+using MSS_Gen.TechAdvancingCompat;
 using Verse;
 
-namespace MSS_Gen.TechAdvancingCompat.HarmonyPatches;
+namespace MSS_Gen.HarmonyPatches;
 
 [HarmonyPatch(typeof(RecipeDef))]
 public static class RecipeDef_Patches

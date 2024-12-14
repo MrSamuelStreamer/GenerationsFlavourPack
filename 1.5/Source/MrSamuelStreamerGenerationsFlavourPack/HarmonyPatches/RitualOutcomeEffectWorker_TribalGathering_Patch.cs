@@ -4,7 +4,7 @@ using HarmonyLib;
 using UnityEngine;
 using VFETribals;
 
-namespace MSS_Gen.TechAdvancingCompat.HarmonyPatches;
+namespace MSS_Gen.HarmonyPatches;
 
 [HarmonyPatch(typeof(RitualOutcomeEffectWorker_TribalGathering))]
 public static class RitualOutcomeEffectWorker_TribalGathering_Patch
