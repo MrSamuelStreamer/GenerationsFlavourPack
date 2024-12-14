@@ -27,9 +27,9 @@
         <value>
             <points>
                 <li>(0.6, 0.0)</li>
-                <li>(0.75, 0.01)</li>
-                <li>(1.0, 0.05)</li>
-                <li>(1.05, 0.1)</li>
+                <li>(0.75, 0.05)</li>
+                <li>(1.0, 0.1)</li>
+                <li>(1.05, 0.3)</li>
             </points>
         </value>
     </Operation>
@@ -56,4 +56,23 @@
             </li>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biotech</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Normal</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>*/GeneDef[defName="DiseaseFree"]/hediffGiversCannotGive</xpath>
+                    <value>
+                        <li>MSS_Gen_CognitiveDecline</li>
+                        <li>MSS_Gen_CompromisedImmunity</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 </Patch>
