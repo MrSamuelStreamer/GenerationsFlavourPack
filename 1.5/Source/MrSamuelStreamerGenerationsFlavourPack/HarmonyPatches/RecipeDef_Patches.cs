@@ -10,7 +10,7 @@ public static class RecipeDef_Patches
 {
     public static bool Available(RecipeDef __instance, ref bool __result)
     {
-        if (DisableForTechLevelDef.DisabledForThisTechLevel().SelectMany(def => def.recipes).Any(rec => rec == __instance))
+        if (DisableForTechLevelDef.DisabledRecipiesForTechLevels().Any(rec => rec == __instance))
         {
             __result = false;
             return false;
