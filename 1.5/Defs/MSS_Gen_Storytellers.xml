@@ -1,23 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
-    <!-- Example usage -->
-    <!-- <MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef> -->
-    <!--     <defName>MSS_Gen_DisableForIndustrial</defName> -->
-    <!--     <techLevel>Industrial</techLevel> -->
-    <!--     <recipes> -->
-    <!--         <li>ButcherCorpseFlesh</li> -->
-    <!--     </recipes> -->
-    <!--     <things> -->
-    <!--         <li>Beer</li> -->
-    <!--     </things> -->
-    <!--     <quests> -->
-    <!--         <li>OpportunitySite_BanditCamp</li> -->
-    <!--     </quests> -->
-    <!--     <incidents> -->
-    <!--         <li>Disease_Flu</li> -->
-    <!--     </incidents> -->
-    <!-- </MSS_Gen.TechAdvancingCompat.DisableForTechLevelDef> -->
-
     <!-- Storyteller per Tech Level -->
     <MSS_Gen.TechAdvancingCompat.StoryTellerForTechLevelDef MayRequire="oskarpotocki.vfe.tribals">
         <defName>MSS_Gen_TalonForTribal</defName>

@@ -184,6 +184,9 @@
     <StartProgram>$(SolutionDir)../../../../RimWorldWin64.exe</StartProgram>
   </PropertyGroup>
   <ItemGroup>
+    <CompatibilityFiles Include="..\..\Defs\MSS_Gen_Storytellers.xml">
+      <Link>GenerationsFlavourPack\1.5\Defs\MSS_Gen_Storytellers.xml</Link>
+    </CompatibilityFiles>
     <ReleaseFiles Include="../../../1.*/**" Exclude="../../../1.*/Source/**" />
     <AboutFiles Include="../../../About/**" Exclude="../../../About/*.png~"/>
     <CommonFiles Include="../../../Common/**" />
