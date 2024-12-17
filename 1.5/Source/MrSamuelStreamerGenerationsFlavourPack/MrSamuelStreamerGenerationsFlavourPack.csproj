@@ -198,6 +198,10 @@
     <ReleaseFiles Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Patches\MSS_Gen_Pyon.xml">
       <Link>GenerationsFlavourPack\Compatibility\dankpyon.medieval.overhaul\1.5\Patches\MSS_Gen_Pyon.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Patches\MSS_Gen_Rituals.xml">
+      <Link>GenerationsFlavourPack\1.5\Patches\MSS_Gen_Rituals.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">
