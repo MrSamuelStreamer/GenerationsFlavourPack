@@ -31,6 +31,6 @@ public static class CompQuality_Patch
             compLegendaryTracker.Initialize(new CompProperties());
         }
 
-        compLegendaryTracker.BecameLegendaryAtTechLevel = Find.FactionManager.OfPlayer.def.techLevel;
+        compLegendaryTracker.BecameLegendaryAtTechLevel = Find.FactionManager.OfPlayer == null ? TechLevel.Undefined : Find.FactionManager.OfPlayer.def.techLevel;
     }
 }
