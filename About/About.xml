@@ -44,6 +44,8 @@
         <li>dankpyon.medieval.overhaul</li>
         <li>anthitei.athsstyleableframework.style</li>
         <li>erin.decorations</li>
+        <li>zenlor.motweaks</li>
+        <li>vr.mopatches</li>
         <li>koni.misc.steamworlddefenses</li>
         <li>biomesteam.biomesfossils</li>
         <li>van.dacrypts</li>
@@ -56,5 +58,6 @@
         <li>bambaryla.bor</li>
         <li>aoba.fortress.industrial</li>
         <li>alias.doormats</li>
+        <li>ferny.progressioncore</li>
     </loadAfter>
 </ModMetaData>
