@@ -4,7 +4,7 @@
     <QuestScriptDef>
         <defName>MSS_Gen_MarriageRequestLeave</defName>
         <label>Marriage Request (Leave Colony)</label>
-        <rootSelectionWeight>1.1</rootSelectionWeight>
+        <rootSelectionWeight>3</rootSelectionWeight>
         <rootMinProgressScore>8</rootMinProgressScore>
         <defaultChallengeRating>1</defaultChallengeRating>
         <expireDaysRange>4~8</expireDaysRange>
@@ -98,7 +98,7 @@
     <QuestScriptDef>
         <defName>MSS_Gen_MarriageRequestStay</defName>
         <label>Marriage Request (Stay in Colony)</label>
-        <rootSelectionWeight>1.1</rootSelectionWeight>
+        <rootSelectionWeight>3</rootSelectionWeight>
         <rootMinProgressScore>8</rootMinProgressScore>
         <defaultChallengeRating>1</defaultChallengeRating>
         <expireDaysRange>4~8</expireDaysRange>
