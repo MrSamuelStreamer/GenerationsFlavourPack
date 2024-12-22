@@ -22,6 +22,7 @@ public static class CompQuality_Patch
     [HarmonyPostfix]
     public static void SetQualityPostfix(CompQuality __instance, QualityCategory q)
     {
+        if(Find.FactionManager == null || Find.FactionManager.OfPlayer == null) return;
         if(!validCategories.Contains(q)) return;
         if (!__instance.parent.TryGetComp(out CompLegendaryTracker compLegendaryTracker))
         {
