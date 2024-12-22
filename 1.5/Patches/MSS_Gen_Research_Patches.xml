@@ -4,12 +4,6 @@
         <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
-        <value>
-            <li>MSS_Gen_Classical</li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="VFEC_Togas"]/prerequisites</xpath>
         <value>
             <li>MSS_Gen_Classical</li>
