@@ -22,6 +22,14 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
 
     public DirectoryInfo presetLocation => MSS_GenMod.mod.Content.ModMetaData.RootDir.GetDirectories().FirstOrDefault(dir => dir.Name == "Settings");
 
+    public bool HaveChangedSettingsThisTick = false;
+
+    public override void WorldComponentTick()
+    {
+        base.WorldComponentTick();
+        HaveChangedSettingsThisTick = false;
+    }
+
     public void LoadPresets()
     {
         Dictionary<string, Preset> Presets = (Dictionary<string, Preset>)PresetsField.Value.GetValue(new SettingsImporter());
@@ -53,6 +61,10 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
 
     public void SetNewConfigs(TechLevel techLevel)
     {
+        if(HaveChangedSettingsThisTick) return;
+
+        HaveChangedSettingsThisTick = true;
+        
         Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_TechLevelChanged,
             new NamedArgument(techLevel, "newTechLevel")
         ));
