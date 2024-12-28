@@ -5,7 +5,7 @@
 		<percentResearchNeeded>0.95</percentResearchNeeded>
 		<useActualTechLevel>True</useActualTechLevel>
 		<numTechsBehind>-1</numTechsBehind>
-		<numTechsAhead>-1</numTechsAhead>
+		<numTechsAhead>0</numTechsAhead>
 		<empireIsAlwaysEligible>False</empireIsAlwaysEligible>
 		<VoidTechTechnologyLevel>6</VoidTechTechnologyLevel>
 		<VoidTechTechnologyLevel>6</VoidTechTechnologyLevel>
