@@ -88,7 +88,7 @@ public class QuestNode_GetUnmarriedPawn : QuestNode
     private bool IsGoodPawn(Pawn pawn)
     {
         Faction faction = pawn.Faction;
-        if (faction == null || !faction.def.humanlikeFaction || faction.defeated || faction.Hidden || faction.IsPlayer || pawn.IsPrisoner)
+        if (faction == null || !faction.def.humanlikeFaction || faction.defeated || faction.Hidden || faction.IsPlayer || pawn.IsPrisoner || !pawn.ageTracker.Adult)
             return false;
 
         return !pawn.Faction.def.permanentEnemy && pawn.GetSpouses(false).NullOrEmpty();
