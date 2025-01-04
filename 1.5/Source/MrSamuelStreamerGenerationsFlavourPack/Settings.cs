@@ -13,13 +13,17 @@ public class Settings : ModSettings
     public int ReformationPointsPerYear = 1;
     public int ReformationPointsPerTechLevel = 5;
     public int ReformationPointsPerBaby = 1;
+    public int ReformationPointsPerDefeatedSettlement = 1;
     public int ReformationPointsPerDefeatedFaction = 5;
+    public int TechsToGetPoints = 5;
+    public int ReformationPointsForTechs = 1;
+    public int ReformationPointsForLegendary = 1;
 
     public bool SeasonalStoryteller = true;
 
     public void DoWindowContents(Rect wrect)
     {
-        float scrollViewHeigh = 24f+12f+24f+12f+24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f;
+        float scrollViewHeigh = 24f+12f+24f+12f+24f+12f+12f+12f+12f+24f+24f+24f+24f+12f+24f+24f+12f+24f+24f+12f+24f+24f+12f+24f+24f+12f+24f+24f+12f+24f+24f;
 
         List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
 
@@ -79,8 +83,29 @@ public class Settings : ModSettings
 
             options.Gap();
 
+            options.Label("MSS_Gen_Settings_ReformationPointsPerDefeatedSettlement".Translate(ReformationPointsPerDefeatedSettlement));
+            options.IntAdjuster(ref ReformationPointsPerDefeatedSettlement, 1, 0);
+
+            options.Gap();
+
+
             options.Label("MSS_Gen_Settings_ReformationPointsPerDefeatedFaction".Translate(ReformationPointsPerDefeatedFaction));
             options.IntAdjuster(ref ReformationPointsPerDefeatedFaction, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerDefeatedFaction".Translate(TechsToGetPoints));
+            options.IntAdjuster(ref TechsToGetPoints, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsPerDefeatedFaction".Translate(ReformationPointsForTechs));
+            options.IntAdjuster(ref ReformationPointsForTechs, 1, 0);
+
+            options.Gap();
+
+            options.Label("MSS_Gen_Settings_ReformationPointsForLegendary".Translate(ReformationPointsForLegendary));
+            options.IntAdjuster(ref ReformationPointsForLegendary, 1, 0);
 
             options.Gap();
         }
@@ -97,7 +122,11 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref ReformationPointsPerYear, "ReformationPointsPerYear", 1);
         Scribe_Values.Look(ref ReformationPointsPerTechLevel, "ReformationPointsPerYear", 5);
         Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerBaby", 1);
-        Scribe_Values.Look(ref ReformationPointsPerBaby, "ReformationPointsPerDefeatedFaction", 5);
+        Scribe_Values.Look(ref ReformationPointsPerDefeatedSettlement, "ReformationPointsPerDefeatedSettlement", 1);
+        Scribe_Values.Look(ref ReformationPointsPerDefeatedFaction, "ReformationPointsPerDefeatedFaction", 5);
+        Scribe_Values.Look(ref TechsToGetPoints, "TechsToGetPoints", 5);
+        Scribe_Values.Look(ref ReformationPointsForTechs, "ReformationPointsForTechs", 1);
+        Scribe_Values.Look(ref ReformationPointsForLegendary, "ReformationPointsForLegendary", 1);
         Scribe_Values.Look(ref SeasonalStoryteller, "SeasonalStoryteller", true);
     }
 }

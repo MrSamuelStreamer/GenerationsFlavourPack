@@ -10,6 +10,8 @@ namespace MSS_Gen.HarmonyPatches;
 [HarmonyPatch(typeof(CompQuality))]
 public static class CompQuality_Patch
 {
+    public static ReformationPointsWorldComponent Comp => Find.World.GetComponent<ReformationPointsWorldComponent>();
+
     public static HashSet<QualityCategory> validCategories = new()
     {
         QualityCategory.Good,
@@ -20,7 +22,7 @@ public static class CompQuality_Patch
 
     [HarmonyPatch(nameof(CompQuality.SetQuality))]
     [HarmonyPostfix]
-    public static void SetQualityPostfix(CompQuality __instance, QualityCategory q)
+    public static void SetQualityPostfix(CompQuality __instance, QualityCategory q, ArtGenerationContext? source)
     {
         if(Find.FactionManager == null || Find.FactionManager.OfPlayer == null) return;
         if(!validCategories.Contains(q)) return;
@@ -33,5 +35,8 @@ public static class CompQuality_Patch
         }
 
         compLegendaryTracker.BecameLegendaryAtTechLevel = Find.FactionManager.OfPlayer == null ? TechLevel.Undefined : Find.FactionManager.OfPlayer.def.techLevel;
+
+        if(Comp.AddPoints(MSS_GenMod.settings.ReformationPointsForLegendary))
+            Messages.Message("MSS_Gen_ReformationPointsForLegendary".Translate(__instance.parent.LabelCap, MSS_GenMod.settings.ReformationPointsForLegendary), MessageTypeDefOf.PositiveEvent, true);
     }
 }

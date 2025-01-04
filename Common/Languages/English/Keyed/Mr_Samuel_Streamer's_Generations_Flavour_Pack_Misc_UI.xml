@@ -9,11 +9,15 @@
     <MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>Reformation points awarded per faction defeated - {0}</MSS_Gen_Settings_ReformationPointsPerDefeatedFaction>
     <MSS_Gen_Tech_Level_Advancing>Congratulations, you've advanced to the {0} tech level!\n\nWe need to make some changes now.  You'll need to restart Rimworld for the changes to take effect. Settings will be merged, so your changes will be preserved. Do you want to continue?\nWarning: not applying these settings will lead to the pack not functioning as expected. If you wish to apply them later, you can do so through the mod settings.\n\nThe following mods require updating:\n\n{1}</MSS_Gen_Tech_Level_Advancing>
     <MSS_Gen_Tech_Level_Advancing_Restart>Config from "{0}" Preset have been imported. Please restart Rimworld to apply the configs</MSS_Gen_Tech_Level_Advancing_Restart>
+    <MSS_Gen_SettlementDefeated>You defeated the {0} settlement of {1} and have been awarded {2} reformation points!</MSS_Gen_SettlementDefeated>
     <MSS_Gen_FactionDefeated>You defeated {0} and have been awarded {1} reformation points!</MSS_Gen_FactionDefeated>
     <MSS_Gen_BabyAddedToFaction>A baby was born in your colony! You have been awarded {0} reformation points!</MSS_Gen_BabyAddedToFaction>
     <MSS_Gen_NewYear>You made it through the year! You have been awarded {0} reformation points!</MSS_Gen_NewYear>
     <MSS_Gen_TechLeve>You advanced in tech level! You have been awarded {0} reformation points!</MSS_Gen_TechLeve>
-
+    <MSS_Gen_YearsPassed>{0} years have passed! You have been awarded {1} reformation points!</MSS_Gen_YearsPassed>
+    <MSS_Gen_ReformationPointsForTechs>You researched {0} projects! You have been awarded {1} reformation points!</MSS_Gen_ReformationPointsForTechs>
+    <MSS_Gen_ReformationPointsYearsInColony>{0} was with the colony for {1} years before passing. You have been awarded {2} reformation points.</MSS_Gen_ReformationPointsYearsInColony>
+    <MSS_Gen_ReformationPointsForLegendary>A legendary {0} was crafted! You have been awarded {1} reformation points!</MSS_Gen_ReformationPointsForLegendary>
     <MSS_Gen_QuestPart_MarryAwayEndLetterLabel>{0} is leaving.</MSS_Gen_QuestPart_MarryAwayEndLetterLabel>
     <MSS_Gen_QuestPart_MarryAwayEndLetterText>{0} is leaving the colony to marry {1} of faction {2}.</MSS_Gen_QuestPart_MarryAwayEndLetterText>
 

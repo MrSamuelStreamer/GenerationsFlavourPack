@@ -13,6 +13,14 @@ namespace MSS_Gen.HarmonyPatches;
 [HarmonyPatch(typeof(SettlementDefeatUtility))]
 public static class SettlementDefeatUtility_Patch
 {
+    [HarmonyPatch(nameof(SettlementDefeatUtility.CheckDefeated))]
+    [HarmonyPostfix]
+    public static void CheckDefeatedPostfix(Settlement factionBase)
+    {
+        if (factionBase.Faction == Faction.OfPlayer)
+            return;
+        Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_SettlementDefeated, factionBase.Name, factionBase.Faction));
+    }
 
     [HarmonyPatch(nameof(SettlementDefeatUtility.CheckDefeated))]
     [HarmonyTranspiler]

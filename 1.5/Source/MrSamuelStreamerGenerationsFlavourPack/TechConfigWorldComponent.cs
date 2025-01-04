@@ -64,7 +64,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
         if(HaveChangedSettingsThisTick) return;
 
         HaveChangedSettingsThisTick = true;
-        
+
         Find.SignalManager.SendSignal(new Signal(Signals.MSS_Gen_TechLevelChanged,
             new NamedArgument(techLevel, "newTechLevel")
         ));
@@ -72,18 +72,6 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
         if (!Loaded)
         {
             LoadPresets();
-        }
-
-        if (Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.Fluid)
-        {
-            if (!Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.development.TryAddDevelopmentPoints(MSS_GenMod.settings.ReformationPointsPerTechLevel))
-            {
-                ModLog.Log("Couldn't add reformation points");
-            }
-            else
-            {
-                Messages.Message("MSS_Gen_TechLeve".Translate(MSS_GenMod.settings.ReformationPointsPerTechLevel), MessageTypeDefOf.PositiveEvent, false);
-            }
         }
 
         List<TechLevelConfigDef> defs = DefDatabase<TechLevelConfigDef>.AllDefsListForReading;
