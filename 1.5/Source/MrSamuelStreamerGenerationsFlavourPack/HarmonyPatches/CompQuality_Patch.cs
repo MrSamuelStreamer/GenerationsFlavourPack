@@ -25,6 +25,7 @@ public static class CompQuality_Patch
     public static void SetQualityPostfix(CompQuality __instance, QualityCategory q, ArtGenerationContext? source)
     {
         if(Find.FactionManager == null || Find.FactionManager.OfPlayer == null) return;
+        if(!__instance.parent.Faction.IsPlayer) return;
         if(!validCategories.Contains(q)) return;
         if (!__instance.parent.TryGetComp(out CompLegendaryTracker compLegendaryTracker))
         {
