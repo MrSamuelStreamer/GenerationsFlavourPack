@@ -69,6 +69,7 @@ public class ReformationPointsWorldComponent(World world) : WorldComponent(world
                     Messages.Message("MSS_Gen_BabyAddedToFaction".Translate(MSS_GenMod.settings.ReformationPointsPerBaby), MessageTypeDefOf.PositiveEvent, true);
                 break;
             case Signals.MSS_Gen_SettlementDefeated:
+                break;
                 if(AddPoints(MSS_GenMod.settings.ReformationPointsPerDefeatedSettlement))
                     Messages.Message("MSS_Gen_SettlementDefeated".Translate(signal.args.GetArg(1),signal.args.GetArg(0), MSS_GenMod.settings.ReformationPointsPerDefeatedSettlement), MessageTypeDefOf.PositiveEvent, true);
                 break;
