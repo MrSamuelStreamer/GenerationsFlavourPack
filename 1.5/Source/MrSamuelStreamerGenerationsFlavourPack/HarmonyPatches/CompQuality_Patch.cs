@@ -36,7 +36,7 @@ public static class CompQuality_Patch
 
         compLegendaryTracker.BecameLegendaryAtTechLevel = Find.FactionManager.OfPlayer == null ? TechLevel.Undefined : Find.FactionManager.OfPlayer.def.techLevel;
 
-        if(Comp.AddPoints(MSS_GenMod.settings.ReformationPointsForLegendary))
+        if(q == QualityCategory.Legendary && Comp.AddPoints(MSS_GenMod.settings.ReformationPointsForLegendary))
             Messages.Message("MSS_Gen_ReformationPointsForLegendary".Translate(__instance.parent.LabelCap, MSS_GenMod.settings.ReformationPointsForLegendary), MessageTypeDefOf.PositiveEvent, true);
     }
 }
