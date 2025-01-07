@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <ThingDef ParentName="BookBase">
+        <defName>MSS_ReferenceBook</defName>
+        <label>reference book</label>
+        <description>A book which focuses on reference.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Textbook/Textbook</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Textbook/Textbook</uiIconPath>
+        <statBases>
+            <MarketValue>160</MarketValue>
+            <WorkToMake>222000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>MSS_Namer_Reference</nameMaker>
+                <descriptionMaker>MSS_Description_Reference</descriptionMaker>
+                <ageYearsRange>100~200</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Textbook/Textbook_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Textbook/Textbook_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="BookOutcomeProperties_GainSkillExp" />
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>MSS_ReferenceBook</defName>
+        <label>write a reference book</label>
+        <description>Write reference book.</description>
+        <jobString>writing reference book.</jobString>
+        <workSkill>Intellectual</workSkill>
+        <workSpeedStat>ResearchSpeed</workSpeedStat>
+        <unfinishedThingDef>VBE_UnfinishedBook</unfinishedThingDef>
+        <effectWorking>Sculpt</effectWorking>
+        <soundWorking>Recipe_Write</soundWorking>
+        <workerCounterClass>VanillaBooksExpanded.RecipeWorker_CreateSkillBook</workerCounterClass>
+        <recipeUsers>
+            <li>VBE_WritersTable</li>
+            <li>VBE_TypewritersTable</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                    <disallowedThingDefs>
+                        <li>Leather_Thrumbo</li>
+                    </disallowedThingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>Leather_Patch</li>
+                <li>Leather_Human</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <modExtensions>
+            <li Class="VanillaBooksExpanded.RecipeSkillBook">
+                <skill>Intellectual</skill>
+            </li>
+        </modExtensions>
+        <products>
+            <MSS_ReferenceBook>1</MSS_ReferenceBook>
+        </products>
+    </RecipeDef>
+</Defs>

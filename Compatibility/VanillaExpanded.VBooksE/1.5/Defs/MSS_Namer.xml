@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>MSS_Namer_Reference</defName>
+    <include>
+      <li>ArtNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>title(p=30)->Thesaurus</li>
+        <li>title(p=2)->Thesaurus, [edition] edition</li>
+        <li>title(p=30)->Dictionary</li>
+        <li>title(p=2)->Dictionary, [edition] edition</li>
+        <li>title->[ANYPAWN_nameIndef]'s Encyclopedia: [volume]</li>
+        <li>title->[ANYPAWN_nameIndef]'s Reference manual: [volume]</li>
+
+          <li>volume->I</li>
+          <li>volume->II</li>
+          <li>volume->III</li>
+          <li>volume->IV</li>
+          <li>volume->V</li>
+          <li>volume->VI</li>
+          <li>volume->VII</li>
+          <li>volume->VIII</li>
+          <li>volume->IX</li>
+          <li>volume->X</li>
+          <li>volume->XI</li>
+          <li>volume->XII</li>
+          <li>volume->XIII</li>
+          <li>volume->XIV</li>
+          <li>volume->XV</li>
+          <li>volume->XVI</li>
+          <li>volume->XVII</li>
+          <li>volume->XVIII</li>
+          <li>volume->XIX</li>
+          <li>volume->XX</li>
+          <li>volume->XXI</li>
+          <li>volume->XXII</li>
+          <li>volume->XXIII</li>
+          <li>volume->XXIV</li>
+
+          <li>edition->1st</li>
+          <li>edition->2nd</li>
+          <li>edition->3rd</li>
+          <li>edition->4th</li>
+          <li>edition->5th</li>
+          <li>edition->6th</li>
+          <li>edition->7th</li>
+          <li>edition->8th</li>
+          <li>edition->9th</li>
+          <li>edition->10th</li>
+          <li>edition->11th</li>
+          <li>edition->12th</li>
+          <li>edition->13th</li>
+          <li>edition->14th</li>
+          <li>edition->15th</li>
+          <li>edition->16th</li>
+          <li>edition->17th</li>
+          <li>edition->18th</li>
+          <li>edition->19th</li>
+          <li>edition->20th</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>MSS_Description_Reference</defName>
+    <include>
+      <li>ArtDescriptionUtility_Global</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+
+        <!-- General, root symbol is 'desc' -->
+
+        <li>subject->[subject_primary]</li>
+
+        <li>desc->A reference manual, inspired by [ANYPAWN_nameFull].</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

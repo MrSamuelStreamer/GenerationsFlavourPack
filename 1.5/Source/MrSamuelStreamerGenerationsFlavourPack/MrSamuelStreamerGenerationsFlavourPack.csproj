@@ -207,6 +207,14 @@
     <ReleaseFiles Update="..\..\Patches\MSS_Gen_Rituals.xml">
       <Link>GenerationsFlavourPack\1.5\Patches\MSS_Gen_Rituals.xml</Link>
     </ReleaseFiles>
+
+    <CompatibilityFiles Update="..\..\..\Compatibility\VanillaExpanded.VBooksE\1.5\Defs\MSS_Books.xml">
+      <Link>GenerationsFlavourPack\Compatibility\VanillaExpanded.VBooksE\1.5\Defs\MSS_Books.xml</Link>
+    </CompatibilityFiles>
+
+    <CompatibilityFiles Update="..\..\..\Compatibility\VanillaExpanded.VBooksE\1.5\Defs\MSS_Namer.xml">
+      <Link>GenerationsFlavourPack\Compatibility\VanillaExpanded.VBooksE\1.5\Defs\MSS_Namer.xml</Link>
+    </CompatibilityFiles>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">
