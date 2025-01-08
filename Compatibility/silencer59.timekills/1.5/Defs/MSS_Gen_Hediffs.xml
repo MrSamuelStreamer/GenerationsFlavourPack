@@ -7,8 +7,17 @@
         <description>This persons immune system is compromised due to old age.</description>
         <initialSeverity>0.1</initialSeverity>
         <maxSeverity>1.0</maxSeverity>
-        <tendable>false</tendable>
+        <tendable>true</tendable>
         <chronic>true</chronic>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.02</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-0.015</severityPerDayTended>
+            </li>
+        </comps>
         <stages>
             <li>
                 <label>initial</label>
@@ -94,6 +103,15 @@
         <maxSeverity>1.0</maxSeverity>
         <tendable>true</tendable>
         <chronic>true</chronic>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.01</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-0.005</severityPerDayTended>
+            </li>
+        </comps>
         <stages>
             <li>
                 <label>initial</label>
