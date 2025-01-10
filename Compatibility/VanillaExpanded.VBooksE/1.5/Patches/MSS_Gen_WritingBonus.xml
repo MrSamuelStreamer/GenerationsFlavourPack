@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StatDef[defName="VBE_WritingSpeed"]/parts</xpath>
+            <value>
+                <parts>
+                    <li Class="StatPart_Age" MayRequire="Ludeon.RimWorld.Biotech">
+                        <useBiologicalYears>true</useBiologicalYears>
+                        <humanlikeOnly>true</humanlikeOnly>
+                        <curve>
+                            <points>
+                                <li>(3,0.05)</li>
+                                <li>(13,1)</li>
+                                <li>(60,1)</li>
+                                <li>(160,16)</li>
+                            </points>
+                        </curve>
+                    </li>
+                </parts>
+            </value>
+    </Operation>
+</Patch>
