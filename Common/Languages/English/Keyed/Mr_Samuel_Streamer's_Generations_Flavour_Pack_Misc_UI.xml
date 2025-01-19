@@ -37,11 +37,11 @@
     <MSS_Gen_Meteo_letterTitle>Meteor storm incoming</MSS_Gen_Meteo_letterTitle>
     <MSS_Gen_Meteo_letterDesc>The soothsayers are all aligned on one prediction - in one day, the heavens will rain down fire upon the land!</MSS_Gen_Meteo_letterDesc>
 
-    <MSS_Gen_IceAge_letterTitle>Ice age incoming</MSS_Gen_IceAge_letterTitle>
-    <MSS_Gen_IceAge_letterDesc>Astronomers have noticed that sun spot activity has massively increased, and have recorded dropping temperatures. They think this is a sign of an incoming ice age. Better prepare!</MSS_Gen_IceAge_letterDesc>
+    <MSS_Gen_IceAgeStart_letterTitle>Ice age incoming</MSS_Gen_IceAgeStart_letterTitle>
+    <MSS_Gen_IceAgeStart_letterDesc>Astronomers have noticed that sun spot activity has massively increased, and have recorded dropping temperatures. They think this is a sign of an incoming ice age. Better prepare!</MSS_Gen_IceAgeStart_letterDesc>
 
-    <MSS_Gen_GlobalWarming_letterTitle>Global warming incoming</MSS_Gen_GlobalWarming_letterTitle>
-    <MSS_Gen_GlobalWarming_letterDesc>Scientists have identified a trend of increasing global average temperature over historical and modern recording. This trend has sharply spiked of late. They believe this will continue in a phenomena they've dubbed Global Warming. They predict multiple environmental disasters will come.</MSS_Gen_GlobalWarming_letterDesc>
+    <MSS_Gen_GlobalStart_letterTitle>Global warming incoming</MSS_Gen_GlobalStart_letterTitle>
+    <MSS_Gen_GlobalStart_letterDesc>Scientists have identified a trend of increasing global average temperature over historical and modern recording. This trend has sharply spiked of late. They believe this will continue in a phenomena they've dubbed Global Warming. They predict multiple environmental disasters will come.</MSS_Gen_GlobalStart_letterDesc>
 
     <MSS_Gen_ArchonRaid_letterTitle>Strange signal</MSS_Gen_ArchonRaid_letterTitle>
     <MSS_Gen_ArchonRaid_letterDesc>You've received a strange signal. You can't fully decode it, but as best as you can tell, it's a countdown. It looks like it'll end tomorrow.</MSS_Gen_ArchonRaid_letterDesc>

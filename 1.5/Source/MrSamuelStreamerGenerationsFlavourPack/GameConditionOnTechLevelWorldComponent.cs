@@ -114,9 +114,19 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
 
         IceAgeHasFired = true;
 
-        GameCondition conditionIceAge = GameConditionMaker.MakeCondition(GameConditionDef.Named("IceAge"));
+        IncidentDef VEE_IceAge = DefDatabase<IncidentDef>.GetNamed("VEE_IceAge");
+        if(VEE_IceAge is null) {
+            ModLog.Warn("VEE_IceAge was not found");
+            return;
+        }
 
-        Find.World.gameConditionManager.RegisterCondition(conditionIceAge);
+        IncidentParms parms = new IncidentParms { target = Find.World };
+
+        if (!VEE_IceAge.Worker.TryExecute(parms))
+        {
+            ModLog.Warn("VEE_IceAge couldn't be fired");
+            return;
+        }
 
         Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
             "MSS_Gen_IceAgeStart_letterDesc".Translate(),
@@ -130,17 +140,24 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         if(GlobalWarmingHasFired) return;
         if(CountdownToGlobalWarming >= Find.TickManager.TicksGame) return;
 
-        GlobalWarmingHasFired = true;
+        IceAgeHasFired = true;
 
-        GameCondition iceAge = Find.World.gameConditionManager.GetActiveCondition(GameConditionDef.Named("IceAge"));
-        iceAge?.End();
+        IncidentDef VEE_GlobalWarming = DefDatabase<IncidentDef>.GetNamed("VEE_GlobalWarming");
+        if(VEE_GlobalWarming is null) {
+            ModLog.Warn("VEE_GlobalWarming was not found");
+            return;
+        }
 
-        GameCondition conditionGlobalWarming = GameConditionMaker.MakeCondition(GameConditionDef.Named("GlobalWarming"));
+        IncidentParms parms = new IncidentParms { target = Find.World };
 
-        Find.World.gameConditionManager.RegisterCondition(conditionGlobalWarming);
+        if (!VEE_GlobalWarming.Worker.TryExecute(parms))
+        {
+            ModLog.Warn("VEE_GlobalWarming couldn't be fired");
+            return;
+        }
 
-        Find.LetterStack.ReceiveLetter("MSS_Gen_IceAgeStart_letterTitle".Translate(),
-            "MSS_Gen_IceAgeStart_letterDesc".Translate(),
+        Find.LetterStack.ReceiveLetter("MSS_Gen_GlobalStart_letterTitle".Translate(),
+            "MSS_Gen_GlobalStart_letterDesc".Translate(),
             LetterDefOf.ThreatBig
         );
     }
