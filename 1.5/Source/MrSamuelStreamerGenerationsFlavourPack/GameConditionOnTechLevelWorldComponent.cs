@@ -252,7 +252,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
     public static GameConditionOnTechLevelWorldComponent Get() => Find.World.components.OfType<GameConditionOnTechLevelWorldComponent>().First();
 
     // Debug action triggers
-    [DebugAction("MSSGenerations", "Trigger Archo Gift", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("MSSGenerations", "Trigger Archo Gift", actionType = DebugActionType.Action, hideInSubMenu = false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     public static void ForceArchoGift()
     {
         GameConditionOnTechLevelWorldComponent comp = Get();
@@ -261,7 +261,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         comp.DoArchoGift();
     }
 
-    [DebugAction("MSSGenerations", "Trigger Meteor", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("MSSGenerations", "Trigger Meteor", actionType = DebugActionType.Action, hideInSubMenu = false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     public static void ForceMeteor()
     {
         GameConditionOnTechLevelWorldComponent comp = Get();
@@ -270,7 +270,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         comp.DoMeteor();
     }
 
-    [DebugAction("MSSGenerations", "Trigger Ice Age", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("MSSGenerations", "Trigger Ice Age", actionType = DebugActionType.Action, hideInSubMenu = false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     public static void ForceIceAge()
     {
         GameConditionOnTechLevelWorldComponent comp = Get();
@@ -279,7 +279,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         comp.DoIceAge();
     }
 
-    [DebugAction("MSSGenerations", "Trigger Global Warming", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("MSSGenerations", "Trigger Global Warming", actionType = DebugActionType.Action, hideInSubMenu = false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     public static void ForceGlobalWarming()
     {
         GameConditionOnTechLevelWorldComponent comp = Get();
@@ -288,7 +288,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         comp.DoGlobalWarming();
     }
 
-    [DebugAction("MSSGenerations", "Trigger Archon Raid", actionType = DebugActionType.Action, hideInSubMenu = true, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("MSSGenerations", "Trigger Archon Raid", actionType = DebugActionType.Action, hideInSubMenu = false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     public static void ForceArchonRaid()
     {
         GameConditionOnTechLevelWorldComponent comp = Get();
