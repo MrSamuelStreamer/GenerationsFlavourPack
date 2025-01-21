@@ -15,5 +15,6 @@
 		<li IfModActive="legendaryminuteman.planetsidepolitics">Compatibility/legendaryminuteman.planetsidepolitics/1.5</li>
 		<li IfModActive="pb3n.simplewarrants">Compatibility/pb3n.SimpleWarrants/1.5</li>
 		<li IfModActive="VanillaExpanded.VBooksE">Compatibility/VanillaExpanded.VBooksE/1.5</li>
+		<li IfModActive="sierra.rf.medievaloverhaul">Compatibility/sierra.rf.medievaloverhaul/1.5</li>
 	</v1.5>
 </loadFolders>
