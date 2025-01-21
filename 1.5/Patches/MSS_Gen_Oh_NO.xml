@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnRelationDef[defName = "Cousin"]/incestOpinionOffset</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnRelationDef[defName = "Cousin"]/romanceChanceFactor</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnRelationDef[defName = "CousinOnceRemoved"]/romanceChanceFactor</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnRelationDef[defName = "SecondCousin"]/romanceChanceFactor</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnRelationDef[defName = "Kin"]/romanceChanceFactor</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThoughtDef[defName = "Incestuous"]</xpath> <!-- I'm so sorry I have sinned -->
+		<!-- This has 0 (ZERO) impact on parent/child, sibling, etc relationships, which are still very illegal -->
+	</Operation>
+</Patch>
