@@ -52,4 +52,6 @@
 
     <MSS_Gen_Tracked>Tracked Usage:</MSS_Gen_Tracked>
     <MSS_Gen_UsedBy>- {0} used this for {1}. They used it {2} times, and got {3} kills.</MSS_Gen_UsedBy>
+
+    <MSS_Gen_RandomGene>{0} gained the {1} xenogene</MSS_Gen_RandomGene>
 </LanguageData>
