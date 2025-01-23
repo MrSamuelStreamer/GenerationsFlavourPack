@@ -219,6 +219,10 @@
     <ReleaseFiles Update="..\..\Patches\MSSAgeUp.xml">
       <Link>GenerationsFlavourPack\1.5\Patches\MSSAgeUp.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\MSS_Gen_BirthdayGenes.xml">
+      <Link>GenerationsFlavourPack\1.5\Defs\MSS_Gen_BirthdayGenes</Link>
+    </ReleaseFiles>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">

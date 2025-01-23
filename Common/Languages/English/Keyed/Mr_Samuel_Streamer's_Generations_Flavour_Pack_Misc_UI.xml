@@ -54,4 +54,7 @@
     <MSS_Gen_UsedBy>- {0} used this for {1}. They used it {2} times, and got {3} kills.</MSS_Gen_UsedBy>
 
     <MSS_Gen_RandomGene>{0} gained the {1} xenogene</MSS_Gen_RandomGene>
+
+    <MSS_BirthdayPickGoodGene>Choose a positive gene for {0_nameDef} to gain via mutation</MSS_BirthdayPickGoodGene>
+    <MSS_BirthdayGeneArchive>The gene {0} was chosen.</MSS_BirthdayGeneArchive>
 </LanguageData>
