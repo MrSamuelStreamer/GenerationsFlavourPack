@@ -118,7 +118,7 @@ public static class Dialog_GrowthMomentChoices_Patch
                 currentChoices.geneChoices = GeneChoicesForPawn(letter.pawn, false);
             }
 
-            Widgets.Label(0.0f, ref curY, width, "MSS_BirthdayPickGoodGene".Translate((NamedArgument) (Thing) letter.pawn).Resolve() + ":");
+            Widgets.Label(0.0f, ref curY, width, "MSS_BirthdayPickBadGene".Translate((NamedArgument) (Thing) letter.pawn).Resolve() + ":");
         }
 
         Listing_Standard listingStandard = new Listing_Standard();
