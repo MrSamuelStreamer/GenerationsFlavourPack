@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AdjustableAge.AgeSettings">
+		<allowedAges>18~30</allowedAges>
+	</ModSettings>
+</SettingsBlock>

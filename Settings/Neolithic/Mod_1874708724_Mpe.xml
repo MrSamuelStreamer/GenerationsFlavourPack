@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SirRandoo.MPE.Settings">
+		<madAnimal>False</madAnimal>
+		<runWild>False</runWild>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MURSpeedMod.SpeedModSettings">
+		<speedBoostMult>8</speedBoostMult>
+		<showBoostToggle>True</showBoostToggle>
+		<speedBoostToggle>True</speedBoostToggle>
+		<manualReactivation>False</manualReactivation>
+		<disableWhenDrafted>False</disableWhenDrafted>
+	</ModSettings>
+</SettingsBlock>

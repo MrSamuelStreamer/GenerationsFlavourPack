@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DucksNoIdeologyLimits.DucksNoIdeologyLimitsSettings">
+		<OnlyPlayer>True</OnlyPlayer>
+	</ModSettings>
+</SettingsBlock>

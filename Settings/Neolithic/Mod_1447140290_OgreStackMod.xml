@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="OgreStack.PersistentData.OgreStackSettings">
+		<SmallVolumeResource_Mode>Scalar</SmallVolumeResource_Mode>
+		<SmallVolumeResource_Value>3</SmallVolumeResource_Value>
+		<Resource_Mode>Scalar</Resource_Mode>
+		<Resource_Value>3</Resource_Value>
+		<RawFoodMeat_Mode>Scalar</RawFoodMeat_Mode>
+		<RawFoodMeat_Value>3</RawFoodMeat_Value>
+		<RawFoodPlant_Mode>Scalar</RawFoodPlant_Mode>
+		<RawFoodPlant_Value>3</RawFoodPlant_Value>
+		<PlantMatter_Mode>Scalar</PlantMatter_Mode>
+		<PlantMatter_Value>3</PlantMatter_Value>
+		<Meal_Mode>Scalar</Meal_Mode>
+		<Meal_Value>3</Meal_Value>
+		<FoodForAnimal_Mode>Scalar</FoodForAnimal_Mode>
+		<FoodForAnimal_Value>3</FoodForAnimal_Value>
+		<Food_Mode>Scalar</Food_Mode>
+		<Food_Value>3</Food_Value>
+		<Item_Mode>Scalar</Item_Mode>
+		<Item_Value>3</Item_Value>
+		<BodyPartOrImplant_Mode>Scalar</BodyPartOrImplant_Mode>
+		<BodyPartOrImplant_Value>3</BodyPartOrImplant_Value>
+		<Leather_Mode>Scalar</Leather_Mode>
+		<Leather_Value>3</Leather_Value>
+		<Textile_Mode>Scalar</Textile_Mode>
+		<Textile_Value>3</Textile_Value>
+		<StoneBlock_Mode>Scalar</StoneBlock_Mode>
+		<StoneBlock_Value>3</StoneBlock_Value>
+		<Manufactured_Mode>Scalar</Manufactured_Mode>
+		<Manufactured_Value>3</Manufactured_Value>
+		<Drug_Mode>Scalar</Drug_Mode>
+		<Drug_Value>3</Drug_Value>
+		<Medicine_Mode>Scalar</Medicine_Mode>
+		<Medicine_Value>3</Medicine_Value>
+		<MortarShell_Mode>Scalar</MortarShell_Mode>
+		<MortarShell_Value>3</MortarShell_Value>
+		<Artifact_Mode>Scalar</Artifact_Mode>
+		<Artifact_Value>3</Artifact_Value>
+		<Other_Mode>Scalar</Other_Mode>
+		<Other_Value>3</Other_Value>
+	</ModSettings>
+</SettingsBlock>

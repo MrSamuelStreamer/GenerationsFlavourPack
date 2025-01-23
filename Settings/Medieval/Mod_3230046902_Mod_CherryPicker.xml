@@ -31,8 +31,6 @@
 			<li>QuestScriptDef/VFE_OpportunitySite_MechanoidAttackParty</li>
 			<li>XenotypeDef/Dirtmole</li>
 			<li>XenotypeDef/Genie</li>
-			<li>XenotypeDef/Sanguophage</li>
-			<li>XenotypeDef/Neanderthal</li>
 			<li>XenotypeDef/Waster</li>
 			<li>XenotypeDef/Yttakin</li>
 			<li>XenotypeDef/Highmate</li>
@@ -43,6 +41,25 @@
 			<li>XenotypeDef/BOR_Solarite</li>
 			<li>XenotypeDef/VRE_Archon</li>
 			<li>XenotypeDef/Hussar</li>
+			<li>IncidentDef/GiveQuest_DistressCall</li>
+			<li>IncidentDef/MechCluster</li>
+			<li>QuestScriptDef/Util_MechCluster</li>
+			<li>GenStepDef/MechClusterForceNoConditionCauser</li>
+			<li>GenStepDef/MechCluster</li>
+			<li>ThingDef/VFEPD_MechanitorShip</li>
+			<li>ThingDef/ShuttleCrashed_Exitable_Mechanitor</li>
+			<li>PawnKindDef/Mechanitor</li>
+			<li>PawnKindDef/Mechanitor_Basic</li>
+			<li>QuestScriptDef/MechanitorShip</li>
+			<li>QuestScriptDef/MechanitorStartingMech</li>
+			<li>IncidentDef/GiveQuest_AncientComplex_Mechanitor</li>
+			<li>GenStepDef/AncientComplex_Mechanitor</li>
+			<li>QuestScriptDef/AG_OpportunitySite_AbandonedBiotechLab</li>
+			<li>GenStepDef/EMIDynamo</li>
+			<li>TraitDef_PoliticsTrait/PoliticsCommunist/Politics</li>
+			<li>TraitDef_PoliticsTrait/PoliticsDespot/Politics</li>
+			<li>TraitDef_PoliticsTrait/PoliticsAnarchist/Politics</li>
+			<li>TraitDef_PoliticsTrait/PoliticsDemocrat/Politics</li>
 		</keys>
 	</ModSettings>
 </SettingsBlock>

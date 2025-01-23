@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="WorldEdit_2_0.Settings.SettingsManager">
+		<activeEditor>False</activeEditor>
+		<Editors>
+			<li Class="WorldEdit_2_0.MainEditor.Tiles.TileEditor">
+				<callKeyCode>F1</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.Templates.TemplateEditor">
+				<callKeyCode>F11</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.RiversAndRoads.RiversEditor">
+				<callKeyCode>F2</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.RiversAndRoads.RoadsEditor">
+				<callKeyCode>F3</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.WorldFeatures.WorldFeatureEditor">
+				<callKeyCode>F4</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.WorldObjects.Factions.FactionEditor">
+				<callKeyCode>F5</callKeyCode>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.WorldObjects.Settlements.SettlementEditor">
+				<callKeyCode>F6</callKeyCode>
+				<dragAndDropKey>None</dragAndDropKey>
+				<deleteSettlementKey>None</deleteSettlementKey>
+			</li>
+			<li Class="WorldEdit_2_0.MainEditor.WorldObjects.Other.ObjectsEditor">
+				<callKeyCode>F7</callKeyCode>
+				<dragAndDropKey>None</dragAndDropKey>
+				<editKey>None</editKey>
+			</li>
+		</Editors>
+	</ModSettings>
+</SettingsBlock>

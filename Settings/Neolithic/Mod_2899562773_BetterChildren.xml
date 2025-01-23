@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BetterChildren.BetterChildrenSettings">
+		<noPassionLearning>2</noPassionLearning>
+		<passionLearning>4</passionLearning>
+		<growthPointsPerDayMultiplier>2</growthPointsPerDayMultiplier>
+	</ModSettings>
+</SettingsBlock>

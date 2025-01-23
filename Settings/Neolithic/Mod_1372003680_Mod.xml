@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Replace_Stuff.Settings">
+		<bridgePrefNames>
+			<li>Bridge</li>
+			<li>BMT_Chinampa_Sandstone</li>
+			<li>BMT_Chinampa_Granite</li>
+			<li>BMT_Chinampa_Limestone</li>
+			<li>BMT_Chinampa_Slate</li>
+			<li>BMT_Chinampa_Marble</li>
+			<li>VFEArch_BridgeSandstone</li>
+			<li>VFEArch_BridgeGranite</li>
+			<li>VFEArch_BridgeLimestone</li>
+			<li>VFEArch_BridgeSlate</li>
+			<li>VFEArch_BridgeMarble</li>
+			<li>VFEArch_BridgeSteel</li>
+			<li>VFEArch_ConcreteFoundation</li>
+			<li>VFEArch_Grass</li>
+			<li>VFEArch_LawnPlot</li>
+			<li>BMT_PontoonBridge</li>
+		</bridgePrefNames>
+	</ModSettings>
+</SettingsBlock>

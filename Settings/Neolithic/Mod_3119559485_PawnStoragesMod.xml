@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="PawnStorages.Settings">
+		<ProductionScale>0.2986439</ProductionScale>
+		<BreedingScale>0.7524779</BreedingScale>
+		<SuggestiveSilo>True</SuggestiveSilo>
+		<RusticFarms>True</RusticFarms>
+	</ModSettings>
+</SettingsBlock>

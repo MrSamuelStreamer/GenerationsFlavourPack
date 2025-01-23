@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AchtungMod.AchtungSettings">
+		<positioningEnabled>True</positioningEnabled>
+		<rescueEnabled>True</rescueEnabled>
+		<achtungKey>Alt</achtungKey>
+		<forceCommandMenuMode>Delayed</forceCommandMenuMode>
+		<forceCommandMenuKey>Ctrl</forceCommandMenuKey>
+		<BreakLevel>AlmostExtreme</BreakLevel>
+		<HealthLevel>InPainShock</HealthLevel>
+		<ignoreForbidden>False</ignoreForbidden>
+		<ignoreRestrictions>False</ignoreRestrictions>
+		<ignoreAssignments>True</ignoreAssignments>
+		<workMarkers>Animated</workMarkers>
+		<buildingSmartDefault>False</buildingSmartDefault>
+		<maxForcedItems>64</maxForcedItems>
+		<menuDelay>250</menuDelay>
+	</ModSettings>
+</SettingsBlock>

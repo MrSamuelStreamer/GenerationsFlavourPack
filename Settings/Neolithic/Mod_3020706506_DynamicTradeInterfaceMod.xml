@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DynamicTradeInterface.Mod.DynamicTradeInterfaceSettings">
+		<TradeWidthPercentage>0.7498536</TradeWidthPercentage>
+		<TradeHeightPercentage>0.7993311</TradeHeightPercentage>
+		<TradeWindowLocked>True</TradeWindowLocked>
+		<ShowAvailableOnMap>False</ShowAvailableOnMap>
+		<visibleColumns>
+			<li>colTradeIconDef</li>
+			<li>colTradeInfoDef</li>
+			<li>colTradeCaptionDef</li>
+			<li>colTradeExtraIconsDef</li>
+			<li>colTradeQuantityDef</li>
+			<li>colTradePriceDef</li>
+			<li>colTradeCounterDef</li>
+			<li>colTradeButtonsDef</li>
+		</visibleColumns>
+		<traderSorting />
+		<colonySorting />
+		<ColumnCustomization>
+			<keys />
+			<values />
+		</ColumnCustomization>
+	</ModSettings>
+</SettingsBlock>

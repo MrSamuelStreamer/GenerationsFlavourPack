@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TechBlock.TechBlockSettings">
+		<requiredPoints>0.95</requiredPoints>
+		<neolithicBaseCost>300</neolithicBaseCost>
+		<medievalBaseCost>200</medievalBaseCost>
+		<insudtrialBaseCost>500</insudtrialBaseCost>
+		<spacerBaseCost>1500</spacerBaseCost>
+		<ultraBaseCost>2500</ultraBaseCost>
+		<archotechBaseCost>4950</archotechBaseCost>
+		<randomInsights>False</randomInsights>
+	</ModSettings>
+</SettingsBlock>

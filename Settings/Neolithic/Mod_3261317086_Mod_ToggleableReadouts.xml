@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ToggleableReadouts.ModSettings_ToggleableReadouts">
+		<exposedFilteredDefs>
+			<li>ThingCategoryDef/VCE_Condiments</li>
+			<li>ThingDef/Bioferrite</li>
+			<li>ThingCategoryDef/DankPyon_RawOres</li>
+			<li>ThingCategoryDef/VCE_Fruit</li>
+			<li>ThingCategoryDef/Gemstones</li>
+			<li>ThingCategoryDef/PlantMatter</li>
+			<li>ThingCategoryDef/ResourcesRaw</li>
+			<li>ThingCategoryDef/Drugs</li>
+			<li>ThingCategoryDef/Textiles</li>
+			<li>ThingCategoryDef/Foods</li>
+			<li>ThingDef/DankPyon_Paper</li>
+			<li>ThingCategoryDef/AnimalProductRaw</li>
+			<li>ThingCategoryDef/DankPyon_Wood</li>
+			<li>ThingDef/DankPyon_Silkworm</li>
+		</exposedFilteredDefs>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,7 @@
+If you're having trouble with the automatical installation, you can install the mod manually by following below:
+
+1. Open the folder for the era you are currently playing in. (e.g. "Medieval")
+2. Open the main Rimworld config folder that your installed original config files in (AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config).
+3. Copy the files from the era specific folder to the main config folder.
+4. Overwrite the files in the main config folder if prompted.
+5. Start Rimworld.

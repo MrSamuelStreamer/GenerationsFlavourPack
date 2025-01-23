@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TechBackground.TechBackground_Settings">
+		<AffectEquipping>True</AffectEquipping>
+		<AffectConstruction>False</AffectConstruction>
+		<AffectCrafting>False</AffectCrafting>
+		<AffectResearch>False</AffectResearch>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DynamicDiplomacy.NPCDiploModSettings">
+		<repEnableDiplo>False</repEnableDiplo>
+		<repEnableConquest>False</repEnableConquest>
+		<repEnableExpansion>True</repEnableExpansion>
+		<repAllowPerm>False</repAllowPerm>
+		<repAllowDDConvert>False</repAllowDDConvert>
+		<repExpansionRadius>10</repExpansionRadius>
+		<repMaxExpansionLimit>25</repMaxExpansionLimit>
+		<repExtraExpansionChancePer6H>3</repExtraExpansionChancePer6H>
+	</ModSettings>
+</SettingsBlock>

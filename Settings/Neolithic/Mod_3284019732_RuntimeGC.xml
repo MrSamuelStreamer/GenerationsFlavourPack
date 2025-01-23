@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RuntimeGC.RuntimeGCSettings">
+		<EnableMemoryUsageBar>False</EnableMemoryUsageBar>
+		<MemoryUsageUpdateInterval>3600</MemoryUsageUpdateInterval>
+		<EnableMemoryUsageTip>False</EnableMemoryUsageTip>
+	</ModSettings>
+</SettingsBlock>

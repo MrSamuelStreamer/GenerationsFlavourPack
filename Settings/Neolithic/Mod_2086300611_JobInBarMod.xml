@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="JobInBar.Settings">
+		<DrawCurrentJob>False</DrawCurrentJob>
+		<jobLabelColor>RGBA(0.700, 0.700, 0.700, 0.800)</jobLabelColor>
+		<useCustomJobLabelColor>True</useCustomJobLabelColor>
+		<currentJobLabelColor>RGBA(1.000, 0.922, 0.016, 0.800)</currentJobLabelColor>
+	</ModSettings>
+</SettingsBlock>

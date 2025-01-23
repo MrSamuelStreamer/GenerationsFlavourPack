@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="PeerPressure.Settings">
+		<CertaintyReductionOpinionMultiplier>4.996479</CertaintyReductionOpinionMultiplier>
+		<ConversionAttemptChanceMultiplier>4.996479</ConversionAttemptChanceMultiplier>
+	</ModSettings>
+</SettingsBlock>

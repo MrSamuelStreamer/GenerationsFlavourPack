@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SimpleWarrants.SimpleWarrantsSettings">
+		<chanceOfWarrantsMadeOnColonist>0.03346599</chanceOfWarrantsMadeOnColonist>
+		<bountyHunterRaidScale>1.001854</bountyHunterRaidScale>
+		<bountyHunterMTB>9.996925</bountyHunterMTB>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Merthsoft.DesignatorShapes.DesignatorSettings">
+		<ResetShapeOnResume>True</ResetShapeOnResume>
+		<DrawBackground>True</DrawBackground>
+		<WindowX>92</WindowX>
+		<WindowY>604</WindowY>
+		<Keys>
+			<li>Q</li>
+			<li>E</li>
+			<li>F</li>
+			<li>Equals</li>
+			<li>Minus</li>
+			<li>Z</li>
+			<li>Y</li>
+		</Keys>
+	</ModSettings>
+</SettingsBlock>

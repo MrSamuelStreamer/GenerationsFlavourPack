@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RomanceOnTheRim.RomanceOnTheRimModSettings">
+		<needFallPerDay>0.2</needFallPerDay>
+		<maxDistanceForInteractions>45</maxDistanceForInteractions>
+		<adoptionBaseChance>0.5</adoptionBaseChance>
+		<diplomaticMarriageBaseChance>0</diplomaticMarriageBaseChance>
+		<diplomaticMarriageBaseChance>0</diplomaticMarriageBaseChance>
+		<diplomaticMarriageAwayBaseChance>0</diplomaticMarriageAwayBaseChance>
+	</ModSettings>
+</SettingsBlock>

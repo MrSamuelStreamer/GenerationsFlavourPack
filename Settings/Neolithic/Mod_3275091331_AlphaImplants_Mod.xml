@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AlphaImplants.AlphaImplants_Settings">
+		<prostheticBodyLimit>0.5</prostheticBodyLimit>
+		<bionicBodyLimit>1</bionicBodyLimit>
+		<archotechBodyLimit>2</archotechBodyLimit>
+	</ModSettings>
+</SettingsBlock>

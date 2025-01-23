@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ProgressRenderer.PRModSettings">
+		<renderFeedback>None</renderFeedback>
+		<renderGameConditions>False</renderGameConditions>
+		<renderWeather>False</renderWeather>
+		<renderZones>False</renderZones>
+		<timeOfDay>12</timeOfDay>
+		<createSubdirs>True</createSubdirs>
+		<useMapNameInstead>True</useMapNameInstead>
+		<fileNamePattern>Numbered</fileNamePattern>
+		<migratedOutputImageSettings>True</migratedOutputImageSettings>
+		<migratedInterval>True</migratedInterval>
+	</ModSettings>
+</SettingsBlock>

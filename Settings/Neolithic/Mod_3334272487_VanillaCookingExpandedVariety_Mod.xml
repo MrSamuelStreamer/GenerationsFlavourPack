@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VanillaCookingExpandedVariety.VanillaCookingExpandedVariety_Settings">
+		<moodMultiplier>10</moodMultiplier>
+		<lowVarietyThreshold>0.5</lowVarietyThreshold>
+		<highVarietyThreshold>0.7</highVarietyThreshold>
+		<numberOfMeals>8</numberOfMeals>
+		<numberOfIngredients>8</numberOfIngredients>
+	</ModSettings>
+</SettingsBlock>

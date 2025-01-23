@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FactionEditData>
+	<name>Generations</name>
+	<guid>8886688983785700</guid>
+	<factionChanges>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_BrigandFaction</defName>
+				<modName>Medieval Overhaul</modName>
+				<def>DankPyon_BrigandFaction</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>OutlanderRoughPig</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>OutlanderRoughPig</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>VRE_Archons</defName>
+				<modName>Vanilla Races Expanded - Archon</modName>
+				<def>VRE_Archons</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>VRE_Archon</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>Beggars</defName>
+				<modName>Ideology</modName>
+				<def>Beggars</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>VFET_WildMenGroup</defName>
+				<modName>Vanilla Factions Expanded - Tribals</modName>
+				<def>VFET_WildMenGroup</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.7526596</li>
+					<li>0.25</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>OutlanderCivil</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>OutlanderCivil</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>TribeCannibal</defName>
+				<modName>Ideology</modName>
+				<def>TribeCannibal</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_ShadowSect</defName>
+				<modName>Medieval Overhaul</modName>
+				<def>DankPyon_ShadowSect</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>AG_Efreet</li>
+					<li>AG_Drakonori</li>
+					<li>AG_Forsaken</li>
+				</keys>
+				<values>
+					<li>0.3351064</li>
+					<li>0.3324468</li>
+					<li>0.3324468</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>FactionBase_Elders</defName>
+				<modName>Elders Faction</modName>
+				<def>FactionBase_Elders</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>EF_Elders</li>
+				</keys>
+				<values>
+					<li>0.6515958</li>
+					<li>0.3484043</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>TribeRough</defName>
+				<modName>Core</modName>
+				<def>TribeRough</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.6489362</li>
+					<li>0.3457447</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>OutlanderRough</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>OutlanderRough</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_NobleHouseCivil2</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>DankPyon_NobleHouseCivil2</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_NobleHouseFierce</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>DankPyon_NobleHouseFierce</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>VFEC_EasternRepublic</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>VFEC_EasternRepublic</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>VFEC_RepublicVillager</def>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags />
+					<techMoney>0~0</techMoney>
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory IsNull="True" />
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<bodyTypes IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>EF_Elders</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.7047873</li>
+					<li>0.1</li>
+					<li>0.2021277</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>VFEC_CentralRepublic</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>VFEC_CentralRepublic</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>VFEC_RepublicVillager</def>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags />
+					<techMoney>0~0</techMoney>
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory IsNull="True" />
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<bodyTypes IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+					<li>EF_Elders</li>
+				</keys>
+				<values>
+					<li>0.6994681</li>
+					<li>0.1968085</li>
+					<li>0.1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>VFEC_WesternRepublic</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>VFEC_WesternRepublic</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>VFEC_RepublicVillager</def>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags />
+					<techMoney>0~0</techMoney>
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory IsNull="True" />
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<bodyTypes IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+					<li>EF_Elders</li>
+				</keys>
+				<values>
+					<li>0.7047873</li>
+					<li>0.2021277</li>
+					<li>0.1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_NobleHouseRoxmont</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>DankPyon_NobleHouseRoxmont</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_NobleHouseCivil</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>DankPyon_NobleHouseCivil</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_NobleHouseSavage</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>DankPyon_NobleHouseSavage</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>BOR_SolarRepublic</defName>
+				<modName>Beyond Our Reach</modName>
+				<def>BOR_SolarRepublic</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>VRE_Archon</li>
+					<li>EF_Elders</li>
+				</keys>
+				<values>
+					<li>0.6994681</li>
+					<li>0.1968085</li>
+					<li>0.1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>MSS_Gen_RivalTribal</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>MSS_Gen_RivalTribal</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.7526596</li>
+					<li>0.2526596</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>Empire</defName>
+				<modName>Royalty</modName>
+				<def>Empire</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>Pirate</defName>
+				<modName>Core</modName>
+				<def>Pirate</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.8031915</li>
+					<li>0.2021277</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>DankPyon_UlrikFaction</defName>
+				<modName>Medieval Overhaul</modName>
+				<def>DankPyon_UlrikFaction</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>0.9042553</li>
+					<li>0.1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>BOR_KwazaarBazaar</defName>
+				<modName>Beyond Our Reach</modName>
+				<def>BOR_KwazaarBazaar</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>PatreonCivil</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>PatreonCivil</def>
+			</faction>
+			<kindEdits />
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>TribeRoughNeanderthal</defName>
+				<modName>Mr Samuel Streamer's Generations Flavour Pack</modName>
+				<def>TribeRoughNeanderthal</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>Tribal_Penitent</def>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags />
+					<techMoney>0~0</techMoney>
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory IsNull="True" />
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<bodyTypes IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 0.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Neanderthal</li>
+				</keys>
+				<values>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+		</li>
+	</factionChanges>
+</FactionEditData>

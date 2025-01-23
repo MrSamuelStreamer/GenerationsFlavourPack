@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ProstheticNoMissingBodyParts.ProstheticNoMissingBodyPartsSettings">
+		<armsWhitelist>
+			<li>ArchotechArm</li>
+			<li>AnimaEntArm</li>
+			<li>BOR_SolarBionicArm</li>
+			<li>BOR_QuasarBionicArm</li>
+			<li>BOR_TenebralBionicArm</li>
+			<li>BOR_UmbralBionicArm</li>
+			<li>AdvancedPowerArm</li>
+			<li>AdvancedBionicArm</li>
+			<li>PowerArm</li>
+			<li>BionicArm</li>
+			<li>SimpleProstheticArm</li>
+		</armsWhitelist>
+		<legsWhitelist>
+			<li>ArchotechLeg</li>
+			<li>AdvancedBionicLeg</li>
+			<li>BionicLeg</li>
+			<li>SimpleProstheticLeg</li>
+		</legsWhitelist>
+		<handsWhitelist />
+		<feetWhitelist />
+	</ModSettings>
+</SettingsBlock>

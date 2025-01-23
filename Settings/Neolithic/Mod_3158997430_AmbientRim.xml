@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ambient.ASettings">
+		<WaveType>-1</WaveType>
+		<RiverType>-1</RiverType>
+		<CampFireSound>False</CampFireSound>
+		<BirdType>-1</BirdType>
+		<SoundAmpMod>-50</SoundAmpMod>
+		<BirdPop>0</BirdPop>
+		<FlySound>False</FlySound>
+		<CicadasSound>False</CicadasSound>
+	</ModSettings>
+</SettingsBlock>

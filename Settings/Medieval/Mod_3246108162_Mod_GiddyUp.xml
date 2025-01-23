@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="GiddyUp.ModSettings_GiddyUp">
-		<enemyMountChance>0</enemyMountChance>
+		<minHandlingLevel>5</minHandlingLevel>
 		<enemyMountChancePreInd>100</enemyMountChancePreInd>
-		<outBiomeWeight>20</outBiomeWeight>
+		<inBiomeWeight>25</inBiomeWeight>
+		<outBiomeWeight>0</outBiomeWeight>
+		<nonWildWeight>0</nonWildWeight>
 		<visitorMountChance>50</visitorMountChance>
 		<visitorMountChancePreInd>50</visitorMountChancePreInd>
 		<disableSlavePawnColumn>True</disableSlavePawnColumn>
@@ -129,6 +131,14 @@
 				<li>DankPyon_UnholdPlain/2</li>
 				<li>DankPyon_UnholdSwamp/2</li>
 				<li>DankPyon_UnholdSnow/2</li>
+				<li>DVE_GreaterDryad_Clawer/0</li>
+				<li>DVE_GreaterDryad_Barkskin/0</li>
+				<li>DVE_GreaterDryad_Woodmaker/0</li>
+				<li>DVE_GreaterDryad_Stonedigger/0</li>
+				<li>DVE_GreaterDryad_Spitter/0</li>
+				<li>MSS_FP_Froggeling/0</li>
+				<li>MSS_FP_Froggomancer/0</li>
+				<li>VCE_Megareindeer/2</li>
 			</keys>
 			<values>
 				<li>0.8332812</li>
@@ -247,6 +257,14 @@
 				<li>1.984375</li>
 				<li>2.054883</li>
 				<li>2.167695</li>
+				<li>0.8480469</li>
+				<li>1.003906</li>
+				<li>2.017969</li>
+				<li>1.226563</li>
+				<li>0.3633594</li>
+				<li>0.3995117</li>
+				<li>1.676563</li>
+				<li>0.7222852</li>
 			</values>
 		</offsetCache>
 	</ModSettings>

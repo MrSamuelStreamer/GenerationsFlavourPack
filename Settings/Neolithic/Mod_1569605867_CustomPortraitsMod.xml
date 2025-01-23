@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CustomPortraits.CustomPortraitsModSettings">
+		<nlCustomPortraitOffsetDict>
+			<keys>
+				<li>Human</li>
+			</keys>
+			<values>
+				<li />
+			</values>
+		</nlCustomPortraitOffsetDict>
+	</ModSettings>
+</SettingsBlock>

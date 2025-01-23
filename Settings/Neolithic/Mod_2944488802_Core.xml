@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AM.AMSettings.Settings">
+		<animSettings>
+			<keys>
+				<li>AM_Duel_Swords</li>
+				<li>AM_Duel_WinFriendlyDuel</li>
+				<li>AM_Duel_WinFriendlyDuel_Reject</li>
+				<li>AM_DuelBow_Medium</li>
+				<li>AM_DuelBow_Colossal</li>
+				<li>AM_Execution_Stab</li>
+				<li>AM_Execution_Fail</li>
+				<li>AM_Execution_Shank</li>
+				<li>AM_Execution_Bash</li>
+				<li>AM_Execution_BashLarge</li>
+				<li>AM_Execution_UpSlash</li>
+				<li>AM_Execution_UpSlash_Doubletap</li>
+				<li>AM_Execution_UpDownSlash</li>
+				<li>AM_Execution_SekiroBS</li>
+				<li>AM_Execution_ThrowSharp</li>
+				<li>AM_Execution_Punt</li>
+				<li>AM_Execution_HeadStab</li>
+				<li>AM_Execution_KnockdownStab</li>
+				<li>AM_Execution_Passover</li>
+				<li>AM_Execution_Whirlwind</li>
+				<li>AM_Execution_HeadRemoval</li>
+				<li>AM_Execution_Behead</li>
+				<li>AM_Execution_BeheadHigh</li>
+				<li>AM_Execution_SpearLift</li>
+				<li>AM_Execution_JumpThrow</li>
+				<li>AM_Execution_PocketSand</li>
+				<li>AM_GilgameshVictim</li>
+				<li>AM_Execution_Weebstick</li>
+				<li>AM_Execution_GaeBulg</li>
+				<li>AM_Idle_TinyAttackHor1</li>
+				<li>AM_Idle_TinyAttackHor2</li>
+				<li>AM_Idle_TinyAttackHor3</li>
+				<li>AM_Idle_TinyAttackNorth1</li>
+				<li>AM_Idle_TinyAttackSouth1</li>
+				<li>AM_Idle_TinyAttackSouth2</li>
+				<li>AM_Idle_MediumAttackHor1</li>
+				<li>AM_Idle_MediumAttackHor2</li>
+				<li>AM_Idle_MediumAttackHor3</li>
+				<li>AM_Idle_MediumAttackNorth1</li>
+				<li>AM_Idle_MediumAttackNorth2</li>
+				<li>AM_Idle_MediumAttackSouth1</li>
+				<li>AM_Idle_MediumAttackSouth2</li>
+				<li>AM_Idle_ColossalAttackHor1</li>
+				<li>AM_Idle_ColossalAttackHor2</li>
+				<li>AM_Idle_ColossalAttackHor3</li>
+				<li>AM_Idle_ColossalAttackNorth1</li>
+				<li>AM_Idle_ColossalAttackSouth1</li>
+				<li>AM_Idle_TinyFlavour1</li>
+				<li>AM_Idle_TinyFlavour2</li>
+				<li>AM_Idle_TinyFlavour3</li>
+				<li>AM_Idle_MediumFlavour1</li>
+				<li>AM_Idle_MediumFlavour2</li>
+				<li>AM_Idle_MediumFlavour3</li>
+				<li>AM_Idle_MediumFlavour4</li>
+				<li>AM_Idle_MediumFlavour5</li>
+				<li>AM_Idle_ColossalFlavour1</li>
+				<li>AM_Idle_ColossalFlavour2</li>
+				<li>AM_Idle_TinyIdle</li>
+				<li>AM_Idle_MediumIdle</li>
+				<li>AM_Idle_ColossalIdle</li>
+				<li>AM_Idle_TinyMoveHor</li>
+				<li>AM_Idle_TinyMoveVert</li>
+				<li>AM_Idle_MediumMoveHor</li>
+				<li>AM_Idle_MediumMoveVert</li>
+				<li>AM_Idle_ColossalMoveHor</li>
+				<li>AM_Idle_ColossalMoveVert</li>
+			</keys>
+			<values>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+			</values>
+		</animSettings>
+		<AutoGrapple>False</AutoGrapple>
+		<EnemiesCanGrapple>False</EnemiesCanGrapple>
+		<AnimalsCanBeExecuted>True</AnimalsCanBeExecuted>
+		<IsFirstTimeRunning>False</IsFirstTimeRunning>
+	</ModSettings>
+</SettingsBlock>

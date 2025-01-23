@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MSS_Gen.Settings">
+		<ReformationPointsPerDefeatedFaction>1</ReformationPointsPerDefeatedFaction>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="GeneticDrift.GeneticDriftSettings">
+		<instability>False</instability>
+		<GeneSetInbuiltBaby>MSS_Gen_GeneDistribution</GeneSetInbuiltBaby>
+		<GeneSetTypeBaby>inbuilt</GeneSetTypeBaby>
+		<geneChancesBaby>1;0.3994513;0.1492456</geneChancesBaby>
+		<endoGeneSetInbuiltAdult>MSS_Gen_GeneDistribution</endoGeneSetInbuiltAdult>
+		<endoGeneSetTypeAdult>inbuilt</endoGeneSetTypeAdult>
+		<endogeneChancesAdult>0.5508916;0.1492456;0</endogeneChancesAdult>
+		<xenoGeneSetInbuiltAdult>MSS_Gen_GeneDistribution</xenoGeneSetInbuiltAdult>
+		<xenoGeneSetTypeAdult>inbuilt</xenoGeneSetTypeAdult>
+		<xenogeneChancesAdult>0;0;0</xenogeneChancesAdult>
+		<puristFactor>0.2555556</puristFactor>
+		<modderFactor>5.011111</modderFactor>
+		<puritanFactor>0.1024691</puritanFactor>
+		<disapprovedFactor>0.2530864</disapprovedFactor>
+		<transhumanistFactor>4</transhumanistFactor>
+	</ModSettings>
+</SettingsBlock>

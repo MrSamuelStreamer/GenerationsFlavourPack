@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="IAintBuildingThat.Settings">
+		<hiddenBuildables>
+			<li>DankPyon_IronIngots1x1c</li>
+			<li>Zombgrella</li>
+			<li>Zombrella</li>
+			<li>VFEArch_BridgeSteelConcrete</li>
+			<li>DankPyon_DarkWoodPlankFloor</li>
+			<li>WoodPlankFloor</li>
+			<li>VFEArch_WoodPlankFloorWalnut</li>
+			<li>VFEArch_WoodPlankFloorBirch</li>
+			<li>VFEArch_WoodPlankFloorMahogany</li>
+			<li>VFEArch_WoodPlankFloorConcrete</li>
+			<li>VFEArch_WoodenParquet</li>
+			<li>VFEArch_WoodenParquetWalnut</li>
+			<li>VFEArch_WoodenParquetBirch</li>
+			<li>VFEArch_WoodenParquetMahogany</li>
+			<li>DankPyon_VFEArch_WoodenParquetDarkWood</li>
+			<li>VFEArch_WoodenParquetConcrete</li>
+			<li>VFEArch_CobblestoneFloorSandstone</li>
+			<li>VFEArch_CobblestoneFloorGranite</li>
+			<li>VFEArch_CobblestoneFloorLimestone</li>
+			<li>VFEArch_CobblestoneFloorSlate</li>
+			<li>VFEArch_CobblestoneFloorMarble</li>
+			<li>VFEArch_CobblestoneFloorConcrete</li>
+			<li>FT_Concrete</li>
+			<li>FT_ConcreteTile</li>
+			<li>FT_FineConcreteTile</li>
+			<li>FT_PlankFloor</li>
+			<li>VFEArch_FineWoodenFloor</li>
+			<li>VFEArch_FineWoodenFloorWalnut</li>
+			<li>VFEArch_FineWoodenFloorBirch</li>
+			<li>VFEArch_FineWoodenFloorMahogany</li>
+			<li>DankPyon_VFEArch_FineDarkWoodenFloor</li>
+			<li>RB_FinePlankWood</li>
+			<li>VBY_PrimitiveResearchSpot</li>
+		</hiddenBuildables>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TBnRE.TBnRE_Settings">
+		<ReBasicIntellectualNeed>5</ReBasicIntellectualNeed>
+		<ReBasicOtherSkillNeed>5</ReBasicOtherSkillNeed>
+		<ReBasicResearchBoost>25</ReBasicResearchBoost>
+	</ModSettings>
+</SettingsBlock>
