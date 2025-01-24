@@ -140,7 +140,7 @@ public class GameConditionOnTechLevelWorldComponent(World world) : WorldComponen
         if(GlobalWarmingHasFired) return;
         if(CountdownToGlobalWarming >= Find.TickManager.TicksGame) return;
 
-        IceAgeHasFired = true;
+        GlobalWarmingHasFired = true;
 
         IncidentDef VEE_GlobalWarming = DefDatabase<IncidentDef>.GetNamed("VEE_GlobalWarming");
         if(VEE_GlobalWarming is null) {
