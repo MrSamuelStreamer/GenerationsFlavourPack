@@ -58,6 +58,16 @@ public static class Dialog_GrowthMomentChoices_Patch
         }
     }
 
+    [HarmonyPatch("SelectionsMade")]
+    [HarmonyPostfix]
+    public static void SelectionsMadePostfix(Dialog_GrowthMomentChoices __instance, ref bool __result)
+    {
+        if (__result && DialogLookup.TryGetValue(__instance, out Choices value))
+        {
+            __result = value.selectedGene != null;
+        }
+    }
+
     public static Lazy<FieldInfo> Letter = new(() => AccessTools.Field(typeof(Dialog_GrowthMomentChoices), "letter"));
 
     public static IntRange GeneRange = new IntRange(2, 6);
