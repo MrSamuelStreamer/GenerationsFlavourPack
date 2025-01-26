@@ -13,7 +13,7 @@ public static class RitualOutcomeEffectWorker_AdvanceToNeolithic_Patch
     public static void Apply()
     {
         TechConfigWorldComponent comp = Find.World.GetComponent<TechConfigWorldComponent>();
-
+        ModLog.Log("Setting new configs to neolithic");
         comp?.SetNewConfigs(TechLevel.Neolithic);
     }
 }

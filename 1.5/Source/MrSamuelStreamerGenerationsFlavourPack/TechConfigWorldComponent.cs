@@ -61,6 +61,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
 
     public void SetNewConfigs(TechLevel techLevel)
     {
+        ModLog.Log("SetNewConfigs");
         if(HaveChangedSettingsThisTick) return;
 
         HaveChangedSettingsThisTick = true;
@@ -91,18 +92,25 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
 
     private void MergeSettings(string presetDefName, string levelName)
     {
-        SettingsImporter importer = new();
-        List<string> modsToImport = importer.ModsToImport(presetDefName);
+        ModLog.Log($"MergeSettings: {presetDefName}, {levelName}");
 
-        Find.WindowStack.Add(new Dialog_MessageBox(
-            "MSS_Gen_Tech_Level_Advancing".Translate(levelName, string.Join("\r\n", modsToImport)),
-            buttonADestructive: true,
-            buttonAAction:
-            () =>
-            {
-                importer.MergeSettings(presetDefName);
-                Find.WindowStack.Add(new Dialog_MessageBox(
-                    "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
-            }, buttonBText: "Cancel", layer: WindowLayer.Super));
+        SettingsImporter importer = new();
+
+        LongEventHandler.QueueLongEvent(delegate
+        {
+            ModLog.Log("Checking for mod configs to import");
+            List<string> modsToImport = importer.ModsToImport(presetDefName);
+
+            Find.WindowStack.Add(new Dialog_MessageBox(
+                "MSS_Gen_Tech_Level_Advancing".Translate(levelName, string.Join("\r\n", modsToImport)),
+                buttonADestructive: true,
+                buttonAAction:
+                () =>
+                {
+                    importer.MergeSettings(presetDefName);
+                    Find.WindowStack.Add(new Dialog_MessageBox(
+                        "MSS_Gen_Tech_Level_Advancing_Restart".Translate(presetDefName)));
+                }, buttonBText: "Cancel", layer: WindowLayer.Super));
+        }, "MSS_Gen_EvaluatingModConfigs", true, null);
     }
 }

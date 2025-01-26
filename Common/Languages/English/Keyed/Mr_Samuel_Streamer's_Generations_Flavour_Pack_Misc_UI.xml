@@ -58,4 +58,6 @@
     <MSS_BirthdayPickGoodGene>Choose a positive gene for {0_nameDef} to gain via mutation</MSS_BirthdayPickGoodGene>
     <MSS_BirthdayPickBadGene>Choose a negative gene for {0_nameDef} to gain via mutation</MSS_BirthdayPickBadGene>
     <MSS_BirthdayGeneArchive>The gene {0} was chosen.</MSS_BirthdayGeneArchive>
+
+    <MSS_Gen_EvaluatingModConfigs>Evaluating mod configs to update</MSS_Gen_EvaluatingModConfigs>
 </LanguageData>

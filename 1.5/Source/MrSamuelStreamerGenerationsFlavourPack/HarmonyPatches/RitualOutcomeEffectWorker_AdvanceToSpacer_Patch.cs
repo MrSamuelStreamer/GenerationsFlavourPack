@@ -14,6 +14,7 @@ public static class RitualOutcomeEffectWorker_AdvanceToSpacer_Patch
     {
         TechConfigWorldComponent comp = Find.World.GetComponent<TechConfigWorldComponent>();
 
+        ModLog.Log("Setting new configs to spacer");
         comp?.SetNewConfigs(TechLevel.Spacer);
     }
 }

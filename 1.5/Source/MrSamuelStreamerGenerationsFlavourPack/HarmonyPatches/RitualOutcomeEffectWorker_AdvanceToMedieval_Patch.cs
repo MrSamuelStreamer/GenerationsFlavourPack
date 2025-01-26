@@ -14,6 +14,7 @@ public static class RitualOutcomeEffectWorker_AdvanceToMedieval_Patch
     {
         TechConfigWorldComponent comp = Find.World.GetComponent<TechConfigWorldComponent>();
 
+        ModLog.Log("Setting new configs to medieval");
         comp?.SetNewConfigs(TechLevel.Medieval);
     }
 }

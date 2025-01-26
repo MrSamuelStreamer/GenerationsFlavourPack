@@ -13,6 +13,19 @@ namespace MSS_Gen.HarmonyPatches;
 [HarmonyPatch(typeof(SettingsImporter))]
 public static class SettingsImporter_Patch
 {
+    public static HashSet<string> SkippedMods = [
+        "2817607528", //ResourceDictionaryMod
+        "2138635288", //TabSortingMod
+        "2695164414", //TweaksGaloreMod
+        "FasterGameLoading-main" //FasterGameLoading
+    ];
+
+    public static HashSet<string> SkippedModNames = [
+        "ResourceDictionaryMod",
+        "TabSortingMod",
+        "TweaksGaloreMod",
+        "FasterGameLoadin"
+    ];
     public static Lazy<FieldInfo> Presets = new Lazy<FieldInfo>(()=>AccessTools.Field(typeof(SettingsImporter), "Presets"));
     private static string GetSettingsFilename(string modIdentifier, string modHandleName) => Path.Combine(
         GenFilePaths.ConfigFolderPath,
@@ -22,9 +35,12 @@ public static class SettingsImporter_Patch
     [HarmonyPrefix]
     public static bool ShouldImport(ref bool __result, string importFilePath, string modId, string modName)
     {
-        if (modId == "2817607528")
+        ModLog.Log($"Should import? {modId}: {modName}");
+        // __result = true;
+        // return false;
+        if (SkippedMods.Contains(modId) || SkippedModNames.Contains(modName))
         {
-            ModLog.Log("skip check for ResourceDictionaryMod");
+            ModLog.Log($"skip check for {modId}: {modName}");
             __result = true;
             return false;
         }
@@ -37,6 +53,7 @@ public static class SettingsImporter_Patch
         else if (currentSettings is null) __result = true;
         else __result = !XmlUtils.NodesAreEqual(importSettings, currentSettings);
 
+        ModLog.Log($"checked {modId}: {modName}");
         return false;
     }
 
@@ -59,10 +76,13 @@ public static class SettingsImporter_Patch
                 string modIdentifier = match.Groups[1].Value;
                 string modHandleName = match.Groups[2].Value;
 
-                if (modIdentifier == "2817607528" && modHandleName.ToLower() == "ResourceDictionaryMod".ToLower())
+                if (SkippedMods.Contains(modIdentifier) || SkippedModNames.Contains(modHandleName))
                 {
-                    // Skip for ResourceDictionaryMod
-                    File.Copy(fullName, GetSettingsFilename(modIdentifier, modHandleName));
+                    ModLog.Log($"Doing copy instead of merge for {modIdentifier}: {modHandleName}");
+                    string dest = GetSettingsFilename(modIdentifier, modHandleName);
+                    if(File.Exists(dest))
+                        File.Delete(dest);
+                    File.Copy(fullName, dest);
                     continue;
                 }
 

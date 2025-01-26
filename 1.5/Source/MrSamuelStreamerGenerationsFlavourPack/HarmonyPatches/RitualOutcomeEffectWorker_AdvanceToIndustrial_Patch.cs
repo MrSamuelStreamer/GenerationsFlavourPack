@@ -14,6 +14,7 @@ public static class RitualOutcomeEffectWorker_AdvanceToIndustrial_Patch
     {
         TechConfigWorldComponent comp = Find.World.GetComponent<TechConfigWorldComponent>();
 
+        ModLog.Log("Setting new configs to industrial");
         comp?.SetNewConfigs(TechLevel.Industrial);
     }
 }

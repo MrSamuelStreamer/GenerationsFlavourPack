@@ -14,6 +14,7 @@ public static class RitualOutcomeEffectWorker_AdvanceToUltra_Patch
     {
         TechConfigWorldComponent comp = Find.World.GetComponent<TechConfigWorldComponent>();
 
+        ModLog.Log("Setting new configs to ultratech");
         comp?.SetNewConfigs(TechLevel.Ultra);
     }
 }
