@@ -6,6 +6,7 @@ using System.Linq;
 using HarmonyLib;
 using JetBrains.Annotations;
 using ModlistConfigurator;
+using MSS_Gen.HarmonyPatches;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
@@ -62,6 +63,7 @@ public class TechConfigWorldComponent(World world) : WorldComponent(world)
     public void SetNewConfigs(TechLevel techLevel)
     {
         ModLog.Log("SetNewConfigs");
+
         if(HaveChangedSettingsThisTick) return;
 
         HaveChangedSettingsThisTick = true;
