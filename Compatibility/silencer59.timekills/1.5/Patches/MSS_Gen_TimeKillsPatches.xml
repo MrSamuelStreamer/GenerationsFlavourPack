@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>*/HediffDef[defName="TK_OldAge"]/lethalSeverity</xpath>
+        <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_TendDuration"]/severityPerDayTended</xpath>
         <value>
-            <lethalSeverity>-1</lethalSeverity>
+            <severityPerDayTended>-0.175</severityPerDayTended>
         </value>
     </Operation>
+
     <Operation Class="PatchOperationReplace">
-        <xpath>*/HediffDef[defName="TK_OldAge"]/tendable</xpath>
+        <xpath>*/HediffDef[defName="TK_Degradation"]/comps[@Class="HediffCompProperties_TendDuration"]/severityPerDayTended</xpath>
         <value>
-            <tendable>false</tendable>
+            <severityPerDayTended>-0.1</severityPerDayTended>
         </value>
     </Operation>
 
@@ -18,7 +19,7 @@
         <value>
             <comps>
                 <li Class="HediffCompProperties_SeverityPerDay">
-                    <severityPerDay>0.01666</severityPerDay>
+                    <severityPerDay>0.1666</severityPerDay>
                 </li>
             </comps>
         </value>
@@ -48,7 +49,7 @@
         <value>
             <li Class="HediffGiver_Random">
                 <hediff>MSS_Gen_CompromisedImmunity</hediff>
-                <mtbDays>2</mtbDays>
+                <mtbDays>1</mtbDays>
                 <canAffectAnyLivePart>false</canAffectAnyLivePart>
             </li>
         </value>
@@ -59,7 +60,7 @@
         <value>
             <li Class="HediffGiver_Random">
                 <hediff>MSS_Gen_CognitiveDecline</hediff>
-                <mtbDays>2</mtbDays>
+                <mtbDays>1</mtbDays>
                 <canAffectAnyLivePart>false</canAffectAnyLivePart>
                 <partsToAffect>
                     <li>Brain</li>
