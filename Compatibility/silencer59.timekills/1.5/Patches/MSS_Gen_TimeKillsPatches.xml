@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_TendDuration"]/severityPerDayTended</xpath>
+        <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_Immunizable"]/severityPerDayNotImmune</xpath>
         <value>
-            <severityPerDayTended>-0.175</severityPerDayTended>
+            <severityPerDayNotImmune>0.0167</severityPerDayNotImmune>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_Immunizable"]</xpath>
+        <value>
+            <severityPerDayImmune>0.008334</severityPerDayImmune>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/HediffDef[defName="TK_OldAge"]/tendable</xpath>
+        <value>
+            <tendable>false</tendable>
         </value>
     </Operation>
 
@@ -39,7 +52,7 @@
                 <li>(0.6, 0.0)</li>
                 <li>(0.75, 0.05)</li>
                 <li>(1.0, 0.35)</li>
-                <li>(1.05, 0.6)</li>
+                <li>(1.05, 0.95)</li>
             </points>
         </value>
     </Operation>
