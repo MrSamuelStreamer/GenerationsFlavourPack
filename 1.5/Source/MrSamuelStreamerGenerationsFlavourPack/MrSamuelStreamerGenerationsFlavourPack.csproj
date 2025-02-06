@@ -219,6 +219,10 @@
     <ReleaseFiles Update="..\..\Patches\MSSAgeUp.xml">
       <Link>GenerationsFlavourPack\1.5\Patches\MSSAgeUp.xml</Link>
     </ReleaseFiles>
+
+    <CompatibilityFiles Update="..\..\..\Compatibility\sarg.alphagenes\1.5\Patches\MSS_AR_Patch.xml">
+      <Link>GenerationsFlavourPack\Compatibility\sarg.alphagenes\1.5\Patches\MSS_AR_Patch.xml</Link>
+    </CompatibilityFiles>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">
