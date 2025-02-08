@@ -6435,6 +6435,72 @@
 				<li>wooden arch sign_building</li>
 				<li>rustic arch sign_building</li>
 				<li>turboencabulator_item</li>
+				<li>jorts_item</li>
+				<li>arc_building</li>
+				<li>chemfuel-powered arc_building</li>
+				<li>chemfuel-boosted arc_building</li>
+				<li>chemfuel-charged arc_building</li>
+				<li>chemfuel-fortified arc_building</li>
+				<li>geothermal arc_building</li>
+				<li>steam-powered arc_building</li>
+				<li>thermal-vent arc_building</li>
+				<li>heat-powered arc_building</li>
+				<li>arc junk_building</li>
+				<li>ancient arc part_building</li>
+				<li>prototype_building</li>
+				<li>ancient construction truck_building</li>
+				<li>ancient construction crane_building</li>
+				<li>ancient digger_building</li>
+				<li>empty construction pallet_building</li>
+				<li>construction pallet with boxes_building</li>
+				<li>construction pallet with scrap_building</li>
+				<li>construction pallet with components_building</li>
+				<li>construction pallet with jerrycans_building</li>
+				<li>construction pallet with wood_building</li>
+				<li>research terminal_building</li>
+				<li>ancient research terminal_building</li>
+				<li>cracked research terminal_building</li>
+				<li>ancient research files_building</li>
+				<li>ancient filing cabinet_building</li>
+				<li>experimental arc part_building</li>
+				<li>studied experimental arc part_building</li>
+				<li>ancient chainlink fence_building</li>
+				<li>ancient arc_building</li>
+				<li>ancient geothermal arc_building</li>
+				<li>nuclear arc husk_building</li>
+				<li>experimental arc_building</li>
+				<li>uranium-powered arc_building</li>
+				<li>nuclear arc_building</li>
+				<li>isotopic arc_building</li>
+				<li>atomic arc_building</li>
+				<li>wood-fired arc_building</li>
+				<li>wood-fueled arc_building</li>
+				<li>wood-powered arc_building</li>
+				<li>wood-blasting arc_building</li>
+				<li>arc component_item</li>
+				<li>ancient tight parka_item</li>
+				<li>conk'ed creet_terrain</li>
+				<li>conk'ed creet blocks_item</li>
+				<li>big jorts' big jorts_item</li>
+				<li>longrat extended_item</li>
+				<li>wombat extended_item</li>
+				<li>dongbat extended_item</li>
+				<li>batbat extended_item</li>
+				<li>longbat extended_item</li>
+				<li>primitive weapon rack_building</li>
+				<li>banquet table_building</li>
+				<li>baptismal font_building</li>
+				<li>sanguophage radio beacon_building</li>
+				<li>solar marine gloves_item</li>
+				<li>solar marine boots_item</li>
+				<li>kwazaari marine gloves_item</li>
+				<li>kwazaari marine boots_item</li>
+				<li>tenebral marine gloves_item</li>
+				<li>tenebral marine boots_item</li>
+				<li>solar shield belt_item</li>
+				<li>quasar shield belt_item</li>
+				<li>tenebral shield belt_item</li>
+				<li>bortus' legs_item</li>
 			</keys>
 			<values>
 				<li>
@@ -7394,6 +7460,7 @@
 					<mainThingDefName>CryptosleepCasket</mainThingDefName>
 					<thingDefs>
 						<li>CryptosleepCasket</li>
+						<li>VQE_OvergrownCryptosleepCasket</li>
 					</thingDefs>
 					<removedDefs />
 				</li>
@@ -8640,8 +8707,10 @@
 				<li>
 					<thingKey>steel_item</thingKey>
 					<mainThingDefName>Steel</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>Steel</li>
+						<li>RB_Glass</li>
 					</thingDefs>
 					<removedDefs />
 				</li>
@@ -17478,7 +17547,8 @@
 				</li>
 				<li>
 					<thingKey>salt_item</thingKey>
-					<mainThingDefName>VCE_Salt</mainThingDefName>
+					<mainThingDefName>DankPyon_Salt</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>VCE_Salt</li>
 						<li>DankPyon_Salt</li>
@@ -18531,7 +18601,6 @@
 					<thingKey>cell wall_building</thingKey>
 					<mainThingDefName>VFEArch_CellWall</mainThingDefName>
 					<thingDefs>
-						<li>VFEArch_CellWall</li>
 						<li>RB_CellWall</li>
 					</thingDefs>
 					<removedDefs />
@@ -25124,7 +25193,8 @@
 				</li>
 				<li>
 					<thingKey>boots_item</thingKey>
-					<mainThingDefName>DankPyon_Footwear_BootsLeather</mainThingDefName>
+					<mainThingDefName>VAE_Footwear_Boots</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>DankPyon_Footwear_BootsLeather</li>
 						<li>VAE_Footwear_Boots</li>
@@ -58617,6 +58687,537 @@
 					<mainThingDefName>MSS_TurboEncabulator</mainThingDefName>
 					<thingDefs>
 						<li>MSS_TurboEncabulator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>jorts_item</thingKey>
+					<mainThingDefName>MSS_FP_Apparel_Jorts</mainThingDefName>
+					<thingDefs>
+						<li>MSS_FP_Apparel_Jorts</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_Basic</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_Basic</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>chemfuel-powered arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_ChemfuelPowered</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_ChemfuelPowered</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>chemfuel-boosted arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_ChemfuelBoosted</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_ChemfuelBoosted</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>chemfuel-charged arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_ChemfuelCharged</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_ChemfuelCharged</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>chemfuel-fortified arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_ChemfuelFortified</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_ChemfuelFortified</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>geothermal arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_Geothermal</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_Geothermal</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>steam-powered arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_SteamPowered</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_SteamPowered</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>thermal-vent arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_ThermalVent</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_ThermalVent</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>heat-powered arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_HeatPowered</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_HeatPowered</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>arc junk_building</thingKey>
+					<mainThingDefName>VQE_GenetronJunk</mainThingDefName>
+					<thingDefs>
+						<li>VQE_GenetronJunk</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient arc part_building</thingKey>
+					<mainThingDefName>VQE_AncientARCPart</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientARCPart</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>prototype_building</thingKey>
+					<mainThingDefName>VQE_AncientARCPrototype_One</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientARCPrototype_One</li>
+						<li>VQE_AncientARCPrototype_Two</li>
+						<li>VQE_AncientARCPrototype_Three</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient construction truck_building</thingKey>
+					<mainThingDefName>VQE_AncientConstructionTruck</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientConstructionTruck</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient construction crane_building</thingKey>
+					<mainThingDefName>VQE_AncientConstructionCrane</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientConstructionCrane</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient digger_building</thingKey>
+					<mainThingDefName>VQE_AncientDigger</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientDigger</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>empty construction pallet_building</thingKey>
+					<mainThingDefName>VQE_EmptyConstructionPallet</mainThingDefName>
+					<thingDefs>
+						<li>VQE_EmptyConstructionPallet</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>construction pallet with boxes_building</thingKey>
+					<mainThingDefName>VQE_ConstructionPallet_Boxes</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ConstructionPallet_Boxes</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>construction pallet with scrap_building</thingKey>
+					<mainThingDefName>VQE_ConstructionPallet_Scrap</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ConstructionPallet_Scrap</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>construction pallet with components_building</thingKey>
+					<mainThingDefName>VQE_ConstructionPallet_Components</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ConstructionPallet_Components</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>construction pallet with jerrycans_building</thingKey>
+					<mainThingDefName>VQE_ConstructionPallet_Chemfuel</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ConstructionPallet_Chemfuel</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>construction pallet with wood_building</thingKey>
+					<mainThingDefName>VQE_ConstructionPallet_Wood</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ConstructionPallet_Wood</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>research terminal_building</thingKey>
+					<mainThingDefName>VQE_AncientResearchTerminal</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientResearchTerminal</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient research terminal_building</thingKey>
+					<mainThingDefName>VQE_AncientResearchTerminal_Off</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientResearchTerminal_Off</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>cracked research terminal_building</thingKey>
+					<mainThingDefName>VQE_AncientResearchTerminal_Cracked</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientResearchTerminal_Cracked</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient research files_building</thingKey>
+					<mainThingDefName>VQE_AncientResearchFiles</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientResearchFiles</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient filing cabinet_building</thingKey>
+					<mainThingDefName>VQE_AncientResearchFiles_Off</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientResearchFiles_Off</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>experimental arc part_building</thingKey>
+					<mainThingDefName>VQE_ExperimentalARCPart</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ExperimentalARCPart</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>studied experimental arc part_building</thingKey>
+					<mainThingDefName>VQE_ExperimentalARCPart_Studied</mainThingDefName>
+					<thingDefs>
+						<li>VQE_ExperimentalARCPart_Studied</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient chainlink fence_building</thingKey>
+					<mainThingDefName>VQE_AncientChainlinkFence</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientChainlinkFence</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient arc_building</thingKey>
+					<mainThingDefName>VQE_AncientGenetron</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientGenetron</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient geothermal arc_building</thingKey>
+					<mainThingDefName>VQE_AncientGeothermalGenetron</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientGeothermalGenetron</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>nuclear arc husk_building</thingKey>
+					<mainThingDefName>VQE_NuclearGenetronHusk</mainThingDefName>
+					<thingDefs>
+						<li>VQE_NuclearGenetronHusk</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>experimental arc_building</thingKey>
+					<mainThingDefName>VQE_AncientOvergrownGenetron</mainThingDefName>
+					<thingDefs>
+						<li>VQE_AncientOvergrownGenetron</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>uranium-powered arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_UraniumPowered</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_UraniumPowered</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>nuclear arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_Nuclear</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_Nuclear</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>isotopic arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_Isotopic</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_Isotopic</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>atomic arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_Atomic</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_Atomic</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wood-fired arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_WoodFired</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_WoodFired</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wood-fueled arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_WoodFueled</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_WoodFueled</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wood-powered arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_WoodPowered</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_WoodPowered</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wood-blasting arc_building</thingKey>
+					<mainThingDefName>VQE_Genetron_WoodBlasting</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Genetron_WoodBlasting</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>arc component_item</thingKey>
+					<mainThingDefName>VQE_GenetronComponent</mainThingDefName>
+					<thingDefs>
+						<li>VQE_GenetronComponent</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ancient tight parka_item</thingKey>
+					<mainThingDefName>VQE_Apparel_Parka</mainThingDefName>
+					<thingDefs>
+						<li>VQE_Apparel_Parka</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>conk'ed creet_terrain</thingKey>
+					<mainThingDefName>MSS_Conkedcrete</mainThingDefName>
+					<thingDefs>
+						<li>MSS_Conkedcrete</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>conk'ed creet blocks_item</thingKey>
+					<mainThingDefName>MSS_BlocksConkedCreet</mainThingDefName>
+					<thingDefs>
+						<li>MSS_BlocksConkedCreet</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>big jorts' big jorts_item</thingKey>
+					<mainThingDefName>MSS_FP_Apparel_BigJortsJorts</mainThingDefName>
+					<thingDefs>
+						<li>MSS_FP_Apparel_BigJortsJorts</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>longrat extended_item</thingKey>
+					<mainThingDefName>MSS_Longrat_Extended</mainThingDefName>
+					<thingDefs>
+						<li>MSS_Longrat_Extended</li>
+						<li>MSS_Thongbat_Extended</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wombat extended_item</thingKey>
+					<mainThingDefName>MSS_Wombat_Extended</mainThingDefName>
+					<thingDefs>
+						<li>MSS_Wombat_Extended</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>dongbat extended_item</thingKey>
+					<mainThingDefName>MSS_Dongbat_Extended</mainThingDefName>
+					<thingDefs>
+						<li>MSS_Dongbat_Extended</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>batbat extended_item</thingKey>
+					<mainThingDefName>MSS_Batbat_Extended</mainThingDefName>
+					<thingDefs>
+						<li>MSS_Batbat_Extended</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>longbat extended_item</thingKey>
+					<mainThingDefName>MSS_LongBat</mainThingDefName>
+					<thingDefs>
+						<li>MSS_LongBat</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>primitive weapon rack_building</thingKey>
+					<mainThingDefName>ASF_WeaponRack</mainThingDefName>
+					<thingDefs>
+						<li>ASF_WeaponRack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>banquet table_building</thingKey>
+					<mainThingDefName>AM_BanquetTable</mainThingDefName>
+					<thingDefs>
+						<li>AM_BanquetTable</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>baptismal font_building</thingKey>
+					<mainThingDefName>AM_BaptismalFont</mainThingDefName>
+					<thingDefs>
+						<li>AM_BaptismalFont</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sanguophage radio beacon_building</thingKey>
+					<mainThingDefName>AM_RaidSpawner</mainThingDefName>
+					<thingDefs>
+						<li>AM_RaidSpawner</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>solar marine gloves_item</thingKey>
+					<mainThingDefName>BOR_Solar_VAE_Handwear_MarineGloves</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Solar_VAE_Handwear_MarineGloves</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>solar marine boots_item</thingKey>
+					<mainThingDefName>BOR_Solar_VAE_Footwear_MarineBoots</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Solar_VAE_Footwear_MarineBoots</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>kwazaari marine gloves_item</thingKey>
+					<mainThingDefName>BOR_Quasar_VAE_Handwear_MarineGloves</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Quasar_VAE_Handwear_MarineGloves</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>kwazaari marine boots_item</thingKey>
+					<mainThingDefName>BOR_Quasar_VAE_Footwear_MarineBoots</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Quasar_VAE_Footwear_MarineBoots</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tenebral marine gloves_item</thingKey>
+					<mainThingDefName>BOR_Tenebral_VAE_Handwear_MarineGloves</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Tenebral_VAE_Handwear_MarineGloves</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tenebral marine boots_item</thingKey>
+					<mainThingDefName>BOR_Tenebral_VAE_Footwear_MarineBoots</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Tenebral_VAE_Footwear_MarineBoots</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>solar shield belt_item</thingKey>
+					<mainThingDefName>BOR_Solar_Apparel_ShieldBelt</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Solar_Apparel_ShieldBelt</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>quasar shield belt_item</thingKey>
+					<mainThingDefName>BOR_Quasar_Apparel_ShieldBelt</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Quasar_Apparel_ShieldBelt</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tenebral shield belt_item</thingKey>
+					<mainThingDefName>BOR_Tenebral_Apparel_ShieldBelt</mainThingDefName>
+					<thingDefs>
+						<li>BOR_Tenebral_Apparel_ShieldBelt</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bortus' legs_item</thingKey>
+					<mainThingDefName>MSS_MeleeWeapon_BortusLegsBladelink</mainThingDefName>
+					<thingDefs>
+						<li>MSS_MeleeWeapon_BortusLegsBladelink</li>
 					</thingDefs>
 					<removedDefs />
 				</li>

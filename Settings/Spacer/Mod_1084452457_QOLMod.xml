@@ -499,6 +499,51 @@
 					<li>VBY_PrimitiveStoneCuttingSpot</li>
 				</RecipeUsers>
 			</li>
+			<li>
+				<id>recipes</id>
+				<isConfigured>Version;t;Label;f;jobString;f;WorkAmount;f;LearnFactor;f;WorkSkill;f;WorkSpeedStat;f;Products;t;SkillRequirements;f;AllowMixingIngredients;f;AutoStripCorpses;f;InterruptIfIngredientIsRotting;f;ProductHasIngredientStuff;f;TargetCountAdjustment;f;HideBodyPartNames;f;IsViolation;f;SurgerySuccessChanceFactor;f;DeathOnFailedSurgeryChance;f;TargetsBodyPart;f;Anesthetize;f;DontShowIfAnyIngredientMissing;f;EfficiencyStat;f;WorkTableEfficiencyStat;f;WorkTableSpeedStat;f;RequiredGiverWorkType;f;UnfinishedThingDef;f;EffectWorking;f;SoundWorking;f;AddsHediff;f;RemovesHediff;f;ResearchPrerequisite;f;WorkerClass;f;WorkerCounterClass;f;IngredientValueGetterClass;f;ForceHiddenSpecialFilters;f;SpecialProducts;f;RecipeUsers;f;AppliedOnFixedBodyParts;f;FactionPrerequisiteTags;f;Ingredients2;f;FixedIngredientFilter;f;DefaultIngredientFilter;f;</isConfigured>
+				<baseObjectKey>TRAHS_DrillSteel</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Products>
+					<li>
+						<id>thingDefCountClass</id>
+						<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+						<Thing>Steel</Thing>
+						<Thing_type>Verse.ThingDef, Assembly-CSharp, Version=1.5.9102.32373, Culture=neutral, PublicKeyToken=null</Thing_type>
+						<Count>50</Count>
+					</li>
+				</Products>
+			</li>
+			<li>
+				<id>recipes</id>
+				<isConfigured>Version;t;Label;f;jobString;f;WorkAmount;f;LearnFactor;f;WorkSkill;f;WorkSpeedStat;f;Products;t;SkillRequirements;f;AllowMixingIngredients;f;AutoStripCorpses;f;InterruptIfIngredientIsRotting;f;ProductHasIngredientStuff;f;TargetCountAdjustment;f;HideBodyPartNames;f;IsViolation;f;SurgerySuccessChanceFactor;f;DeathOnFailedSurgeryChance;f;TargetsBodyPart;f;Anesthetize;f;DontShowIfAnyIngredientMissing;f;EfficiencyStat;f;WorkTableEfficiencyStat;f;WorkTableSpeedStat;f;RequiredGiverWorkType;f;UnfinishedThingDef;f;EffectWorking;f;SoundWorking;f;AddsHediff;f;RemovesHediff;f;ResearchPrerequisite;f;WorkerClass;f;WorkerCounterClass;f;IngredientValueGetterClass;f;ForceHiddenSpecialFilters;f;SpecialProducts;f;RecipeUsers;f;AppliedOnFixedBodyParts;f;FactionPrerequisiteTags;f;Ingredients2;f;FixedIngredientFilter;f;DefaultIngredientFilter;f;</isConfigured>
+				<baseObjectKey>TRAHS_DrillSilver</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Products>
+					<li>
+						<id>thingDefCountClass</id>
+						<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+						<Thing>Silver</Thing>
+						<Thing_type>Verse.ThingDef, Assembly-CSharp, Version=1.5.9102.32373, Culture=neutral, PublicKeyToken=null</Thing_type>
+						<Count>50</Count>
+					</li>
+				</Products>
+			</li>
+			<li>
+				<id>recipes</id>
+				<isConfigured>Version;t;Label;f;jobString;f;WorkAmount;f;LearnFactor;f;WorkSkill;f;WorkSpeedStat;f;Products;t;SkillRequirements;f;AllowMixingIngredients;f;AutoStripCorpses;f;InterruptIfIngredientIsRotting;f;ProductHasIngredientStuff;f;TargetCountAdjustment;f;HideBodyPartNames;f;IsViolation;f;SurgerySuccessChanceFactor;f;DeathOnFailedSurgeryChance;f;TargetsBodyPart;f;Anesthetize;f;DontShowIfAnyIngredientMissing;f;EfficiencyStat;f;WorkTableEfficiencyStat;f;WorkTableSpeedStat;f;RequiredGiverWorkType;f;UnfinishedThingDef;f;EffectWorking;f;SoundWorking;f;AddsHediff;f;RemovesHediff;f;ResearchPrerequisite;f;WorkerClass;f;WorkerCounterClass;f;IngredientValueGetterClass;f;ForceHiddenSpecialFilters;f;SpecialProducts;f;RecipeUsers;f;AppliedOnFixedBodyParts;f;FactionPrerequisiteTags;f;Ingredients2;f;FixedIngredientFilter;f;DefaultIngredientFilter;f;</isConfigured>
+				<baseObjectKey>TRAHS_DrillGold</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Products>
+					<li>
+						<id>thingDefCountClass</id>
+						<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+						<Thing>Gold</Thing>
+						<Thing_type>Verse.ThingDef, Assembly-CSharp, Version=1.5.9102.32373, Culture=neutral, PublicKeyToken=null</Thing_type>
+						<Count>20</Count>
+					</li>
+				</Products>
+			</li>
 		</recipes>
 		<floorsAndTerrain>
 			<li>
@@ -724,7 +769,17 @@
 			</li>
 		</floorsAndTerrain>
 		<thoughts />
-		<apparel />
+		<apparel>
+			<li>
+				<id>apparel</id>
+				<isConfigured>Label;f;description;f;wearPerDay;f;GenerateAllowChance;f;careIfWornByCorpse;f;careIfDamaged;f;Smeltable;f;burnableByRecipe;f;relicChance;f;layers;f;bodyPartGroups;t;countsAsClothingForNudity;f;tags;f;Tradeability;f;TradeTags;f;thingSetMakerTags;f;techLevel;f;StuffCategories;f;ThingCategories;f;GraphicData;f;WornGraphicData;f;drawData;f;renderSkipFlags;f;equippedStatOffsets;f;statBases;f;developmentalStageFilter;f;</isConfigured>
+				<baseObjectKey>Apparel_Gunlink</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<bodyPartGroups>
+					<li>Neck</li>
+				</bodyPartGroups>
+			</li>
+		</apparel>
 		<weapons />
 		<projectiles />
 		<damage />
@@ -734,7 +789,7 @@
 		<buildings>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>DankPyon_RusticCookingTable</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<ResearchPrerequisites>
@@ -744,7 +799,7 @@
 			</li>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>TableButcher</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<ResearchPrerequisites>
@@ -758,7 +813,7 @@
 			</li>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>DankPyon_Workbench</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<ResearchPrerequisites>
@@ -769,7 +824,7 @@
 			</li>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>DankPyon_CleaningBench</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<ResearchPrerequisites>
@@ -780,7 +835,7 @@
 			</li>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;f;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>DankPyon_Book_ScribeTable</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<ResearchPrerequisites>
@@ -792,7 +847,7 @@
 			</li>
 			<li>
 				<id>buildings</id>
-				<isConfigured>Version;t;Label;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;t;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;f;CostList;t;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;t;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
 				<baseObjectKey>RB_ClerestoryWall</baseObjectKey>
 				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
 				<CostList>
@@ -807,6 +862,14 @@
 				<ResearchPrerequisites>
 					<li>VFET_Construction</li>
 				</ResearchPrerequisites>
+			</li>
+			<li>
+				<id>buildings</id>
+				<isConfigured>Version;t;Label;f;graphicData;f;PathCost;f;PathCostIgnoreRepeat;f;Passability;f;TerrainAffordanceNeeded;f;altitudeLayer;f;Selectable;f;NeverMultiSelect;f;constructionSkillPrerequisite;f;artisticSkillPrerequisite;f;BlockWind;f;blockLight;f;HoldsRoof;f;FillPercent;f;CoversFloor;f;CastEdgeShadows;f;StaticSunShadowHeight;f;Fertility;f;Minifiable;f;Stealable;f;StuffCategories;f;CostStuffCount;t;CostList;t;KilledLeavings;f;thingSetMakerTags;f;statBases;f;DesignationCategory;f;uiOrder;f;DesignatorDropdown;f;CanGenerateDefaultDesignator;f;ResearchPrerequisites;f;Recipes;f;TurretGunDef;f;TurretBurstCooldownTime;f;TurretBurstWarmupTimeMin;f;TurretBurstWarmupTimeMax;f;TurretInitialCooldownTime;f;SowTag;f;CombatPower;f;BuildingTags;f;UseIdeoColor;f;paintable;f;DominantStyleCategory;f;ArtificialForMeditationPurposes;f;joyKind;f;alwaysDeconstructible;f;deconstructible;f;buildingPropertiesBed;f;fixedStorageSettingsFilter;f;defaultStorageSettingsFilter;f;maxItemsInCell;f;CompRefuelable;f;CompTransporter;f;mineableProperties;f;LinkableFacilities;f;CompFacility;f;GasStorageCapacity;f;GasTraderConsumption;f;GasTraderConsumptionWhenUsed;f;CompBattery;f;CompPower;f;CompHeatPusher;f;CompGlower;f;ThingCategories;f;CompBiosculpterPod_HealingCycle;f;CompProjectileInterceptor;f;</isConfigured>
+				<baseObjectKey>RB_GlassWall</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<CostStuffCount>10</CostStuffCount>
+				<CostList />
 			</li>
 		</buildings>
 		<items />
@@ -831,6 +894,93 @@
 				<TechLevel>Industrial</TechLevel>
 				<Prerequisites>
 					<li>MF_ModernFurniture</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;t;RequiredResearchFacilities;f;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>VFE_BasicDroneAssembly</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<RequiredResearchBuilding>HiTechResearchBench</RequiredResearchBuilding>
+				<RequiredResearchBuilding_type>Verse.ThingDef, Assembly-CSharp, Version=1.5.9102.32373, Culture=neutral, PublicKeyToken=null</RequiredResearchBuilding_type>
+				<Prerequisites>
+					<li>MultiAnalyzer</li>
+					<li>Machining</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;f;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>Prosthetics</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Prerequisites>
+					<li>Machining</li>
+					<li>MicroelectronicsBasics</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;f;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>Ferny_MechanizedAgriculture</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Prerequisites>
+					<li>Machining</li>
+					<li>MultiAnalyzer</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;t;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>VFE_AutomatedDefensiveMeasures</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<RequiredResearchFacilities>
+					<li>MultiAnalyzer</li>
+				</RequiredResearchFacilities>
+				<Prerequisites>
+					<li>MultiAnalyzer</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;t;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>VFE_AdvancedDroneAssembly</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<RequiredResearchFacilities>
+					<li>MultiAnalyzer</li>
+				</RequiredResearchFacilities>
+				<Prerequisites>
+					<li>MultiAnalyzer</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;t;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>VCEUE_NeutroamineRefining</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<RequiredResearchFacilities>
+					<li>MultiAnalyzer</li>
+				</RequiredResearchFacilities>
+				<Prerequisites>
+					<li>BiofuelRefining</li>
+					<li>MultiAnalyzer</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;f;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>JumpPack</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Prerequisites>
+					<li>MultiAnalyzer</li>
+				</Prerequisites>
+			</li>
+			<li>
+				<id>researchProjects</id>
+				<isConfigured>titleUnlocks;f;Label;f;description;f;BaseCost;f;knowledgeCost;f;knowledgeCategory;f;Tab;f;ResearchViewX;f;ResearchViewY;f;TechLevel;f;RequiredResearchBuilding;f;RequiredResearchFacilities;f;Prerequisites;t;hiddenPrerequisites;f;Tags;f;TechprintCount;f;</isConfigured>
+				<baseObjectKey>Biosculpting</baseObjectKey>
+				<baseObjectReferenceKey>-1</baseObjectReferenceKey>
+				<Prerequisites>
+					<li>Biosculpting</li>
 				</Prerequisites>
 			</li>
 		</researchProjects>
