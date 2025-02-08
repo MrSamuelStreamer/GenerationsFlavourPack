@@ -3,13 +3,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_Immunizable"]/severityPerDayNotImmune</xpath>
         <value>
-            <severityPerDayNotImmune>0.0167</severityPerDayNotImmune>
+            <severityPerDayNotImmune>0.00556</severityPerDayNotImmune>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
         <xpath>*/HediffDef[defName="TK_OldAge"]/comps[@Class="HediffCompProperties_Immunizable"]</xpath>
         <value>
-            <severityPerDayImmune>0.008334</severityPerDayImmune>
+            <severityPerDayImmune>0.003</severityPerDayImmune>
         </value>
     </Operation>
 
@@ -23,7 +23,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>*/HediffDef[defName="TK_Degradation"]/comps[@Class="HediffCompProperties_TendDuration"]/severityPerDayTended</xpath>
         <value>
-            <severityPerDayTended>-0.1</severityPerDayTended>
+            <severityPerDayTended>0.004</severityPerDayTended>
         </value>
     </Operation>
 
@@ -32,7 +32,7 @@
         <value>
             <comps>
                 <li Class="HediffCompProperties_SeverityPerDay">
-                    <severityPerDay>0.1666</severityPerDay>
+                    <severityPerDay>0.008</severityPerDay>
                 </li>
             </comps>
         </value>
