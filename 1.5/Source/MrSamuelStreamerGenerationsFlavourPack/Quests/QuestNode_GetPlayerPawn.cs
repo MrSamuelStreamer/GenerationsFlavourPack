@@ -14,15 +14,13 @@ public class QuestNode_GetPlayerPawn : QuestNode
     public IEnumerable<Pawn> GetCandidates()
     {
 
-        IEnumerable<Pawn> candidates = Find.Maps.Where(map=>map.IsPlayerHome).SelectMany(map=>map.mapPawns.AllHumanlike).Where(pawn => pawn.Faction.IsPlayer && pawn.IsColonist && pawn.IsColonistPlayerControlled);
+        IEnumerable<Pawn> candidates = Find.Maps.Where(map=>map.IsPlayerHome).SelectMany(map=>map.mapPawns.AllHumanlike).Where(pawn => pawn.Faction.IsPlayer && pawn.IsColonist && pawn.IsColonistPlayerControlled && pawn.ageTracker.Adult);
         if (CannotBeMarried)
         {
             candidates = candidates.Where(pawn => pawn.GetSpouses(false).NullOrEmpty());
         }
 
-        var a = candidates.ToList();
-
-        return a;
+        return candidates.ToList();
     }
 
     protected override void RunInt()
