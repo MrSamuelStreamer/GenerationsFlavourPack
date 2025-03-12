@@ -12,6 +12,9 @@ public static class MSS_GenDefOf
 
     public static GeneDef MSS_Gen_VoidsEmbrace;
     public static IncidentDef VREA_PsychicStorm;
+    public static XenotypeDef MSS_Gen_Archoseed;
+
+    public static JobDef MSSGen_BecomeArcho;
 
     static MSS_GenDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MSS_GenDefOf));
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <JobDef>
+        <defName>MSSGen_BecomeArcho</defName>
+        <driverClass>MSS_Gen.JobDriver_BecomeArcho</driverClass>
+        <reportString>becoming an archoseed at TargetA</reportString>
+        <neverShowWeapon>true</neverShowWeapon>
+    </JobDef>
+</Defs>

@@ -223,6 +223,10 @@
     <CompatibilityFiles Update="..\..\..\Compatibility\sarg.alphagenes\1.5\Patches\MSS_AR_Patch.xml">
       <Link>GenerationsFlavourPack\Compatibility\sarg.alphagenes\1.5\Patches\MSS_AR_Patch.xml</Link>
     </CompatibilityFiles>
+
+    <ReleaseFiles Update="..\..\Defs\MSSGen_JobDef.xml">
+      <Link>GenerationsFlavourPack\1.5\Defs\MSSGen_JobDef</Link>
+    </ReleaseFiles>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="..\..\..\Compatibility\dankpyon.medieval.overhaul\1.5\Defs\">
