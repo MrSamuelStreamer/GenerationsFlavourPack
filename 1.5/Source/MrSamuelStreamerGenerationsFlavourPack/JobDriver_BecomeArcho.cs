@@ -14,17 +14,17 @@ public class JobDriver_BecomeArcho : JobDriver
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
-        return pawn.Reserve(
+        return pawn.CanReach(
             Nexus,
-            job,
-            errorOnFailed: errorOnFailed);
+            PathEndMode.ClosestTouch,
+            Danger.Deadly);
     }
 
     public Thing Nexus => job.targetA.Thing;
 
     protected override IEnumerable<Toil> MakeNewToils()
     {
-        yield return Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.InteractionCell);
+        yield return Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.ClosestTouch);
         Toil waitToil = Toils_General.Wait(5000);
         waitToil.AddPreInitAction((Action) (() => Messages.Message("MSSGen_ConversionBegins".Translate(pawn.Named("PAWN")), (Thing) pawn, MessageTypeDefOf.PositiveEvent)));
         waitToil.AddPreInitAction((Action) (() => SoundDefOf.Bestowing_Start.PlayOneShot((SoundInfo) (Thing) pawn)));
