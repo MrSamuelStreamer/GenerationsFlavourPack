@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>MSS_Archotouched</defName>
+    <label>Archo Touched</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This person has ascended through an Archonexus, or other similarly powerful enough conduit to the Archodimension. Their presence in the timeless dimension has permanently altered their perception of realtime, and what remains of their physical biology now moves at a far greater speed than ever before.</description>
+    <isBad>false</isBad>
+    <hairColorOverride>(192, 235, 52)</hairColorOverride>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>2.0</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>2.5</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <RestFallRateFactor>0.25</RestFallRateFactor>
+          <PsychicSensitivity>3</PsychicSensitivity>
+        </statFactors>
+        <regeneration>100</regeneration>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>CoolPsycasts_Timeshunt</li>
+        </abilityDefs>
+      </li>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>CoolPsycasts_GrantPsycast</li>
+        </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>
