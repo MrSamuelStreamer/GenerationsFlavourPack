@@ -56,6 +56,7 @@
 
     <MSS_Gen_EvaluatingModConfigs>Evaluating mod configs to update</MSS_Gen_EvaluatingModConfigs>
 
-    <MSSGen_Convert>Convert {0} into an archoseed</MSSGen_Convert>
-    <MSSGen_ConversionBegins>Conversion of {0} into an archoseed has begun!</MSSGen_ConversionBegins>
+    <MSSGen_Convert_All>Archoconvert archselected pawns into archoseeds</MSSGen_Convert_All>
+    <MSSGen_Convert>Archoconvert {0} into an archoseed</MSSGen_Convert>
+    <MSSGen_ConversionBegins>Archoconversion of {0} into an archoseed has archobegun!</MSSGen_ConversionBegins>
 </LanguageData>
